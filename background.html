@@ -1,0 +1,2571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Background — Sex Tax by Zak Maymin</title>
+  <meta name="description" content="Chapter-by-chapter companion material for Sex Tax: paintings, passages, papers, and puzzles.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Background — Sex Tax by Zak Maymin">
+  <meta property="og:description" content="Paintings, passages, papers, and puzzles — chapter-by-chapter companion material for Sex Tax.">
+  <meta property="og:image" content="https://sextax.org/wiertz_reader.jpg">
+  <meta property="og:url" content="https://sextax.org/background.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e0d0;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+    }
+
+    /* TAB NAV */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-bottom: 1px solid #1e1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0a0a0a;
+    }
+    .tab-nav a {
+      display: block;
+      padding: 1rem 2.5rem;
+      color: #666;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-nav a:hover { color: #b89060; }
+    .tab-nav a.active {
+      color: #c8860a;
+      border-bottom-color: #c8860a;
+    }
+
+    /* PAGE HEADER */
+    .page-header {
+      text-align: center;
+      padding: 4rem 2rem 1rem;
+    }
+    .page-header h1 {
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      color: #c8860a;
+      text-shadow: 0 0 40px rgba(200,120,10,0.3);
+      margin-bottom: 0.5rem;
+    }
+    .page-header p {
+      color: #888;
+      font-size: 1rem;
+      font-style: italic;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    /* (chapter-nav replaced by sidebar) */
+
+    /* CHAPTER SECTION */
+    .chapter {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      border-top: 1px solid #1e1e1e;
+    }
+
+    .chapter h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #c8860a;
+      font-weight: normal;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    /* FULL-PAGE PAINTING */
+    .painting-full {
+      margin: 0 -2rem 3rem;
+      text-align: center;
+    }
+    .painting-full img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 3px;
+      box-shadow: 0 0 60px rgba(200,80,0,0.15), 0 8px 40px rgba(0,0,0,0.6);
+    }
+    .painting-full .caption {
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+      color: #888;
+      font-style: italic;
+      padding: 0 2rem;
+    }
+    .painting-full .caption strong {
+      color: #b89060;
+      font-style: normal;
+    }
+
+    /* TEXT BLOCKS */
+    .text-block {
+      max-width: 720px;
+      margin: 0 auto 3rem;
+    }
+    .text-block h3 {
+      font-size: 1.15rem;
+      color: #d8cfc0;
+      margin-bottom: 1rem;
+      font-weight: normal;
+      border-left: 3px solid #c8860a;
+      padding-left: 1rem;
+    }
+    .text-block p {
+      font-size: 1.05rem;
+      color: #b8b0a0;
+      margin-bottom: 1rem;
+    }
+    .text-block a {
+      color: #c8860a;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(200,134,10,0.3);
+      transition: border-color 0.2s;
+    }
+    .text-block a:hover {
+      border-bottom-color: #c8860a;
+    }
+
+    /* BLOCKQUOTE */
+    blockquote {
+      max-width: 720px;
+      margin: 2rem auto;
+      border-left: 3px solid #333;
+      padding: 1.5rem 2rem;
+      background: rgba(255,255,255,0.02);
+      border-radius: 0 3px 3px 0;
+    }
+    blockquote p {
+      font-size: 1.05rem;
+      color: #c8bfb0;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    blockquote p:last-child { margin-bottom: 0; }
+    blockquote .verse-ref {
+      display: block;
+      text-align: right;
+      font-size: 0.9rem;
+      color: #888;
+      font-style: normal;
+      margin-top: 1rem;
+    }
+
+    /* VERSION TOGGLE */
+    .version-toggle {
+      max-width: 720px;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
+    .version-toggle button {
+      background: transparent;
+      border: 1px solid #333;
+      color: #666;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      padding: 0.4rem 1.2rem;
+      margin: 0 0.3rem;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .version-toggle button:hover { color: #b89060; border-color: #555; }
+    .version-toggle button.active {
+      color: #c8860a;
+      border-color: #c8860a;
+    }
+
+    /* LINKS LIST */
+    .links-list {
+      list-style: none;
+      margin: 1rem 0;
+    }
+    .links-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #1a1a1a;
+      font-size: 0.95rem;
+    }
+    .links-list li:last-child { border-bottom: none; }
+    .links-list a {
+      color: #c8860a;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(200,134,10,0.3);
+      transition: border-color 0.2s;
+    }
+    .links-list a:hover { border-bottom-color: #c8860a; }
+    .links-list .desc {
+      color: #777;
+      font-size: 0.85rem;
+      display: block;
+      margin-top: 0.2rem;
+    }
+    .links-list .tag {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.05em;
+      padding: 0.15rem 0.5rem;
+      border-radius: 2px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .tag-free { background: #1a2a1a; color: #6a9a6a; }
+    .tag-paywall { background: #2a1a1a; color: #9a6a6a; }
+
+    /* DIVIDER */
+    .divider {
+      text-align: center;
+      color: #c8860a;
+      font-size: 1.2rem;
+      letter-spacing: 0.5em;
+      padding: 2rem 0;
+      opacity: 0.4;
+    }
+
+    /* SIDEBAR NAV */
+    .sidebar {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      width: 170px;
+      height: calc(100vh - 50px);
+      background: #0d0d0d;
+      border-right: 1px solid #1e1e1e;
+      overflow-y: auto;
+      z-index: 90;
+      padding: 1rem 0;
+      scrollbar-width: thin;
+      scrollbar-color: #333 transparent;
+    }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+    .sidebar a {
+      display: block;
+      padding: 0.35rem 1rem;
+      color: #666;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.2s, background 0.2s;
+      border-left: 2px solid transparent;
+    }
+    .sidebar a:hover {
+      color: #b89060;
+      background: rgba(200,134,10,0.05);
+    }
+    .sidebar a.active {
+      color: #c8860a;
+      border-left-color: #c8860a;
+      background: rgba(200,134,10,0.08);
+    }
+    .sidebar .sidebar-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #444;
+      padding: 0.8rem 1rem 0.3rem;
+      pointer-events: none;
+    }
+    .sidebar-toggle {
+      display: none;
+      position: fixed;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #c8860a;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 95;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+      transition: background 0.2s;
+      line-height: 44px;
+      text-align: center;
+      padding: 0;
+    }
+    .sidebar-toggle:hover { background: #222; }
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 85;
+    }
+
+    /* Desktop: sidebar visible, content shifted */
+    @media (min-width: 769px) {
+      .page-header, .chapter, footer { margin-left: 170px; }
+      .chapter { max-width: 900px; }
+    }
+
+    /* Mobile: sidebar hidden, toggle visible */
+    @media (max-width: 768px) {
+      .sidebar {
+        left: -220px;
+        width: 200px;
+        transition: left 0.3s ease;
+        box-shadow: none;
+      }
+      .sidebar.open {
+        left: 0;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.5);
+      }
+      .sidebar-toggle { display: block; }
+      .sidebar-overlay.open { display: block; }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 1px solid #151515;
+      color: #444;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    footer a {
+      color: #666;
+      text-decoration: none;
+    }
+    footer a:hover { color: #c8860a; }
+  </style>
+</head>
+<body>
+
+  <nav class="tab-nav">
+    <a href="index.html">The Novel</a>
+    <a href="read.html">Read Chapter 1</a>
+    <a href="background.html" class="active">Background</a>
+  </nav>
+
+  <div class="page-header">
+    <h1>BACKGROUND</h1>
+    <p>Paintings, passages, papers, and puzzles &mdash; chapter by chapter.</p>
+  </div>
+
+  <!-- SIDEBAR NAV -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-label">Chapters</div>
+    <a href="#authors-note" data-ch="authors-note">Note</a>
+    <a href="#chapter-1" data-ch="chapter-1">1 Correction</a>
+    <a href="#chapter-2" data-ch="chapter-2">2 Daughter</a>
+    <a href="#chapter-3" data-ch="chapter-3">3 Roommate</a>
+    <a href="#chapter-4" data-ch="chapter-4">4 Romus</a>
+    <a href="#chapter-5" data-ch="chapter-5">5 Exam</a>
+    <a href="#chapter-6" data-ch="chapter-6">6 Jail</a>
+    <a href="#chapter-7" data-ch="chapter-7">7 Court</a>
+    <a href="#chapter-8" data-ch="chapter-8">8 Pizza</a>
+    <a href="#chapter-9" data-ch="chapter-9">9 Striptease</a>
+    <a href="#chapter-10" data-ch="chapter-10">10 Dinner</a>
+    <a href="#chapter-11" data-ch="chapter-11">11 Night</a>
+    <a href="#chapter-12" data-ch="chapter-12">12 Attack</a>
+    <a href="#chapter-13" data-ch="chapter-13">13 Condorcet</a>
+    <a href="#chapter-14" data-ch="chapter-14">14 Coven</a>
+    <a href="#chapter-15" data-ch="chapter-15">15 Ritual</a>
+    <a href="#chapter-16" data-ch="chapter-16">16 Athame</a>
+    <a href="#chapter-17" data-ch="chapter-17">17 Plea</a>
+    <a href="#chapter-18" data-ch="chapter-18">18 Prophets</a>
+    <a href="#chapter-19" data-ch="chapter-19">19 Flying</a>
+    <a href="#chapter-20" data-ch="chapter-20">20 Landing</a>
+    <a href="#chapter-21" data-ch="chapter-21">21 Cemetery</a>
+    <a href="#chapter-22" data-ch="chapter-22">22 Training</a>
+    <a href="#chapter-23" data-ch="chapter-23">23 Wife</a>
+    <a href="#chapter-24" data-ch="chapter-24">24 Well</a>
+    <a href="#chapter-25" data-ch="chapter-25">25 Negotiations</a>
+    <a href="#chapter-26" data-ch="chapter-26">26 Lover</a>
+    <a href="#chapter-27" data-ch="chapter-27">27 Puzzle</a>
+    <a href="#chapter-28" data-ch="chapter-28">28 Kupala</a>
+    <a href="#chapter-29" data-ch="chapter-29">29 Signing</a>
+    <a href="#chapter-30" data-ch="chapter-30">30 Fight</a>
+  </nav>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle chapter list">&#9776;</button>
+
+  <!-- ============================================================ -->
+  <!-- AUTHOR'S NOTE                                                 -->
+  <!-- ============================================================ -->
+
+  <section class="chapter" id="authors-note">
+    <h2>Author's Note</h2>
+
+    <!-- PAINTING 1: WIERTZ — HERO -->
+    <div class="painting-full">
+      <img src="wiertz_reader.jpg" alt="The Reader of Novels by Antoine Wiertz, 1853">
+      <div class="caption">
+        <strong>Antoine Wiertz</strong> &mdash; <em>The Reader of Novels</em>, 1853<br>
+        Wiertz Museum, Brussels
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>A nude woman reads a novel while the devil himself reaches over her shoulder, pushing the pages forward. Wiertz painted this in 1853 as a warning about the seductive power of fiction &mdash; novels were considered dangerous, especially for women. The painting asks the same question the Author's Note opens with: <em>Should this book be read?</em></p>
+      <p>The devil doesn't force. He doesn't need to. He only has to make the next page irresistible.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- THE LIBERAL PARADOX -->
+    <div class="text-block">
+      <h3>The Liberal Paradox</h3>
+      <p>The Author's Note introduces a real result from social choice theory: <strong>Sen's Impossibility of a Paretian Liberal</strong>, published in 1970. It proves mathematically that you cannot simultaneously guarantee individual freedom and economic efficiency. Every free society must choose &mdash; and every choice has a cost.</p>
+      <p>In <em>Sex Tax</em>, this isn't abstract. The Russian government has made its choice: redistribute desire itself. The math says someone has to lose. The novel asks: who?</p>
+    </div>
+
+    <div class="text-block">
+      <h3>Read the Paper</h3>
+      <ul class="links-list">
+        <li>
+          <a href="https://dash.harvard.edu/bitstream/handle/1/3612779/Sen_ImpossibilityParetian.pdf?sequence=4" target="_blank">Sen, A. (1970) &mdash; "The Impossibility of a Paretian Liberal"</a>
+          <span class="tag tag-free">FREE PDF</span>
+          <span class="desc">The original paper. Journal of Political Economy, 78(1), 152&ndash;157. Via Harvard DASH.</span>
+        </li>
+        <li>
+          <a href="https://www.jstor.org/stable/2025225" target="_blank">Gibbard, A. (1974) &mdash; "A Pareto-Consistent Libertarian Claim"</a>
+          <span class="tag tag-paywall">JSTOR</span>
+          <span class="desc">The major follow-up. Refines Sen's result by distinguishing types of individual rights. Journal of Economic Theory, 7(4), 388&ndash;410.</span>
+        </li>
+        <li>
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-9256.00107" target="_blank">Vanhuysse, P. (2000) &mdash; "Paretian Liberal Paradox in Economic Transition"</a>
+          <span class="tag tag-paywall">WILEY</span>
+          <span class="desc">Applies Sen's paradox to post-Soviet economies &mdash; directly relevant to the novel's Russian setting. Politics, 20(1), 25&ndash;31.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- 2 PETER -->
+    <div class="text-block">
+      <h3>2 Peter 2:17&ndash;22</h3>
+      <p>The Author's Note epigraph comes from the Second Epistle of Peter. The full passage describes false teachers who promise freedom but deliver slavery. In the novel, the question is which side is which.</p>
+    </div>
+
+    <div class="version-toggle">
+      <button class="active" onclick="showVersion('kjv')">King James (1611)</button>
+      <button onclick="showVersion('esv')">English Standard Version</button>
+    </div>
+
+    <blockquote id="bible-kjv">
+      <p>These are wells without water, clouds that are carried with a tempest; to whom the mist of darkness is reserved for ever.</p>
+      <p>For when they speak great swelling words of vanity, they allure through the lusts of the flesh, through much wantonness, those that were clean escaped from them who live in error.</p>
+      <p><strong>While they promise them liberty, they themselves are the servants of corruption: for of whom a man is overcome, of the same is he brought in bondage.</strong></p>
+      <p>For if after they have escaped the pollutions of the world through the knowledge of the Lord and Saviour Jesus Christ, they are again entangled therein, and overcome, the latter end is worse with them than the beginning.</p>
+      <p>For it had been better for them not to have known the way of righteousness, than, after they have known it, to turn from the holy commandment delivered unto them.</p>
+      <p>But it is happened unto them according to the true proverb, The dog is turned to his own vomit again; and the sow that was washed to her wallowing in the mire.</p>
+      <span class="verse-ref">&mdash; 2 Peter 2:17&ndash;22 (KJV)</span>
+    </blockquote>
+
+    <blockquote id="bible-esv" style="display:none;">
+      <p>These are waterless springs and mists driven by a storm. For them the gloom of utter darkness has been reserved.</p>
+      <p>For, speaking loud boasts of folly, they entice by sensual passions of the flesh those who are barely escaping from those who live in error.</p>
+      <p><strong>They promise them freedom, but they themselves are slaves of corruption. For whatever overcomes a person, to that he is enslaved.</strong></p>
+      <p>For if, after they have escaped the defilements of the world through the knowledge of our Lord and Savior Jesus Christ, they are again entangled in them and overcome, the last state has become worse for them than the first.</p>
+      <p>For it would have been better for them never to have known the way of righteousness than after knowing it to turn back from the holy commandment delivered to them.</p>
+      <p>What the true proverb says has happened to them: "The dog returns to its own vomit, and the sow, after washing herself, returns to wallow in the mire."</p>
+      <span class="verse-ref">&mdash; 2 Peter 2:17&ndash;22 (ESV)</span>
+    </blockquote>
+
+    <div class="text-block">
+      <p>Peter is writing about people who knew the truth and turned away from it &mdash; and the passage insists this is <em>worse</em> than never having known it at all. In a novel where a law would redistribute desire by force, the question cuts both ways: Is the government freeing people from inequality, or enslaving them to a new corruption? Is Gil saving Russia by refusing to sign &mdash; or condemning it?</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- PAINTING 2: GIACOMOTTI -->
+    <div class="painting-full">
+      <img src="giacomotti_forbidden.jpg" alt="Forbidden Literature by Félix-Henri Giacomotti, 1886">
+      <div class="caption">
+        <strong>F&eacute;lix-Henri Giacomotti</strong> &mdash; <em>Forbidden Literature</em>, 1886
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Giacomotti's women have been <em>caught</em>. There is guilt, shared conspiracy, the thrill of the forbidden. One reads while the other watches &mdash; or watches out. The 19th century was obsessed with the danger of women reading novels, and paintings like this one were both a warning and a advertisement. The title says <em>forbidden</em>. The painting says <em>irresistible</em>.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- PAINTING 3: FRAGONARD -->
+    <div class="painting-full">
+      <img src="fragonard_reader.jpg" alt="A Young Girl Reading by Jean-Honoré Fragonard, c. 1770">
+      <div class="caption">
+        <strong>Jean-Honor&eacute; Fragonard</strong> &mdash; <em>A Young Girl Reading</em>, c.&nbsp;1770<br>
+        National Gallery of Art, Washington
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Fragonard's reader is alone and doesn't care if you're watching. She's already gone &mdash; absorbed into whatever she's reading, bathed in golden light, the world forgotten. Where Giacomotti's women read together in nervous excitement, Fragonard's woman reads alone in perfect stillness. Two kinds of reading, two kinds of freedom. The novel contains both.</p>
+    </div>
+
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- CHAPTER 1: CORRECTION                                         -->
+  <!-- ============================================================ -->
+
+  <section class="chapter" id="chapter-1">
+    <h2>Chapter 1 &mdash; Correction</h2>
+
+    <!-- PAINTING 1: GENTILESCHI — HERO -->
+    <div class="painting-full">
+      <img src="gentileschi_judith.jpg" alt="Judith Slaying Holofernes by Artemisia Gentileschi, c. 1620">
+      <div class="caption">
+        <strong>Artemisia Gentileschi</strong> &mdash; <em>Judith Slaying Holofernes</em>, c.&nbsp;1620<br>
+        Museo di Capodimonte, Naples
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Judith uses her beauty to gain access to the Assyrian general Holofernes, then beheads him in his tent. Two women pinning down a powerful man, blood spraying across white sheets. Gentileschi painted this after her own rape trial, and the violence is not symbolic &mdash; it is earned.</p>
+      <p>Chapter 1 opens with twenty armed men sent to subdue a single woman whose sexual power has shut down an entire region. The state's answer to desire it cannot control is always the same: send men with weapons. Judith's answer is older.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- LEVITICUS 18:17 -->
+    <div class="text-block">
+      <h3>Leviticus 18:17</h3>
+      <p>The chapter's epigraph comes from the Torah's most concentrated chapter on sexual taboo &mdash; Leviticus 18, the list of forbidden sexual relations. It is not advice. It is legislation, backed by divine authority and the threat of exile.</p>
+      <p>Using it as an epigraph for a chapter where the government raids a sexually powerful woman draws a direct parallel: the state has always claimed jurisdiction over the sexual body. The novel's sex tax is Leviticus 18 made literal and economic.</p>
+    </div>
+
+    <div class="version-toggle">
+      <button class="active" onclick="showVersion2('kjv')">King James (1611)</button>
+      <button onclick="showVersion2('esv')">English Standard Version</button>
+    </div>
+
+    <blockquote id="lev-kjv">
+      <p><strong>Thou shalt not uncover the nakedness of a woman and her daughter, neither shalt thou take her son's daughter, or her daughter's daughter, to uncover her nakedness; for they are her near kinswomen: it is wickedness.</strong></p>
+      <span class="verse-ref">&mdash; Leviticus 18:17 (KJV)</span>
+    </blockquote>
+
+    <blockquote id="lev-esv" style="display:none;">
+      <p><strong>You shall not uncover the nakedness of a woman and of her daughter, and you shall not take her son's daughter or her daughter's daughter to uncover her nakedness; they are relatives; it is depravity.</strong></p>
+      <span class="verse-ref">&mdash; Leviticus 18:17 (ESV)</span>
+    </blockquote>
+
+    <div class="text-block">
+      <p>Note the final word: the KJV calls it <em>wickedness</em>; the ESV calls it <em>depravity</em>. Both are the government's voice &mdash; authority declaring that certain kinds of desire are crimes. The chapter that follows shows what happens when a government acts on that declaration.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- THE COOLIDGE EFFECT -->
+    <div class="text-block">
+      <h3>The Coolidge Effect</h3>
+      <p>Ruslan cites it in his meeting with Klementina: male rats, exhausted from mating, become instantly aroused when a new female is introduced. The stimulus isn't quality. It's novelty.</p>
+      <p>The term comes from an apocryphal story about President Calvin Coolidge. He and the First Lady were touring a government farm separately. When Mrs. Coolidge passed the chicken pens and saw a rooster mating vigorously, she asked how often. "Dozens of times each day," the attendant said. "Please tell that to the President." When Coolidge was told, he asked: "Same hen every time?" "Oh no, Mr. President, a different hen every time." Coolidge nodded: "Please tell that to Mrs. Coolidge."</p>
+      <p>The effect was established scientifically by Wilson, Kuehn &amp; Beach (1963) and confirmed across species. In humans, neuroimaging shows that novel sexual stimuli produce measurably greater dopamine release than familiar ones &mdash; the same reward circuitry. Ruslan's argument to Klementina is backed by real science. Her counterargument &mdash; that she <em>is</em> novelty, because she can change her physical characteristics at will &mdash; is the novel's twist on it.</p>
+    </div>
+
+    <div class="painting-full">
+      <img src="rubens_paris.jpg" alt="The Judgement of Paris by Peter Paul Rubens, c. 1636">
+      <div class="caption">
+        <strong>Peter Paul Rubens</strong> &mdash; <em>The Judgement of Paris</em>, c.&nbsp;1636<br>
+        The National Gallery, London
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Paris must choose the most beautiful among three goddesses. The ultimate Coolidge Effect scenario &mdash; a man presented with novel beauty, forced to compare, knowing his choice will start a war. The stimulus isn't quality. It's novelty. And the cost of choosing is Troy.</p>
+    </div>
+
+    <div class="text-block">
+      <h3>Read the Science</h3>
+      <ul class="links-list">
+        <li>
+          <a href="https://doi.org/10.1037/h0049471" target="_blank">Wilson, Kuehn &amp; Beach (1963) &mdash; "Modification in the sexual behavior of male rats produced by changing the stimulus female"</a>
+          <span class="tag tag-paywall">APA</span>
+          <span class="desc">The landmark paper establishing the Coolidge Effect. Journal of Comparative and Physiological Psychology, 56(3), 636&ndash;644.</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1037/0033-2909.89.3.464" target="_blank">Dewsbury, D.A. (1981) &mdash; "Effects of novelty on copulatory behavior: The Coolidge Effect and related phenomena"</a>
+          <span class="tag tag-paywall">APA</span>
+          <span class="desc">The definitive review. Synthesizes all animal studies and formally establishes the term. Psychological Bulletin, 89(3), 464&ndash;482.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- IVAN KUPALA NIGHT -->
+    <div class="text-block">
+      <h3>Ivan Kupala Night</h3>
+      <p>The chapter's deadline: "In two weeks &mdash; on Ivan Kupala's Night, June 23rd, the ancient midsummer festival &mdash; the President was required to publicly sign the annual renewal of the Citizen Sex Tax Bill."</p>
+      <p>Ivan Kupala is the most sexually charged night in the Slavic calendar. A pagan midsummer festival syncretized with the feast of St. John the Baptist, it celebrates fire, water, fertility, and love. Couples leap over bonfires hand in hand &mdash; three jumps without letting go means marriage. Girls float flower wreaths on rivers to divine their romantic futures. And young couples disappear into the forest to "search for the fern flower" &mdash; since ferns don't actually flower, this was a widely understood euphemism.</p>
+      <p>The Orthodox Church condemned it repeatedly. The Stoglav Synod of 1551 denounced its "satanic singing and dancing." Historical sources describe mass fertility rites persisting into the 16th century.</p>
+      <p>Passing a sex tax on the one night when Slavic tradition celebrates sexual freedom in its purest, most ancient form is the novel's central irony: bureaucratic control imposed on the night that has always meant liberation.</p>
+    </div>
+
+    <div class="painting-full">
+      <img src="siemiradzki_kupala.jpg" alt="Night on the Eve of Ivan Kupala by Henryk Siemiradzki, 1892">
+      <div class="caption">
+        <strong>Henryk Siemiradzki</strong> &mdash; <em>Night on the Eve of Ivan Kupala</em>, 1892<br>
+        Lviv National Art Gallery, Ukraine
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Siemiradzki's painting captures the festival at its most luminous &mdash; figures in traditional costume dancing around bonfires, the warm golden light of the flames against the midsummer dark. This is the freedom the sex tax would regulate. This is the night the bill must be signed.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <!-- CARAVAGGIO — SALOME -->
+    <div class="painting-full">
+      <img src="caravaggio_salome.jpg" alt="Salome Receives the Head of John the Baptist by Caravaggio, c. 1607">
+      <div class="caption">
+        <strong>Caravaggio</strong> &mdash; <em>Salome with the Head of St. John the Baptist</em>, c.&nbsp;1607&ndash;1610<br>
+        The National Gallery, London
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Salome's dance so intoxicates King Herod that he offers her anything &mdash; and she asks for a prophet's head on a platter. Desire exchanged for death, beauty converted into state-sanctioned murder. Caravaggio's Salome is not triumphant but eerily calm, almost bureaucratic &mdash; she is simply collecting what was promised.</p>
+      <p>That administrative quality makes it the right painting for a chapter where government agents execute a classified mission against a woman whose crime is being desired. Ruslan, too, is calm. Ruslan, too, is simply following protocol.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/fuseli_nightmare.jpg" alt="The Nightmare by Henry Fuseli">
+      <div class="caption">
+        <strong>Henry Fuseli</strong> &mdash; <em>The Nightmare</em>, 1781<br>
+        Detroit Institute of Arts
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>A demon crouches on a sleeping woman&rsquo;s chest &mdash; desire as invasion, vulnerability as spectacle. The chapter opens with Ruslan&rsquo;s men violating a woman&rsquo;s autonomy under state authority; Fuseli&rsquo;s incubus is their spiritual ancestor.</p>
+    </div>
+
+  </section>
+
+<div id="all-chapters-content">
+
+<!-- ============================================================ -->
+<!-- CHAPTER 2: DAUGHTER                                           -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-2">
+  <h2>Chapter 2 &mdash; Daughter</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/tschirch_songF.jpg" alt="The Song of Songs, Study F by Egon Tschirch, 1923">
+    <div class="caption">
+      <strong>Egon Tschirch</strong> &mdash; <em>The Song of Songs, Study F</em>, 1923
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Tschirch&rsquo;s <em>Song of Songs</em> series takes its name from the most erotically charged book of the Bible &mdash; Solomon&rsquo;s great poem of desire, the one text scripture never managed to make safe. Study F shows a woman caught between ecstasy and terror, the body twisted in a posture that could be rapture or recoil. You cannot tell if she is reaching toward something or pulling away.</p>
+    <p>Chapter 2 opens with Ruslan discovering the President&rsquo;s daughter Ilona dead in a bathtub, electrocuted by the &ldquo;Romantic Enhancer&rdquo; &mdash; a device built to intensify desire that instead killed her. Eros and Thanatos, the oldest pairing in myth: the drive toward pleasure and the drive toward death revealed as the same current running through the same wire. Klementina arrives screaming that Ilona was &ldquo;our daughter,&rdquo; and Ruslan, desperate, slashes his own wrist to attempt blood magic. The painting&rsquo;s ambiguity &mdash; ecstasy or agony? &mdash; is the chapter&rsquo;s central image.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Ezekiel 33:4</h3>
+    <p>Ezekiel&rsquo;s warning is brutally simple: if the trumpet sounds and you don&rsquo;t listen, your death is your own fault. The Romantic Enhancer was the trumpet Ilona didn&rsquo;t heed &mdash; a device everyone knew was dangerous, a pleasure that carried its own warning in the voltage required to power it. Her blood is upon her own head.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch2','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch2','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch2-kjv">
+    <p><strong>Then whosoever heareth the sound of the trumpet, and taketh not warning; if the sword come, and take him away, his blood shall be upon his own head.</strong></p>
+    <span class="verse-ref">&mdash; Ezekiel 33:4 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch2-esv" style="display:none;">
+    <p><strong>Then if anyone who hears the sound of the trumpet does not take warning, and the sword comes and takes him away, his blood shall be upon his own head.</strong></p>
+    <span class="verse-ref">&mdash; Ezekiel 33:4 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/klimt_danae.jpg" alt="Danaë by Gustav Klimt">
+      <div class="caption">
+        <strong>Gustav Klimt</strong> &mdash; <em>Dana&euml;</em>, 1907<br>
+        Private Collection (Leopold Museum loan)
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Zeus comes to Dana&euml; as a shower of gold &mdash; divine desire that cannot be refused, pleasure indistinguishable from violation. Ilona dies from the Romantic Enhancer, a device that channels ecstasy like Zeus&rsquo;s golden rain until it kills.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 3: ROOMMATE                                           -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-3">
+  <h2>Chapter 3 &mdash; Roommate</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/degas_bath.jpg" alt="After the Bath, Woman with a Towel by Edgar Degas, c. 1898">
+    <div class="caption">
+      <strong>Edgar Degas</strong> &mdash; <em>After the Bath, Woman with a Towel</em>, c.&nbsp;1898<br>
+      Hermitage Museum, St.&nbsp;Petersburg
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Degas spent decades painting women bathing &mdash; stepping into tubs, drying themselves, combing their hair &mdash; always observed from odd angles, as though the viewer were peering through a keyhole. The women never look back. They are not performing for anyone. The eroticism comes precisely from that: the unguarded body, the private moment witnessed by an uninvited eye.</p>
+    <p>The chapter mirrors this exactly. Gil arrives at Jezebel&rsquo;s apartment to borrow statistics notes, and her roommate Acindina emerges from the bathroom completely naked &mdash; tall, dark-haired, utterly unembarrassed. She is not performing. She is simply existing in her own space while Gil, the uninvited eye, can only stare. Degas understood that nakedness without self-consciousness is more powerful than any deliberate seduction.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Song of Solomon 4:1</h3>
+    <p>The most famous love poem in scripture opens with a breathless doubling &mdash; &ldquo;thou art fair&rdquo; said twice, as though once weren&rsquo;t enough, as though beauty of this magnitude requires repetition to be believed. It is an incantation more than a description. Gil&rsquo;s first sight of Acindina has that same quality of stunned reiteration: the mind trying to process what the eyes refuse to release.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch3','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch3','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch3-kjv">
+    <p><strong>Behold, thou art fair, my love; behold, thou art fair; thou hast doves&rsquo; eyes within thy locks: thy hair is as a flock of goats, that appear from mount Gilead.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 4:1 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch3-esv" style="display:none;">
+    <p><strong>Behold, you are beautiful, my love, behold, you are beautiful! Your eyes are doves behind your veil. Your hair is like a flock of goats leaping down the slopes of Gilead.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 4:1 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/boucher_diana.jpg" alt="Diana Leaving Her Bath by François Boucher">
+      <div class="caption">
+        <strong>Fran&ccedil;ois Boucher</strong> &mdash; <em>Diana Leaving Her Bath</em>, 1742<br>
+        Mus&eacute;e du Louvre, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Diana, goddess of chastity, caught in a private moment &mdash; her nudity is accidental, not offered. Acindina emerging naked from the bathroom carries the same charge: beauty that doesn&rsquo;t know it&rsquo;s being watched, or doesn&rsquo;t care.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 4: ROMUS                                              -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-4">
+  <h2>Chapter 4 &mdash; Romus</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/picasso_nude.jpg" alt="Seated Male Nude by Pablo Picasso, 1908-09">
+    <div class="caption">
+      <strong>Pablo Picasso</strong> &mdash; <em>Seated Male Nude</em>, 1908&ndash;09
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Picasso&rsquo;s nude male sits exposed and fragmented &mdash; cubism breaking the human body into geometric planes, as though the act of observation itself shatters what it touches. The figure is massive yet vulnerable, its solidity an illusion produced by facets that don&rsquo;t quite cohere. You are looking at a man coming apart.</p>
+    <p>Gil&rsquo;s nakedness in this chapter is digital rather than physical. Awake at 4:30 AM, scrolling through his phone, he stumbles onto mysterious threads about ROMUS &mdash; a device that allegedly boosts both libido and intelligence. The moment he reads too much, his phone flashes, emits a siren, and dies. He has been seen. His ordered life begins to fracture along invisible fault lines, just as Picasso&rsquo;s figure fractures along visible ones.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Isaiah 47:3</h3>
+    <p>Isaiah&rsquo;s threat is directed at Babylon &mdash; the empire that thought itself invulnerable, the civilization that said &ldquo;I shall not sit as a widow.&rdquo; God&rsquo;s answer: your nakedness shall be uncovered. Not as intimacy but as exposure, as punishment, as the stripping away of every illusion of safety. Gil&rsquo;s phone dying is the first stripping. More will follow.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch4','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch4','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch4-kjv">
+    <p><strong>Thy nakedness shall be uncovered, yea, thy shame shall be seen: I will take vengeance, and I will not meet thee as a man.</strong></p>
+    <span class="verse-ref">&mdash; Isaiah 47:3 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch4-esv" style="display:none;">
+    <p><strong>Your nakedness shall be uncovered, and your disgrace shall be seen. I will take vengeance, and I will spare no one.</strong></p>
+    <span class="verse-ref">&mdash; Isaiah 47:3 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/giorgione_venus.jpg" alt="Sleeping Venus by Giorgione">
+      <div class="caption">
+        <strong>Giorgione</strong> &mdash; <em>Sleeping Venus</em>, c.&nbsp;1510<br>
+        Gem&auml;ldegalerie Alte Meister, Dresden
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>The first reclining nude in Western art &mdash; Venus asleep, defenseless, her body an open landscape. Gil at 4:30 AM, scrolling through ROMUS threads in the dark, is equally exposed: vulnerable to forces he doesn&rsquo;t yet understand, his curiosity the unlocked door.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 5: EXAM                                               -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-5">
+  <h2>Chapter 5 &mdash; Exam</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/munch_scream.jpg" alt="The Scream by Edvard Munch, 1893">
+    <div class="caption">
+      <strong>Edvard Munch</strong> &mdash; <em>The Scream</em>, 1893<br>
+      National Gallery, Oslo
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>The figure does not scream so much as <em>become</em> the scream. Munch dissolves the boundary between the human body and the landscape &mdash; the sky bleeds, the water warps, the bridge recedes into a vanishing point that offers no escape. Anxiety is not something the figure feels. It is something the figure <em>is</em>.</p>
+    <p>Gil&rsquo;s world is liquefying in exactly this way. A red car nearly runs him down on the way to campus. Acindina throws herself in front of it to protect him and Jezebel. At the university, they walk into a protest rally about government control over sexual energy &mdash; the sex tax debate erupting into public space for the first time in Gil&rsquo;s experience. The ordered landscape of exams and lecture halls is bending, distorting, becoming something unrecognizable. Munch knew: once you hear the scream, you cannot unhear it.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Psalm 144:5</h3>
+    <p>The Psalmist begs God to rip open the heavens and descend &mdash; to touch the mountains until they smoke. It is a prayer for overwhelming intervention, for the divine to break into the mundane with such force that the landscape itself catches fire. The protest rally is the first eruption: the political made physical, the abstract debate about sexual redistribution suddenly present in Gil&rsquo;s world as shouting bodies and placards and the smell of tear gas.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch5','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch5','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch5-kjv">
+    <p><strong>Bow thy heavens, O LORD, and come down: touch the mountains, and they shall smoke.</strong></p>
+    <span class="verse-ref">&mdash; Psalm 144:5 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch5-esv" style="display:none;">
+    <p><strong>Bow your heavens, O Lord, and come down! Touch the mountains so that they smoke!</strong></p>
+    <span class="verse-ref">&mdash; Psalm 144:5 (ESV)</span>
+  </blockquote>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 6: JAIL                                               -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-6">
+  <h2>Chapter 6 &mdash; Jail</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/goyo_bathing.jpg" alt="Woman at Bath (Yu no Ka) by Hashiguchi Goyō, 1915">
+    <div class="caption">
+      <strong>Hashiguchi Goy&#x14d;</strong> &mdash; <em>Woman at Bath (Yu no Ka)</em>, 1915
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Goy&#x14d;&rsquo;s bather exists in a state of perfect self-possession. The body is present &mdash; every line rendered with the shin-hanga movement&rsquo;s exacting precision &mdash; but the mind is elsewhere, absorbed in the private ritual of washing. There is no audience. There is no performance. The beauty of the image comes from its absolute interiority: a woman alone with water and her own thoughts.</p>
+    <p>In jail, Gil&rsquo;s body is trapped but his mind races with the same inward intensity. Child pornography has been planted on his phone &mdash; a charge designed to make him untouchable after he stumbled onto ROMUS. He is terrified of what jail means for someone with that accusation. FBI Agent Mizushima drives him in silence. Like Goy&#x14d;&rsquo;s bather, Gil must retreat inward to survive what is happening to the body.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Genesis 22:12</h3>
+    <p>The Binding of Isaac &mdash; the <em>Akedah</em> &mdash; is the foundational story of a test pushed to its absolute limit. Abraham raises the knife over his son, and God stops his hand at the last possible instant: &ldquo;Lay not thine hand upon the lad.&rdquo; The entire meaning of the story turns on that intervention. Without it, Abraham is simply a murderer. Gil is the lad on the altar. The chapter&rsquo;s unbearable tension is whether anyone will stay the knife before it falls.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch6','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch6','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch6-kjv">
+    <p><strong>And he said, Lay not thine hand upon the lad, neither do thou any thing unto him: for now I know that thou fearest God, seeing thou hast not withheld thy son, thine only son from me.</strong></p>
+    <span class="verse-ref">&mdash; Genesis 22:12 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch6-esv" style="display:none;">
+    <p><strong>Do not lay your hand on the boy or do anything to him, for now I know that you fear God, seeing you have not withheld your son, your only son, from me.</strong></p>
+    <span class="verse-ref">&mdash; Genesis 22:12 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/goya_maja.jpg" alt="La Maja Desnuda by Francisco Goya">
+      <div class="caption">
+        <strong>Francisco Goya</strong> &mdash; <em>La Maja Desnuda</em>, c.&nbsp;1800<br>
+        Museo del Prado, Madrid
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>The first Western painting to show pubic hair on a real (non-mythological) woman &mdash; it was confiscated by the Inquisition. A body that refuses to be idealized, staring back without apology. Gil in jail is similarly stripped of all pretense, his body a site of humiliation and unwanted exposure.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 7: COURT                                              -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-7">
+  <h2>Chapter 7 &mdash; Court</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/gerome_phryne.jpg" alt="Phryne before the Areopagus by Jean-Léon Gérôme, 1861">
+    <div class="caption">
+      <strong>Jean-L&eacute;on G&eacute;r&ocirc;me</strong> &mdash; <em>Phryne before the Areopagus</em>, 1861<br>
+      Kunsthalle Hamburg
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>G&eacute;r&ocirc;me&rsquo;s painting depicts the most famous trial in the ancient world. Phryne, an Athenian courtesan accused of impiety, was defended by the orator Hypereides, who &mdash; when his arguments failed to move the judges &mdash; tore off her robe before the Areopagus, revealing her beauty as his final exhibit. The judges acquitted her. The painting captures the exact moment of unveiling: Phryne covers her face while her body is exposed to the court, and every judge in the amphitheater leans forward with expressions that blend moral authority with unmistakable desire. The courtroom is simultaneously a theater of justice and a theater of voyeurism, and G&eacute;r&ocirc;me refuses to distinguish between them.</p>
+    <p>Gil is transported to Middlesex County Courthouse on a yellow school bus. The charge is child pornography &mdash; and the chapter&rsquo;s bitter insight is that the charge itself is the conviction. No jury needs to deliberate. No evidence needs to be weighed. The accusation alone makes sympathy impossible. G&eacute;r&ocirc;me understood the same mechanism: Phryne&rsquo;s body was her defense because the court had already decided her guilt &mdash; only the spectacle of beauty could override the verdict the judges had prepared before she entered the room. Gil has no such defense. His body is not beautiful; it is accused. The painting shows what happens when a trial becomes a performance. The chapter shows what happens when the performance has already ended before the defendant arrives.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Matthew 27:23</h3>
+    <p>Pilate&rsquo;s trial of Jesus is the oldest story in Western civilization of a crowd demanding punishment regardless of innocence. &ldquo;What evil hath he done?&rdquo; Pilate asks, and the question goes unanswered &mdash; not because there is no answer, but because the mob has stopped listening. The crowd does not want justice. The crowd wants a crucifixion. Gil faces the same arithmetic: the charge has already decided the verdict.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch7','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch7','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch7-kjv">
+    <p><strong>And the governor said, Why, what evil hath he done? But they cried out the more, saying, Let him be crucified.</strong></p>
+    <span class="verse-ref">&mdash; Matthew 27:23 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch7-esv" style="display:none;">
+    <p><strong>And he said, &ldquo;Why? What evil has he done?&rdquo; But they shouted all the more, &ldquo;Let him be crucified!&rdquo;</strong></p>
+    <span class="verse-ref">&mdash; Matthew 27:23 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/velazquez_venus.jpg" alt="The Rokeby Venus by Diego Velázquez">
+      <div class="caption">
+        <strong>Diego Vel&aacute;zquez</strong> &mdash; <em>The Rokeby Venus</em>, 1647&ndash;51<br>
+        National Gallery, London
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Venus seen from behind, gazing at her own reflection &mdash; beauty aware of itself, observed but unreachable. In the courtroom, Gil&rsquo;s body and reputation are on display for judgment, but the real Gil remains hidden behind the charges, visible only in reflection.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 8: PIZZA                                              -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-8">
+  <h2>Chapter 8 &mdash; Pizza</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/matisse_armchair.jpg" alt="Nude in an Armchair by Henri Matisse, 1926-27">
+    <div class="caption">
+      <strong>Henri Matisse</strong> &mdash; <em>Nude in an Armchair</em>, 1926&ndash;27
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Matisse&rsquo;s nude does not recline &mdash; she <em>presides</em>. The armchair is a throne, and she occupies it with the confidence of someone who has never questioned her right to be exactly where she is. The colors are warm, the brushwork assured, and the woman&rsquo;s posture communicates a single, unmistakable message: <em>I am not waiting for permission.</em></p>
+    <p>Gil walks free from the Middlesex County Courthouse with no phone, almost no money, and a charge of five to twenty years hanging over him. FBI Agent Shinobu Mizushima catches up and offers him a ride. He refuses, politely. She persists. Shinobu&rsquo;s energy mirrors the Matisse nude: she is not asking for anything. She is simply making herself available on her own terms, with absolute confidence that he will eventually accept. The offer of alliance, like the painting, is patient and unapologetic.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Song of Solomon 4:9</h3>
+    <p>The verse speaks of being undone not by force but by the smallest gesture &mdash; &ldquo;one of thine eyes,&rdquo; &ldquo;one chain of thy neck.&rdquo; A single glance. A single jewel. The Hebrew word translated as &ldquo;ravished&rdquo; in the KJV and &ldquo;captivated&rdquo; in the ESV literally means to have your heart stolen. Gil&rsquo;s resistance to Shinobu is already a form of attention, and attention is already a form of surrender.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch8','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch8','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch8-kjv">
+    <p><strong>Thou hast ravished my heart, my sister, my spouse; thou hast ravished my heart with one of thine eyes, with one chain of thy neck.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 4:9 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch8-esv" style="display:none;">
+    <p><strong>You have captivated my heart, my sister, my bride; you have captivated my heart with one glance of your eyes, with one jewel of your necklace.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 4:9 (ESV)</span>
+  </blockquote>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 9: STRIPTEASE                                         -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-9">
+  <h2>Chapter 9 &mdash; Striptease</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/metzinger_dance.jpg" alt="La Danse (Bacchante) by Jean Metzinger, 1906">
+    <div class="caption">
+      <strong>Jean Metzinger</strong> &mdash; <em>La Danse (Bacchante)</em>, 1906<br>
+      Kr&ouml;ller-M&uuml;ller Museum, Otterlo
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Metzinger&rsquo;s Bacchante dances in a frenzy of fractured color &mdash; Divisionist dots dissolving into early Cubist planes, the body caught mid-motion, mid-transformation. The Bacchantes were the followers of Dionysus, women who danced themselves into ecstatic states where clothing, inhibition, and sometimes sanity fell away. The painting vibrates between control and abandon, each brushstroke both precise and wild.</p>
+    <p>The chapter title &ldquo;Striptease&rdquo; is bitterly ironic. Gil is stripped not of clothing but of everything else: he returns to his building to discover he has been evicted. The police told his neighbors he is a child predator. His belongings have been moved to the basement. The striptease is social &mdash; reputation, home, and security peeled away one by one. Then an elderly resident, Ms.&nbsp;Martin, descends the stairs and offers to let him stay. In the wreckage, a small grace.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Proverbs 6:20</h3>
+    <p>The verse is a parent&rsquo;s instruction to a child: keep the commandments, don&rsquo;t forsake the teaching. It presumes a home, a family, a structure of care. Gil has none of these &mdash; his family is absent, his home has just been taken. Ms.&nbsp;Martin, appearing like a figure from a different era, becomes the surrogate: the mother whose law is not forsaken because it arrives precisely when everything else has been.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch9','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch9','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch9-kjv">
+    <p><strong>My son, keep thy father&rsquo;s commandment, and forsake not the law of thy mother:</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 6:20 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch9-esv" style="display:none;">
+    <p><strong>My son, keep your father&rsquo;s commandment, and forsake not your mother&rsquo;s teaching.</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 6:20 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/manet_olympia.jpg" alt="Olympia by Édouard Manet">
+      <div class="caption">
+        <strong>&Eacute;douard Manet</strong> &mdash; <em>Olympia</em>, 1863<br>
+        Mus&eacute;e d&rsquo;Orsay, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Olympia stares directly at the viewer &mdash; a sex worker who refuses to perform shame. She is not nude; she is naked with intention. Acindina&rsquo;s strip act carries the same defiance: her body is her argument, and the argument is that it belongs to her alone.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 10: DINNER                                            -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-10">
+  <h2>Chapter 10 &mdash; Dinner</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/debatponsan_truth.jpg" alt="Truth Leaving the Well by Édouard Debat-Ponsan, 1898">
+    <div class="caption">
+      <strong>&Eacute;douard Debat-Ponsan</strong> &mdash; <em>Truth Leaving the Well</em>, 1898
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>The myth is ancient: Truth lives at the bottom of a well and emerges naked because she needs no covering. Debat-Ponsan painted this during the Dreyfus Affair, when France was tearing itself apart over a false accusation &mdash; the painting was an act of protest, Truth climbing out to confront a nation that preferred comfortable lies. She holds a mirror in one hand and a whip in the other. Truth does not come gently.</p>
+    <p>At Jezebel and Acindina&rsquo;s apartment, Gil sits down to scrambled eggs and conversation, and truths begin surfacing one by one. His A+ on the statistics exam. Jezebel&rsquo;s study of Kabbalah. The forces that are converging on all three of them. The dinner table becomes the mouth of the well, and what climbs out is naked, armed, and unwelcome.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>John 8:32</h3>
+    <p>The most quoted verse about liberation in Western civilization &mdash; so quoted it has become a clich&eacute;, carved into university buildings and intelligence agency lobbies alike. But the verse is conditional: &ldquo;<em>ye shall know</em> the truth&rdquo; &mdash; first you must know it, which means first you must survive the knowing. The chapter is the beginning of that survival. The truth is climbing out of the well. Whether it sets them free remains to be seen.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch10','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch10','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch10-kjv">
+    <p><strong>And ye shall know the truth, and the truth shall make you free.</strong></p>
+    <span class="verse-ref">&mdash; John 8:32 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch10-esv" style="display:none;">
+    <p><strong>and you will know the truth, and the truth will set you free.</strong></p>
+    <span class="verse-ref">&mdash; John 8:32 (ESV)</span>
+  </blockquote>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 11: NIGHT                                             -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-11">
+  <h2>Chapter 11 &mdash; Night</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/tschirch_songE.jpg" alt="The Song of Songs, Study E by Egon Tschirch, 1923">
+    <div class="caption">
+      <strong>Egon Tschirch</strong> &mdash; <em>The Song of Songs, Study E</em>, 1923
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Where Study F (Chapter 2) was all terror and extremity, Study E is its nocturnal counterpart &mdash; dark, intimate, bodies suggested rather than displayed. Tschirch paints desire as something that exists in the space between figures, in the warmth of proximity, in what is almost but not quite touched. The darkness is not concealment. It is permission.</p>
+    <p>The chapter is a masterclass in erotic tension through restraint. Gil cannot sleep on the too-short sofa. He knocks on Acindina&rsquo;s door. She tells him she sleeps naked and asks, with matter-of-fact directness, whether that bothers him. They negotiate sleeping arrangements like adults &mdash; no coyness, no pretense &mdash; and get into bed together. Nothing explicit happens. Everything is charged. The distance between two bodies in a single bed is the most erotic measurement in literature.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Song of Solomon 1:2</h3>
+    <p>The Song of Solomon opens with the most direct expression of desire in all of scripture &mdash; no preamble, no courtship ritual, no theological framing. Just want: &ldquo;Let him kiss me with the kisses of his mouth.&rdquo; The woman speaks first. She does not ask permission. Acindina&rsquo;s directness has the same quality &mdash; desire stated plainly, without apology, as a fact of the body rather than a negotiation of the will.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch11','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch11','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch11-kjv">
+    <p><strong>Let him kiss me with the kisses of his mouth: for thy love is better than wine.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 1:2 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch11-esv" style="display:none;">
+    <p><strong>Let him kiss me with the kisses of his mouth! For your love is better than wine;</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 1:2 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/lautrec_kiss.jpg" alt="In Bed: The Kiss by Henri de Toulouse-Lautrec">
+      <div class="caption">
+        <strong>Henri de Toulouse-Lautrec</strong> &mdash; <em>In Bed: The Kiss</em>, 1892<br>
+        Private Collection
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Two figures tangled in white sheets, faces pressed together, the boundary between bodies dissolved. Lautrec painted intimacy as it actually looks &mdash; not posed, not performed, just two people lost in each other. The threesome in this chapter has that same quality of genuine tenderness.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/klimt_kiss.jpg" alt="The Kiss by Gustav Klimt">
+      <div class="caption">
+        <strong>Gustav Klimt</strong> &mdash; <em>The Kiss</em>, 1907&ndash;08<br>
+        &Ouml;sterreichische Galerie Belvedere, Vienna
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Gold leaf makes the lovers&rsquo; bodies into one continuous surface &mdash; they are dissolving into each other, into pattern, into something beyond anatomy. The chapter&rsquo;s emotional core is the same: three lonely people finding comfort in each other&rsquo;s bodies, the physical act less important than the merging of solitudes.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 12: ATTACK                                            -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-12">
+  <h2>Chapter 12 &mdash; Attack</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/waterhouse_circe.jpg" alt="Circe Offering the Cup to Ulysses by John William Waterhouse, 1891">
+    <div class="caption">
+      <strong>John William Waterhouse</strong> &mdash; <em>Circe Offering the Cup to Ulysses</em>, 1891<br>
+      Gallery Oldham, Greater Manchester
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Waterhouse&rsquo;s Circe sits enthroned in her own domain, holding a poisoned cup toward the viewer while a mirror behind her reflects the approaching figure of Odysseus with drawn sword. She is calm. She is in control. The armed man entering her space believes he holds the advantage; the painting knows otherwise. Circe is the archetypal witch confronting martial force with a different kind of power &mdash; not physical strength but the knowledge of what substances do to bodies, what spells do to wills. Her bare feet and translucent robe are not vulnerability but confidence: she has no need for armor.</p>
+    <p>Dawn. Jezebel whispers a sealing spell over the door as intruders search the hallway. Two armed men burst in, followed by Ruslan. Gil, Jezebel, and Acindina are naked &mdash; caught in the most vulnerable state imaginable. FBI Agent Shinobu rushes in screaming &ldquo;FBI!&rdquo; but Ruslan uses telekinetic power to rip the gun from her hand. The chapter is the first open collision between the mundane and the magical, the moment when witchcraft stops being subtext and becomes plot. Waterhouse&rsquo;s Circe understood this arithmetic centuries ago: the sword is impressive, but the cup is what changes you.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Psalm 27:3</h3>
+    <p>David wrote this psalm as a warrior, and the confidence it expresses is not philosophical but physical &mdash; the confidence of a man who has been surrounded before and survived. &ldquo;Though an host should encamp against me, my heart shall not fear.&rdquo; The Hebrew <em>machaneh</em>, translated as &ldquo;host,&rdquo; means a military encampment: tents, sentries, the organized machinery of siege. David&rsquo;s faith is not that the army will vanish but that his heart will hold while the army remains.</p>
+    <p>Dawn. Two armed men burst through the door. FBI Agent Shinobu screams her identification. Ruslan rips the gun from her hand with telekinetic force. Gil, Jezebel, and Acindina are naked &mdash; caught in the most vulnerable state imaginable, an army encamped against them in a hallway. The psalm does not promise escape from the siege. It promises that fear will not be the thing that kills you. The chapter is the first open collision between the mundane and the magical, and in that collision, the verse&rsquo;s ancient confidence finds its modern equivalent: not faith in God, but faith in powers that the besieging army does not yet understand.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch12','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch12','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch12-kjv">
+    <p><strong>Though an host should encamp against me, my heart shall not fear: though war should rise against me, in this will I be confident.</strong></p>
+    <span class="verse-ref">&mdash; Psalm 27:3 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch12-esv" style="display:none;">
+    <p><strong>Though an army encamp against me, my heart shall not fear; though war arise against me, yet I will be confident.</strong></p>
+    <span class="verse-ref">&mdash; Psalm 27:3 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/gentileschi_judith.jpg" alt="Judith Slaying Holofernes by Artemisia Gentileschi">
+      <div class="caption">
+        <strong>Artemisia Gentileschi</strong> &mdash; <em>Judith Slaying Holofernes</em>, c.&nbsp;1620<br>
+        Uffizi Gallery, Florence
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Two women overpower a man with brute force and cold purpose. When Ruslan&rsquo;s men burst into the apartment, Jezebel&rsquo;s Hebrew incantation and Acindina&rsquo;s scream are this painting made literal &mdash; women wielding power that men cannot comprehend, blood on the sheets.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 13: CONDORCET                                         -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-13">
+  <h2>Chapter 13 &mdash; Condorcet</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/delacroix_liberty.jpg" alt="Liberty Leading the People by Eugène Delacroix, 1830">
+    <div class="caption">
+      <strong>Eug&egrave;ne Delacroix</strong> &mdash; <em>Liberty Leading the People</em>, 1830<br>
+      The Louvre, Paris
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Delacroix painted the July Revolution of 1830 as myth while the barricades were still smoking. Liberty is bare-breasted, holding the tricolor in one hand and a musket in the other, leading a crowd of dissimilar people &mdash; a boy with pistols, a man in a top hat, workers in shirtsleeves, the dead underfoot &mdash; forward into an uncertain future. She is not allegory dressed as a woman; she is a woman elevated to allegory by the act of moving forward when everyone else has stopped. The exposed breast is not seduction but defiance: she has no time for modesty, and modesty would diminish the argument her body is making. The painting is about collective motion that may or may not be rational &mdash; a crowd surging in a direction that feels right without anyone having voted on where to go.</p>
+    <p>The three fugitives flee New Brunswick in a borrowed gray Honda Civic. Acindina spots a blue Hyundai tailing them. She instructs: no phones, cash only. They head west on Route 78. The chapter title refers to the Marquis de Condorcet&rsquo;s voting paradox &mdash; the mathematical proof that group preferences can be irrational even when every individual&rsquo;s preferences are perfectly rational. Three people in a car, three sets of instincts about what to do next, and no guarantee that their collective decision will be the right one. Delacroix&rsquo;s revolutionaries face the same paradox: each has a reason to fight, but together their reasons do not add up to a coherent plan. They move forward anyway. Liberty&rsquo;s breast is bare because she has been stripped of everything except motion &mdash; the same condition the Ecclesiastes verse prescribes: naked you arrived, naked you will leave, and the interval is the only thing that belongs to you.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Ecclesiastes 5:15</h3>
+    <p>Ecclesiastes is the Bible&rsquo;s great meditation on futility, and this verse is its starkest formulation: you came into the world naked, you will leave it naked, and everything you accumulate between those two points amounts to nothing you can carry. The Hebrew <em>amal</em>, translated as &ldquo;labour,&rdquo; carries a sense of toil that is simultaneously necessary and pointless &mdash; you must work, and the work will not save you.</p>
+    <p>Gil, Jezebel, and Acindina are in flight, carrying nothing. No phones, no credit cards, no fixed address, no legal standing. Every possession has been stripped. The Condorcet paradox strips rationality the same way: you had three sensible preferences, and together they amount to nothing. The verse does not console. It observes. You arrived with nothing. You will leave with nothing. The interval between is the only thing that is yours, and even that, the Preacher suggests, may not amount to much.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch13','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch13','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch13-kjv">
+    <p><strong>As he came forth of his mother&rsquo;s womb, naked shall he return to go as he came, and shall take nothing of his labour, which he may carry away in his hand.</strong></p>
+    <span class="verse-ref">&mdash; Ecclesiastes 5:15 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch13-esv" style="display:none;">
+    <p><strong>As he came from his mother&rsquo;s womb he shall go again, naked as he came, and shall take nothing for his toil that he may carry away in his hand.</strong></p>
+    <span class="verse-ref">&mdash; Ecclesiastes 5:15 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/botticelli_venus.jpg" alt="The Birth of Venus by Sandro Botticelli">
+      <div class="caption">
+        <strong>Sandro Botticelli</strong> &mdash; <em>The Birth of Venus</em>, c.&nbsp;1485<br>
+        Uffizi Gallery, Florence
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Venus arrives naked on a shell, born from sea foam &mdash; new, perfect, not yet touched by the world&rsquo;s contradictions. Acindina introduces Gil to the witch system in this chapter: a new reality born from the collision of desire, power, and mathematics. Gil, like Botticelli&rsquo;s Venus, stands at the threshold of a world he didn&rsquo;t choose.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 14: COVEN                                             -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-14">
+  <h2>Chapter 14 &mdash; Coven</h2>
+
+  <!-- HERO PAINTING: Kirchner (Ed2V4 Coven assignment) -->
+  <div class="painting-full">
+    <img src="paintings/kirchner_nude.jpg" alt="Seated Female Nude by Ernst Ludwig Kirchner, c. 1910">
+    <div class="caption">
+      <strong>Ernst Ludwig Kirchner</strong> &mdash; <em>Seated Female Nude</em>, c.&nbsp;1910
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Kirchner&rsquo;s nude is angular, electric, coiled with the tension of a body that knows it is being watched and does not care. The Br&uuml;cke painters stripped away academic polish to find something rawer underneath &mdash; color applied in slashes, form reduced to its essential forces. This is not a body at rest. This is a body ready.</p>
+    <p>They arrive at an isolated property. A woman named Hester greets them and serves a mysterious reddish drink. They are given hospital-style gowns and led to a room with cushions arranged in a circle. A man called Django lies on a yoga mat. &ldquo;The King will see you now.&rdquo; The coven operates with the same stripped-down intensity as Kirchner&rsquo;s painting: no ornament, no pretense, bodies as vehicles for energy that flows between them.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- 2nd PAINTING: Courbet (Ed2V4 Coven 2nd image) -->
+  <div class="painting-full">
+    <img src="paintings/courbet_origine.jpg" alt="L'Origine du monde by Gustave Courbet, 1866">
+    <div class="caption">
+      <strong>Gustave Courbet</strong> &mdash; <em>L&rsquo;Origine du monde</em>, 1866<br>
+      Mus&eacute;e d&rsquo;Orsay, Paris
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Courbet painted the most confrontational image in Western art: a close-up of a woman&rsquo;s body, nothing else, no face, no context, no alibi. For over a century it was hidden behind curtains and locked doors &mdash; owned by diplomats, psychoanalysts, and finally the French state. It entered the Mus&eacute;e d&rsquo;Orsay in 1995 and has been causing arguments ever since.</p>
+    <p>The title is the key: <em>The Origin of the World</em>. Not pornography but cosmology. Courbet insists that this body &mdash; specifically, explicitly this body &mdash; is where everything begins. The coven&rsquo;s healing ritual operates on the same principle: sexual energy as the origin, the source, the well from which all other power is drawn.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Ecclesiastes 3:1</h3>
+    <p>The most famous meditation on time in all of scripture &mdash; &ldquo;to every thing there is a season&rdquo; &mdash; is usually read as comfort, as the wisdom of acceptance. But it is also a statement about powerlessness: you do not choose the season. The season chooses you. There is a time to heal and a time to kill, a time to embrace and a time to refrain from embracing, and you will not know which season you are in until it is already upon you.</p>
+    <p>The coven operates on exactly this principle. They arrive at the isolated property, are given hospital gowns, led to a room with cushions in a circle. Django lies on a yoga mat. &ldquo;The King will see you now.&rdquo; The season of healing has arrived, and it looks nothing like what anyone expected &mdash; not clinical, not sterile, but communal, physical, charged with the stripped-down energy that Kirchner painted and Courbet confronted. Ecclesiastes does not explain why the seasons change. It merely observes that they do, and that the wise person recognizes the turning.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch14','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch14','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch14-kjv">
+    <p><strong>To every thing there is a season, and a time to every purpose under the heaven:</strong></p>
+    <span class="verse-ref">&mdash; Ecclesiastes 3:1 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch14-esv" style="display:none;">
+    <p><strong>For everything there is a season, and a time for every matter under heaven:</strong></p>
+    <span class="verse-ref">&mdash; Ecclesiastes 3:1 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/renoir_bathers.jpg" alt="The Large Bathers by Pierre-Auguste Renoir">
+      <div class="caption">
+        <strong>Pierre-Auguste Renoir</strong> &mdash; <em>The Large Bathers</em>, 1884&ndash;87<br>
+        Philadelphia Museum of Art
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Naked women in a sunlit landscape, bodies unselfconscious and at ease &mdash; nudity as a natural state, not a provocation. The coven&rsquo;s skyclad ritual has this same quality: thirteen people naked together not for titillation but for purpose, their bodies instruments of collective healing.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/bouguereau_nymphs.jpg" alt="Nymphs and Satyr by William-Adolphe Bouguereau">
+      <div class="caption">
+        <strong>William-Adolphe Bouguereau</strong> &mdash; <em>Nymphs and Satyr</em>, 1873<br>
+        Clark Art Institute, Williamstown
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Four nymphs drag a satyr into water &mdash; playful, powerful, the balance of power reversed. The satyr resists but is outnumbered. In the coven, Gil finds himself similarly overwhelmed by a ritual he doesn&rsquo;t control, surrounded by women whose power operates on terms he&rsquo;s only beginning to understand.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 15: RITUAL                                            -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-15">
+  <h2>Chapter 15 &mdash; Ritual</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/hokusai_dream.jpg" alt="The Dream of the Fisherman's Wife by Katsushika Hokusai, 1814">
+    <div class="caption">
+      <strong>Katsushika Hokusai</strong> &mdash; <em>The Dream of the Fisherman&rsquo;s Wife</em>, 1814
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Hokusai&rsquo;s woodblock print is the most famous piece of <em>shunga</em> &mdash; Japanese erotic art &mdash; ever produced, and also the most persistently misread. A woman lies entwined with two octopuses, one enormous, one small, their tentacles coiling around her thighs and breasts while she arches her neck in unmistakable pleasure. For two centuries, Western audiences have read the image as violation. They are wrong. The original Japanese text, written in speech bubbles like a comic, tells a different story entirely: the woman is a willing participant, speaking her desire aloud, directing the encounter with the authority of a choreographer. The image does not depict helplessness. It depicts a fantasy that exceeds the boundaries of the human body &mdash; desire so vast it requires more limbs, more contact, more surface than any single lover could provide.</p>
+    <p>The chapter&rsquo;s ritual operates in the same territory beyond the conventional. Thirteen participants &mdash; a prime number, a coven&rsquo;s number &mdash; form a circle for a nude healing ritual. Gil examines his own reactions with analytical detachment, comparing the women&rsquo;s bodies to mathematical arguments, finding beauty in the formal structures of both. A woman called &ldquo;Queen&rdquo; presides and explains four rules. The ritual is to heal Django. Like Hokusai&rsquo;s print, the scene refuses the categories that polite society insists upon &mdash; communal where convention demands private, naked where propriety demands clothed, healing where prudishness sees only transgression. The circle of bodies channels energy through proximity, intention, and the willingness to reach beyond what acceptable desire is supposed to look like.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Ezekiel 23:20</h3>
+    <p>Ezekiel is the Bible&rsquo;s angriest prophet, and chapter 23 is his angriest hour &mdash; an extended allegory in which two sisters, Oholah and Oholibah, represent Samaria and Jerusalem. Both &ldquo;played the harlot&rdquo; by making political alliances with foreign empires, and Ezekiel describes their infidelity in language so explicitly sexual that many congregations skip the passage entirely. Verse 20 is the climax of the metaphor: a comparison so anatomically blunt it has no parallel anywhere else in scripture. It is, by any measure, the most sexually explicit verse in the Bible &mdash; the prophetic imagination pushed past all decorum to convey the enormity of the betrayal.</p>
+    <p>In a chapter where bodies are used as instruments of healing, where the circle of flesh is a technology of restoration rather than a performance of lust, the verse serves as a dark mirror. Ezekiel&rsquo;s language is grotesque because the desire it describes has exceeded every prescribed limit &mdash; it has taken on proportions that language itself can barely hold. The ritual, too, exceeds limits: communal, naked, charged with sexual energy directed not toward pleasure but toward repair. The verse reminds us that when desire overflows its sanctioned channels, the words we use to describe it must also overflow, must become strange, must become almost too much to say aloud.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch15','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch15','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch15-kjv">
+    <p><strong>For she doted upon their paramours, whose flesh is as the flesh of asses, and whose issue is like the issue of horses.</strong></p>
+    <span class="verse-ref">&mdash; Ezekiel 23:20 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch15-esv" style="display:none;">
+    <p><strong>and lusted after her lovers there, whose members were like those of donkeys, and whose issue was like that of horses.</strong></p>
+    <span class="verse-ref">&mdash; Ezekiel 23:20 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/bernini_teresa.jpg" alt="Ecstasy of Saint Teresa by Gian Lorenzo Bernini">
+      <div class="caption">
+        <strong>Gian Lorenzo Bernini</strong> &mdash; <em>Ecstasy of Saint Teresa</em>, 1647&ndash;52<br>
+        Santa Maria della Vittoria, Rome
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Teresa&rsquo;s head thrown back, lips parted, body surrendered &mdash; religious ecstasy rendered in marble that looks indistinguishable from sexual climax. This is the chapter&rsquo;s revelation made stone: the most powerful sexual experience in the book involves no physical contact at all. Bernini understood that ecstasy lives in the brain, not the body.</p>
+    </div>
+
+</section>
+
+
+<!-- ============================================================ -->
+<!-- CHAPTER 16: ATHAME                                           -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-16">
+  <h2>Chapter 16 &mdash; Athame</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/michelangelo_creation.jpg" alt="The Creation of Adam by Michelangelo, c. 1508-12">
+    <div class="caption">
+      <strong>Michelangelo</strong> &mdash; <em>The Creation of Adam</em>, c.&nbsp;1508&ndash;12<br>
+      Sistine Chapel, Vatican City
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>The most famous image of power transmission ever painted: God&rsquo;s finger reaching toward Adam&rsquo;s across an inch of empty space. The spark of life is suspended in the gap. Michelangelo understood that creation is not a completed act but a perpetual reaching &mdash; the divine and the human never quite touching, the energy always in transit, always crossing a distance that can be narrowed but never closed. The genius of the composition is that the two hands are not symmetrical: God&rsquo;s arm is extended, muscular, purposeful; Adam&rsquo;s is languid, barely lifted, receiving rather than grasping. Power flows in one direction, and yet both figures are necessary for the circuit to exist at all.</p>
+    <p>The athame works the same way. A double-edged ritual blade used in Wiccan and ceremonial magic, it never cuts flesh &mdash; it cuts energy, directs intention, draws circles in the air that become real to those inside them. It is a weapon that wounds nothing physical. In Django&rsquo;s library, where the coven&rsquo;s ritual tools are kept, the athame is the instrument of transmission: like God&rsquo;s outstretched finger, it sends power across a gap that must remain open. The chapter pushes past the coven&rsquo;s earlier rituals into something darker and more demanding, and the athame is the tool that makes the crossing possible &mdash; directing without touching, cutting without drawing blood, transferring power through the inch of empty space that Michelangelo understood as the very architecture of creation.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Ephesians 6:4</h3>
+    <p>Paul&rsquo;s instruction to fathers is deceptively simple: do not provoke your children to anger, but raise them in discipline and instruction. The verse is about the transmission of authority from one generation to the next &mdash; not through wrath, not through force, but through what Paul calls &ldquo;nurture.&rdquo; It is the New Testament&rsquo;s clearest statement that power exercised as domination destroys the very thing it claims to protect. The father who provokes wrath creates rebellion; the father who nurtures creates continuity.</p>
+    <p>The athame is the ritual&rsquo;s instrument of nurture: a blade that teaches by directing, never by cutting. It transmits the coven&rsquo;s knowledge and energy the way a parent transmits values &mdash; through presence, through pattern, through the steady hand that draws the circle again and again until the student understands that the circle was always there. Ephesians 6:4 and the athame share the same paradox: authority is most powerful when it restrains itself, when the blade remains sheathed, when the father&rsquo;s strength is spent not in striking but in showing.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch16','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch16','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch16-kjv">
+    <p><strong>And, ye fathers, provoke not your children to wrath: but bring them up in the nurture and admonition of the Lord.</strong></p>
+    <span class="verse-ref">&mdash; Ephesians 6:4 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch16-esv" style="display:none;">
+    <p><strong>Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord.</strong></p>
+    <span class="verse-ref">&mdash; Ephesians 6:4 (ESV)</span>
+  </blockquote>
+
+  <div class="text-block references">
+    <h3>References &amp; Sources</h3>
+    <ul>
+      <li><strong>Gil&rsquo;s defense of Queen Jezebel</strong> &mdash; Gil&rsquo;s biblical argument draws on the text of 1&nbsp;Kings and 2&nbsp;Kings. His key claims: (1) Elijah lied to God about Israel in 1&nbsp;Kings&nbsp;19:14, claiming &ldquo;I alone am left,&rdquo; when God corrects him that 7,000 had not bowed to Baal; (2) there is no verse in the Hebrew Bible documenting Jezebel&rsquo;s sexual infidelity &mdash; the accusations come from Elijah and his successors; (3) Elisha&rsquo;s relationship with the Shunamite woman (2&nbsp;Kings&nbsp;4:8&ndash;17) is recorded as miraculous rather than adulterous, despite the textual parallels; (4) Jezebel&rsquo;s marriage to Ahab was a political alliance between Israel and Sidon (1&nbsp;Kings&nbsp;16:31). These are legitimate interpretive arguments within biblical scholarship, though they represent a minority revisionist position.</li>
+      <li><strong>Proverbs 31:3</strong> &mdash; &ldquo;Do not give your strength to women, or your ways to that which destroys kings.&rdquo; This verse, which gives the novel its original title, is attributed to King Lemuel&rsquo;s mother. The same chapter contains the <em>Eshet Chayil</em> (&ldquo;Woman of Valor&rdquo;), sung by Jewish husbands to their wives every Friday night before the Sabbath meal.</li>
+    </ul>
+  </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/cranach_venus.jpg" alt="Venus by Lucas Cranach the Elder">
+      <div class="caption">
+        <strong>Lucas Cranach the Elder</strong> &mdash; <em>Venus</em>, 1532<br>
+        St&auml;del Museum, Frankfurt
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Cranach&rsquo;s Venus is thin, pale, almost adolescent &mdash; she wears nothing but a transparent veil and a knowing smile. Temptation presented as something delicate, breakable, easily refused. Django&rsquo;s gift of the athame is exactly this warning: power lies in refusal. Do not give your strength to women.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 17: PLEA                                              -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-17">
+  <h2>Chapter 17 &mdash; Plea</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/volk_witchcraft.jpg" alt="Accused of Witchcraft by Douglas Volk, 1884">
+    <div class="caption">
+      <strong>Douglas Volk</strong> &mdash; <em>Accused of Witchcraft</em>, 1884
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Volk&rsquo;s painting depicts a young Puritan woman standing before her judges in a Salem courtroom, and what makes the image so unsettling is the expression on her face. She is neither defiant nor submissive. She is composed &mdash; the particular composure of a person who understands that the verdict has already been written, that the trial is a ceremony rather than an inquiry. Her hands are clasped, her posture straight, her gaze level. The judges behind their table lean forward with the hungry attention of men who have already decided what they are looking at. The Salem witch trials were never about guilt. They were about a community&rsquo;s need to name its fear, to give it a face, preferably a woman&rsquo;s face, and to punish it publicly enough that everyone else would remember to be afraid.</p>
+    <p>Gil&rsquo;s court appearance carries the same machinery of predetermined judgment. He fires his public defender &mdash; a man hired to speak for him &mdash; and insists on speaking for himself. Bail is set at $200,000, an amount designed not as justice but as containment. Like Volk&rsquo;s accused woman, Gil stands alone before a system that has already decided his fate. The title &ldquo;Plea&rdquo; is both a legal term and a prayer, and the painting refuses to tell you which one the accused is making as she stands there, composed, waiting for the sentence she already knows.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Romans 2:1</h3>
+    <p>Paul&rsquo;s letter to the Romans contains the New Testament&rsquo;s most direct accusation of hypocrisy. The structure of the verse is devastating in its simplicity: you who judge another condemn yourself, because you practice the very same things you condemn. Paul turns the gavel back on the judge. The courtroom reverses. The one who sits in authority is suddenly the one on trial, and the evidence is his own behavior &mdash; not alleged, not circumstantial, but practiced and known.</p>
+    <p>The courtroom judges Gil for a crime. The verse asks what crimes the judges practice in private. Gil, standing alone after firing the man the system appointed to speak on his behalf, embodies the verse&rsquo;s logic: he refuses the theater of legal representation because representation implies that someone else can know your guilt better than you can. Paul&rsquo;s accusation works the same way &mdash; it strips the apparatus of judgment down to its naked hypocrisy and asks each man to judge himself before he dares to judge another. &ldquo;Thou art inexcusable, O man.&rdquo; The King James phrasing is addressed to everyone and no one. In the courtroom, as in the epistle, the one who points the finger is the one most exposed.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch17','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch17','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch17-kjv">
+    <p><strong>Therefore thou art inexcusable, O man, whosoever thou art that judgest: for wherein thou judgest another, thou condemnest thyself; for thou that judgest doest the same things.</strong></p>
+    <span class="verse-ref">&mdash; Romans 2:1 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch17-esv" style="display:none;">
+    <p><strong>Therefore you have no excuse, O man, every one of you who judges. For in passing judgment on another you condemn yourself, because you, the judge, practice the very same things.</strong></p>
+    <span class="verse-ref">&mdash; Romans 2:1 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/baldung_ages.jpg" alt="The Three Ages of Man and Death by Hans Baldung Grien">
+      <div class="caption">
+        <strong>Hans Baldung Grien</strong> &mdash; <em>The Three Ages of Man and Death</em>, 1510<br>
+        Kunsthistorisches Museum, Vienna
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Youth, beauty, and death in a single frame &mdash; a young woman gazes at her own beauty while a skeleton grips her arm. The charges against Gil escalate: wire fraud becomes murder, indecent exposure is added. His youth and innocence are being dragged toward destruction by forces he can see but cannot escape.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 18: PROPHETS                                          -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-18">
+  <h2>Chapter 18 &mdash; Prophets</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/jezebel_punishment.jpg" alt="The Death of Jezebel by Gustave Doré, 1866">
+    <div class="caption">
+      <strong>Gustave Dor&eacute;</strong> &mdash; <em>The Death of Jezebel</em>, 1866<br>
+      From <em>La Sainte Bible</em>
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>The painting depicts the moment from 2&nbsp;Kings&nbsp;9 when Jezebel, Queen of Israel, is thrown from her window on the orders of Jehu. She has painted her face and adorned her hair &mdash; not in seduction, as centuries of hostile commentators have insisted, but in defiance. It is the last act of a queen who refuses to die looking like a victim. Below, the dogs that will consume her body are already waiting. The eunuchs who throw her lean out from the window with the mechanical obedience of men who have calculated which side of power they need to be on. Every depiction of this scene across the history of Western art is, at its core, a study in how power punishes women who refuse to relinquish it &mdash; and how the punishment is always made into a spectacle, always staged for an audience, always presented as justice rather than revenge.</p>
+    <p>In the chapter named &ldquo;Prophets,&rdquo; the character Jezebel faces a different kind of fall. She is damaged by a Kabbalah procedure &mdash; a mystical operation gone wrong, leaving her broken by the very forces she commands. The prescribed cure is coitus: not as desire, not as pleasure, but as medicine. The sacred and the profane, healing and carnal union &mdash; the chapter refuses the distinction between them. Like the queen in the painting, this Jezebel is undone not by her enemies but by the power she herself wielded. The painting shows a woman destroyed by a king&rsquo;s order; the chapter shows a woman damaged by a mystic&rsquo;s art. In both cases, the fall is the cost of having reached too high.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Jeremiah 23:9</h3>
+    <p>Jeremiah is known as the &ldquo;weeping prophet,&rdquo; and this verse is his most personal, most physically vulnerable confession. His heart is broken. His bones shake. He is like a drunk man &mdash; but not from wine. He is drunk on the Lord&rsquo;s holiness, overcome by the sheer weight of carrying divine words in a human body. It is a description of what prophecy does to the prophet: it breaks him. The message is too large for the vessel, and the vessel knows it, and the vessel speaks anyway.</p>
+    <p>The chapter shows the weight of magic breaking the witch in exactly the same way. Jezebel has handled forces that exceed her capacity, and the result is not spiritual enlightenment but physical collapse &mdash; bones shaking, heart broken, the body overwhelmed by what it has channeled. Jeremiah&rsquo;s confession is the closest scripture comes to describing what it feels like to be a conduit for power that was never meant to pass through flesh. The desperate, carnal remedy the chapter prescribes &mdash; union as restoration, the body healing the body &mdash; is the answer to a question Jeremiah could only ask: when holiness breaks you, what puts you back together?</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch18','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch18','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch18-kjv">
+    <p><strong>Mine heart within me is broken because of the prophets; all my bones shake; I am like a drunken man, and like a man whom wine hath overcome, because of the LORD, and because of the words of his holiness.</strong></p>
+    <span class="verse-ref">&mdash; Jeremiah 23:9 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch18-esv" style="display:none;">
+    <p><strong>Concerning the prophets: My heart is broken within me; all my bones shake; I am like a drunken man, like a man overcome by wine, because of the Lord and because of his holy words.</strong></p>
+    <span class="verse-ref">&mdash; Jeremiah 23:9 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/canova_psyche.jpg" alt="Psyche Revived by Cupid's Kiss by Antonio Canova">
+      <div class="caption">
+        <strong>Antonio Canova</strong> &mdash; <em>Psyche Revived by Cupid&rsquo;s Kiss</em>, 1793<br>
+        Mus&eacute;e du Louvre, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Cupid&rsquo;s kiss resurrects Psyche from death &mdash; love as the literal antidote to oblivion. Gil faces the same dilemma: Jezebel is dying, and the cure is physical love. He sacrifices his magical protection to save her, just as Cupid defied the gods to revive Psyche. The cost of love is everything. The alternative is worse.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 19: FLYING                                            -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-19">
+  <h2>Chapter 19 &mdash; Flying</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/davinci_monalisa.jpg" alt="Mona Lisa by Leonardo da Vinci, c. 1503-19, The Louvre">
+    <div class="caption">
+      <strong>Leonardo da Vinci</strong> &mdash; <em>Mona Lisa</em>, c.&nbsp;1503&ndash;19<br>
+      The Louvre, Paris
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>The most famous painting in the world, and the most written about, and the least understood. The <em>Mona Lisa</em> does exactly one thing that no other portrait before or since has managed: it makes you uncertain whether the subject is pleased to see you. The smile is there &mdash; or is it? The corners of the mouth lift, but the eyes do not follow. Neuroscience has shown that the expression activates different brain regions depending on where you look: focus on the mouth, she smiles; focus on the eyes, she doesn&rsquo;t. Da Vinci used <em>sfumato</em> &mdash; layers of translucent glaze so thin they cannot be seen individually &mdash; to create an expression that exists in the gap between perception and interpretation.</p>
+    <p>Gil is handcuffed in this chapter, with Stepan as his guard, and the connection to the painting is exact: Gil spends the flight trying to read Stepan&rsquo;s face, searching for a signal &mdash; sympathy, contempt, complicity, indifference &mdash; and finding the same maddening ambiguity that five centuries of viewers have found in the <em>Mona Lisa</em>. Is the guard his captor or his protector? The face will not say. Da Vinci understood that the most powerful expression a human face can wear is the one that refuses to resolve.</p>
+    <p>The landscape behind the <em>Mona Lisa</em> is impossible &mdash; the horizon lines on either side of her head do not match, creating a geological vertigo that mirrors the psychological vertigo of her expression. Gil&rsquo;s flight into Russia carries the same quality: the world outside the window is real but incomprehensible, a landscape he cannot read any better than the face across from him.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Jeremiah 3:1</h3>
+    <p>God speaks to Israel as a husband speaks to a wife who has left him for other men &mdash; and then, impossibly, asks her to come back. The verse is a legal question turned into a love letter: the Torah says a divorced woman who remarries cannot return to her first husband (Deuteronomy 24:1&ndash;4), yet God, the ultimate lawmaker, breaks his own law. &ldquo;Yet return again to me.&rdquo; The invitation violates the statute. Grace overrides jurisprudence.</p>
+    <p>Gil is being taken to Russia to impersonate a dead president and sign a law he does not understand. Everything about his situation is a violation of consent, of sovereignty, of law itself. And yet the chapter contains a strange undercurrent of invitation &mdash; the same impossible &ldquo;return to me&rdquo; that Jeremiah records. Russia is calling Gil home to a home he never had.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch19','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch19','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch19-kjv">
+    <p><strong>They say, If a man put away his wife, and she go from him, and become another man&rsquo;s, shall he return unto her again? shall not that land be greatly polluted? but thou hast played the harlot with many lovers; yet return again to me, saith the LORD.</strong></p>
+    <span class="verse-ref">&mdash; Jeremiah 3:1 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch19-esv" style="display:none;">
+    <p><strong>If a man divorces his wife and she goes from him and becomes another man&rsquo;s wife, will he return to her? Would not that land be greatly polluted? You have played the whore with many lovers; and would you return to me? declares the Lord.</strong></p>
+    <span class="verse-ref">&mdash; Jeremiah 3:1 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/chagall_overtown.jpg" alt="I and the Village by Marc Chagall">
+      <div class="caption">
+        <strong>Marc Chagall</strong> &mdash; <em>I and the Village</em>, 1911<br>
+        Museum of Modern Art, New York
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Chagall&rsquo;s dreamlike vision of Russian village life &mdash; figures floating, perspectives impossible, memory and longing fused into color. Gil is airborne too, handcuffed in a small plane, leaving America for a Russia he&rsquo;s never seen but somehow resembles. The surrealism of his situation &mdash; kidnapped to impersonate a dead president &mdash; is pure Chagall.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 20: LANDING                                           -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-20">
+  <h2>Chapter 20 &mdash; Landing</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/tschirch_song8.jpg" alt="The Song of Songs, No. 8 by Egon Tschirch, 1923">
+    <div class="caption">
+      <strong>Egon Tschirch</strong> &mdash; <em>The Song of Songs, No.&nbsp;8</em>, 1923
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Tschirch&rsquo;s <em>Song of Songs</em> series occupies the territory where sacred and erotic become genuinely indistinguishable &mdash; not as provocation, but as theological statement. Study No.&nbsp;8 is the most intimate of the cycle: two figures intertwined in a posture that could be healing or lovemaking, the boundary dissolved in amber light that seems to emanate from the bodies themselves rather than any external source. The Expressionist style refuses to separate the figures from each other &mdash; arms merge into torsos, skin tones bleed across anatomical borders, and the composition collapses two people into a single organism of warmth. It is a painting that insists the erotic act is not a metaphor for spiritual union but the thing itself.</p>
+    <p>The plane descends into Russia, and Gil arrives handcuffed, with Stepan as his guard. The flight attendant&rsquo;s seduction was Plan&nbsp;B &mdash; a deliberate, calculated attempt to drain Gil&rsquo;s sexual power before he reaches Moscow, each gesture stripped of everything unnecessary until only the essential transaction remains. Tschirch&rsquo;s intertwined figures mirror the chapter&rsquo;s deeper logic: the merging of Gil&rsquo;s identity with the dead president&rsquo;s, two lives pressed together like bodies in amber light, one living and one dead, fused into a single political organism. The painting shows union as ecstasy. The chapter shows it as abduction.</p>
+    <p>What Tschirch understood, and what the chapter dramatizes, is that the deepest intimacies are also the deepest violations of boundary. The amber glow that makes the painting beautiful is the same force that makes Gil&rsquo;s situation terrifying: a country is calling him home to a home he never had, claiming him with the possessive tenderness of a lover who will not let go.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Song of Solomon 2:16</h3>
+    <p>The simplest statement of mutual possession in all of scripture: &ldquo;My beloved is mine, and I am his.&rdquo; Six words in English, four in Hebrew &mdash; <em>dodi li va&rsquo;ani lo</em> &mdash; a chiastic structure where each half mirrors the other, as though the grammar itself is an embrace. The beloved who speaks is the Shulamite woman, and her declaration is radical in its symmetry: she possesses as fully as she is possessed. The lily imagery that follows &mdash; &ldquo;he feedeth among the lilies&rdquo; &mdash; turns the erotic into the pastoral, the lover into a grazing animal, desire into something as natural and unhurried as a creature in a meadow.</p>
+    <p>But for Gil, the possession runs one way. Russia claims him &mdash; his face, his body, his signature &mdash; but he does not claim Russia. The verse&rsquo;s perfect reciprocity is precisely what the chapter lacks. &ldquo;My beloved is mine, and I am his&rdquo; assumes consent on both sides; Gil&rsquo;s arrival assumes consent on neither. The lilies become the manicured grounds of a power he did not choose, and the pastoral turns political. What the Song of Solomon offers as love&rsquo;s simplest truth, the chapter reveals as coercion&rsquo;s most elegant disguise.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch20','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch20','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch20-kjv">
+    <p><strong>My beloved is mine, and I am his: he feedeth among the lilies.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 2:16 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch20-esv" style="display:none;">
+    <p><strong>My beloved is mine, and I am his; he grazes among the lilies.</strong></p>
+    <span class="verse-ref">&mdash; Song of Solomon 2:16 (ESV)</span>
+  </blockquote>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 21: CEMETERY                                          -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-21">
+  <h2>Chapter 21 &mdash; Cemetery</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/matisse_pinknude.jpg" alt="Pink Nude (Nu Rose) by Henri Matisse, 1935, Baltimore Museum of Art">
+    <div class="caption">
+      <strong>Henri Matisse</strong> &mdash; <em>Pink Nude (Nu Rose)</em>, 1935<br>
+      Baltimore Museum of Art
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Matisse repainted this canvas twenty-two times. We know because his wife Am&eacute;lie photographed each version, creating a documentary record that is itself a study in obsessive reduction. The early versions are realistic &mdash; a recognizable woman reclining on a recognizable couch. By the final iteration, she has become something else entirely: a monumental pink form that fills the canvas like a landscape, her body simplified into curves so bold they approach abstraction. The blue-and-white grid behind her is as flat as wallpaper. Depth has been abolished. Context has been abolished. What remains is pure, unapologetic presence &mdash; a body that has been stripped of everything except the fact of its existence.</p>
+    <p>Alice Kyteler &mdash; the historical Irish woman accused of witchcraft in Kilkenny in 1324 &mdash; lies naked inside a coffin, and the connection to Matisse is one of method rather than image. Twenty-two repaintings were a relentless drive to simplify, to subtract, to reduce a living woman to a pink shape on a flat plane. The coffin ritual is a similar reduction: a woman stripped of name, of history, of the vertical world of the living, compressed into the narrowest possible space. She has chosen darkness, chosen enclosure, chosen the underground. Matisse arrived at monumentality through subtraction; Alice arrives at power through the same process.</p>
+    <p>The moment Matisse captured &mdash; a body so simplified it becomes elemental &mdash; is the moment the chapter holds: the threshold between concealment and revelation, the instant before the coffin lid closes or opens, which is more charged than either state alone. Matisse&rsquo;s pink nude does not invite or refuse the gaze. She simply is. Alice, in her coffin, achieves the same terrifying sufficiency.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Psalm 88:10</h3>
+    <p>Psalm 88 is the darkest text in the entire Psalter &mdash; the only psalm that ends without a single note of hope, without even the conventional pivot to praise that rescues every other lament. The psalmist addresses God from the pit, literally from the grave, and asks whether the dead can worship. &ldquo;Wilt thou shew wonders to the dead?&rdquo; The question is not rhetorical. It is a negotiation, a last-ditch argument for survival based not on the psalmist&rsquo;s worthiness but on God&rsquo;s self-interest. Keep me alive, or lose a worshipper. It is the Bible&rsquo;s starkest challenge to divine benevolence: if you let me die, who will be left to praise you?</p>
+    <p>Alice in her coffin mirrors this negotiation exactly. She offers herself to the underground as both sacrifice and transaction &mdash; the same desperate bargain the psalmist strikes with a silent heaven. The question &ldquo;shall the dead arise and praise thee?&rdquo; hangs over the cemetery scene like an unanswered prayer. Can the dead arise? The psalm refuses to say. The coffin lid, for now, remains open.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch21','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch21','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch21-kjv">
+    <p><strong>Wilt thou shew wonders to the dead? shall the dead arise and praise thee? Selah.</strong></p>
+    <span class="verse-ref">&mdash; Psalm 88:10 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch21-esv" style="display:none;">
+    <p><strong>Do you work wonders for the dead? Do the departed rise up to praise you? Selah</strong></p>
+    <span class="verse-ref">&mdash; Psalm 88:10 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/fragonard_bolt.jpg" alt="The Bolt by Jean-Honoré Fragonard">
+      <div class="caption">
+        <strong>Jean-Honor&eacute; Fragonard</strong> &mdash; <em>The Bolt</em>, c.&nbsp;1777<br>
+        Mus&eacute;e du Louvre, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>A man reaches past a woman to lock the door &mdash; seduction or trap, desire or imprisonment. The ambiguity is the point. In the cemetery pit, Ruslan negotiates while intertwined with Klementina, sex and power conducted simultaneously, the door bolted shut behind Gil.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 22: TRAINING                                          -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-22">
+  <h2>Chapter 22 &mdash; Training</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/vermeer_pearl.jpg" alt="Girl with a Pearl Earring by Johannes Vermeer, c. 1665, Mauritshuis, The Hague">
+    <div class="caption">
+      <strong>Johannes Vermeer</strong> &mdash; <em>Girl with a Pearl Earring</em>, c.&nbsp;1665<br>
+      Mauritshuis, The Hague
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>She is turning toward you. Or turning away. The painting&rsquo;s power lives in that ambiguity &mdash; the girl caught mid-rotation, her lips parted as though about to speak or having just stopped, the enormous pearl earring catching light from a source we cannot see. Vermeer painted her against a black void, eliminating every contextual clue: no room, no furniture, no window, no world. There is only her face, her blue-and-gold turban, her earring, and the darkness she emerges from. Art historians call it a <em>tronie</em> &mdash; a character study, not a portrait of a specific person &mdash; which means she may never have existed. She is an idea of a girl, perpetually turning, perpetually about to speak, frozen in the instant before identity resolves.</p>
+    <p>Gil&rsquo;s training makes him into a <em>tronie</em>. The ROMUS device, the Russian folk dance drills, the language immersion &mdash; his entire education is conducted through and around the aroused body, the theory being that heightened sexual energy accelerates learning. But the result is not a person. It is a character study: a man painted against a void, stripped of his own context, taught to turn toward an audience with an expression that will never fully resolve. Vermeer&rsquo;s girl may never have existed as a specific person; the president Gil is becoming never existed either. He is being made into someone who is perpetually about to be real.</p>
+    <p>The black background is essential. Vermeer understood that a face without a world behind it becomes universal &mdash; it can belong to anyone&rsquo;s story. Gil&rsquo;s trainers understand the same principle: strip a man of his history, his language, his reflexes, and what remains is a surface onto which any identity can be projected. The pedagogy refuses to pretend the body and mind can be educated separately. To open the body&rsquo;s full capacity for learning is also to open it to damage &mdash; and the girl&rsquo;s parted lips, so often read as invitation, may just as easily be the beginning of a warning.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Proverbs 5:4</h3>
+    <p>Proverbs 5 is a father&rsquo;s warning to his son about the &ldquo;strange woman&rdquo; &mdash; the adulteress, the forbidden other. The father begins with sweetness: &ldquo;Her lips drop as a honeycomb, and her mouth is smoother than oil.&rdquo; Then the pivot, as sudden as a blade drawn from silk: &ldquo;But her end is bitter as wormwood, sharp as a twoedged sword.&rdquo; The Hebrew <em>acharit</em>, translated as &ldquo;end,&rdquo; means not just conclusion but consequence &mdash; the place where all smooth roads arrive. The honeycomb is real. The wormwood is also real. They are the same woman.</p>
+    <p>Gil&rsquo;s trainers are the strange women of the proverb. Their lips drop honey &mdash; the instruction is smooth, the methods are pleasurable, the ROMUS device turns learning into arousal and arousal into fluency. But the end of this education is a blade. The two-edged sword cuts both ways: the man who emerges from the training will speak perfect Russian but will have lost the language in which he once thought his own thoughts. Proverbs warns about a sweetness that leads to bitterness. The chapter shows a pedagogy that does the same &mdash; every lesson a honeycomb, every lesson a sword.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch22','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch22','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch22-kjv">
+    <p><strong>But her end is bitter as wormwood, sharp as a twoedged sword.</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 5:4 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch22-esv" style="display:none;">
+    <p><strong>but in the end she is bitter as wormwood, sharp as a two-edged sword.</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 5:4 (ESV)</span>
+  </blockquote>
+
+  <div class="text-block references">
+    <h3>References &amp; Sources</h3>
+    <ul>
+      <li><strong>Pushkin&rsquo;s erotic verse</strong> &mdash; &ldquo;Как широко, как глубоко&rdquo; (&ldquo;How limitless, how bottomless&rdquo;) is a genuine four-line epigram by Alexander Pushkin, written in 1825 and first published posthumously in 1867. It belongs to his <em>matерные стихи</em> (bawdy verses), a well-documented but less formally celebrated part of his output, suppressed during his lifetime.</li>
+      <li><strong>Russian folk call-and-response</strong> &mdash; The &ldquo;divchina&rdquo; rhyme (asking a girl why her breasts are soft, her lips sweet, and her belly swollen) follows the structure of Ukrainian <em>soromitski pisni</em> (bawdy folk songs), an oral tradition historically excluded from published collections. The word &ldquo;дівчина&rdquo; is characteristically Ukrainian.</li>
+      <li><strong>Afanasiev&rsquo;s erotic folk tales</strong> &mdash; Alexander Afanasiev (1826&ndash;1871) was Russia&rsquo;s equivalent of the Brothers Grimm. His main collection, <em>Narodnye russkie skazki</em>, is canonical. His erotic tales, compiled separately as <em>Russkie zavetnye skazki</em> (Russian Secret Tales), were too explicit for publication in Russia and were first printed in Geneva around 1872.</li>
+      <li><strong>Chorovod</strong> &mdash; A traditional Russian folk circle dance, one of the oldest forms of communal performance in Slavic culture, combining singing, movement, and dramatic enactment.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 23: WIFE                                              -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-23">
+  <h2>Chapter 23 &mdash; Wife</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/modigliani_nude.jpg" alt="Reclining Nude on Blue Cushion by Amedeo Modigliani, 1917">
+    <div class="caption">
+      <strong>Amedeo Modigliani</strong> &mdash; <em>Reclining Nude on Blue Cushion</em>, 1917
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>In December 1917, the Berthe Weill gallery on Rue Taitbout in Paris mounted a one-man exhibition of Modigliani&rsquo;s nudes. A police commissaire stationed across the street saw the nudes displayed in the gallery window, crossed over, and ordered their immediate removal. The official complaint: the nudes showed pubic hair. Weill, rather than let police confiscate the works, took down the window paintings herself &mdash; though the exhibition continued inside, and a handful of drawings sold for thirty francs each. The incident became the most famous act of art censorship in twentieth-century Paris. The nudes themselves are not provocative by any conventional measure &mdash; they are elongated, stylized, their faces mask-like and serene, their bodies rendered in warm ochres against deep reds. What disturbed the authorities was not what the paintings showed but what they refused to conceal. Every other nude in the Western tradition either hides or aestheticizes the body&rsquo;s reality. Modigliani simply painted what was there.</p>
+    <p>Klementina enters the Kremlin with the same refusal to conceal. She arrives in the chapter as she arrives in every scene she occupies &mdash; changing the temperature, rearranging the power dynamics, making the men around her conscious of their own inadequacy. Gil is presented with the <em>khodoki</em> binder, the official book of presidential petitioners, and he is still learning its weight when she appears. Modigliani simply painted what was there; Klementina simply is what she is. The Berthe Weill police could not tolerate a nude that refused to apologize for its own nakedness. Gil cannot quite tolerate a woman who refuses to perform the deference he unconsciously expects.</p>
+    <p>Modigliani&rsquo;s elongated forms strip the body of everything except its essential architecture &mdash; the long neck, the tilted head, the closed eyes that refuse to meet the viewer&rsquo;s gaze. Klementina operates with the same economy. She is in her element; Gil is not. Whoever is at home has the advantage, and the chapter makes clear that within the Kremlin walls, home belongs to her.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Proverbs 5:20</h3>
+    <p>The father&rsquo;s warning continues from earlier in the chapter: &ldquo;Why wilt thou, my son, be ravished with a strange woman, and embrace the bosom of a stranger?&rdquo; The Hebrew word translated as &ldquo;ravished&rdquo; in the KJV &mdash; <em>shagah</em> &mdash; literally means to go astray, to wander, to err. It is the same root used for a sheep that has lost its flock. Desire for the stranger is not described as sin but as navigation failure: you have lost your way. The verse does not condemn the strange woman herself. It asks the son why he has chosen to be lost.</p>
+    <p>Klementina is the strange woman of the proverb &mdash; strange not because she is foreign but because she is utterly at home in a world where Gil is the foreigner. The verse asks &ldquo;why?&rdquo; as though the son has a choice, as though wandering toward the stranger is a decision that can be reversed by reason. The chapter suggests otherwise. Klementina&rsquo;s presence does not invite or forbid &mdash; it simply occupies, and the question the proverb poses with such paternal urgency dissolves in the face of a woman who never needed to ask.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch23','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch23','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch23-kjv">
+    <p><strong>And why wilt thou, my son, be ravished with a strange woman, and embrace the bosom of a stranger?</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 5:20 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch23-esv" style="display:none;">
+    <p><strong>Why should you be intoxicated, my son, with a forbidden woman and embrace the bosom of an adulteress?</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 5:20 (ESV)</span>
+  </blockquote>
+
+  <div class="text-block references">
+    <h3>References &amp; Sources</h3>
+    <ul>
+      <li><strong>Khodoki</strong> &mdash; The <em>khodoki</em> (ходоки, literally &ldquo;walkers&rdquo;) were peasant petitioners who walked to Moscow to present grievances to the tsar, and later to Lenin. The tradition is memorialized in Vladimir Serov&rsquo;s painting <em>Khodoki u Lenina</em> (Petitioners Visiting Lenin, 1950) and is a foundational image in Russian political culture.</li>
+      <li><strong>Modigliani exhibition, 1917</strong> &mdash; The exhibition at Berthe Weill&rsquo;s gallery, 50 Rue Taitbout, Paris, opened December&nbsp;3, 1917. A police commissaire ordered the nudes removed from the window for showing pubic hair. Weill took down the window paintings herself rather than allow confiscation; the show continued inside, and several drawings sold for thirty francs each.</li>
+    </ul>
+  </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/ingres_odalisque.jpg" alt="La Grande Odalisque by Jean-Auguste-Dominique Ingres">
+      <div class="caption">
+        <strong>Jean-Auguste-Dominique Ingres</strong> &mdash; <em>La Grande Odalisque</em>, 1814<br>
+        Mus&eacute;e du Louvre, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>The odalisque reclines in a harem &mdash; a woman whose body serves the state, beautiful and imprisoned. Klementina, the President&rsquo;s wife, exists in an identical arrangement: her body is political currency, her intimacy a tool of governance.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/titian_venus.jpg" alt="Venus of Urbino by Titian">
+      <div class="caption">
+        <strong>Titian</strong> &mdash; <em>Venus of Urbino</em>, 1538<br>
+        Uffizi Gallery, Florence
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Titian&rsquo;s Venus looks directly at the viewer with frank availability &mdash; not coy, not ashamed, simply present. Klementina examines Gil&rsquo;s wounded body with that same direct, clinical gaze. The erotic and the medical merge, just as Venus&rsquo;s beauty merges with the domestic scene behind her.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 24: WELL                                              -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-24">
+  <h2>Chapter 24 &mdash; Well</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/perrault_nymph.jpg" alt="A Water Nymph by L&eacute;on Bazile Perrault, 1898">
+    <div class="caption">
+      <strong>L&eacute;on Bazile Perrault</strong> &mdash; <em>A Water Nymph</em>, 1898
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Perrault&rsquo;s nymph reclines at the water&rsquo;s edge with the self-possession of someone who has never needed to be anywhere else. The Academic style is meticulous &mdash; every highlight on wet skin rendered with photographic precision, every reed and ripple painted with the patience of a naturalist &mdash; but the subject resists the painter&rsquo;s control. She does not pose for the viewer. She does not arrange herself for consumption. She occupies her space with the quiet authority of a creature in its element, and the water around her is not a setting but an extension of her body. In Greek mythology, water nymphs &mdash; naiads &mdash; were dangerous precisely because they were beautiful in their own territory: men did not drown because the nymphs pulled them under, but because they swam too far trying to reach them.</p>
+    <p>The chapter moves to a TV studio where Gil wears a <em>kosovorotka</em> &mdash; the traditional side-fastening Russian shirt &mdash; and Janna appears in a <em>sarafan</em>, the folk dress that reveals and conceals in alternating panels. They perform &ldquo;Nese Halya vodu&rdquo; (&ldquo;Halya carries water&rdquo;), a Ukrainian folk song about a girl at a well, watched by a boy she pretends not to notice. The well is the oldest meeting place in scripture &mdash; where Isaac&rsquo;s servant finds Rebekah at the well of Nahor, where Jacob meets Rachel at the well in Haran, where Jesus speaks to the Samaritan woman at Jacob&rsquo;s well. Every well scene is a courtship. Every drawn bucket is an offering. Janna at the well, like Perrault&rsquo;s nymph at the water&rsquo;s edge, is in her element. Gil is not. He is the man on dry land, reaching.</p>
+    <p>Perrault understood what the folk song knows instinctively: the figure who belongs to the water has all the power, and the figure who approaches from the land has only longing. The nymph does not need the viewer. The girl at the well does not need the boy who watches. The performance is simultaneously real and scripted, a courtship conducted in costume, and its danger is the same danger the naiads posed &mdash; that the one who reaches may forget he cannot breathe in her element.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- VIDEO -->
+  <div class="text-block">
+    <h3>Nese Halya Vodu</h3>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:1rem 0;">
+      <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/RlslqGXgmq4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Colossians 2:2</h3>
+    <p>Paul writes to the church at Colossae about hearts &ldquo;knit together in love&rdquo; &mdash; a textile metaphor for spiritual unity that carries more force in the original Greek than any translation can convey. The word <em>sumbibazo</em> means to join together, to unite, to bring to the same conclusion &mdash; it is the word used for teaching by demonstration, for understanding that comes not through explanation but through being brought alongside. The mystery of God, Paul says, is not solved but woven. And the &ldquo;full assurance of understanding&rdquo; he promises is not intellectual certainty but the bodily knowledge of a fabric that holds.</p>
+    <p>The folk performance is a knitting-together: traditional costumes, ancient melodies, two people performing a courtship that is simultaneously rehearsed and felt. The <em>kosovorotka</em> and the <em>sarafan</em> are themselves woven things &mdash; fabrics that carry centuries of meaning in their patterns and cuts. Gil and Janna are being <em>sumbibazo</em>&rsquo;d, joined together by the song&rsquo;s choreography into an image of intimacy that the cameras will broadcast as proof of presidential normalcy. The verse promises &ldquo;full assurance of understanding&rdquo; &mdash; exactly what Gil lacks. He wears the costume. He sings the words. But the knitting has not reached his heart, and the mystery remains unsolved.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch24','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch24','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch24-kjv">
+    <p><strong>That their hearts might be comforted, being knit together in love, and unto all riches of the full assurance of understanding, to the acknowledgement of the mystery of God, and of the Father, and of Christ;</strong></p>
+    <span class="verse-ref">&mdash; Colossians 2:2 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch24-esv" style="display:none;">
+    <p><strong>that their hearts may be encouraged, being knit together in love, to reach all the riches of full assurance of understanding and the knowledge of God&rsquo;s mystery, which is Christ,</strong></p>
+    <span class="verse-ref">&mdash; Colossians 2:2 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/waterhouse_hylas.jpg" alt="Hylas and the Nymphs by John William Waterhouse">
+      <div class="caption">
+        <strong>John William Waterhouse</strong> &mdash; <em>Hylas and the Nymphs</em>, 1896<br>
+        Manchester Art Gallery
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Nymphs pull the beautiful Hylas into their pool &mdash; seduction as drowning, beauty as an undertow. The live khodok scene has the same current: Janna and Gil perform for cameras, their real grief hidden beneath the surface of what looks like desire.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 25: NEGOTIATIONS                                      -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-25">
+  <h2>Chapter 25 &mdash; Negotiations</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/siemiradzki_kupala.jpg" alt="Night on the Eve of Ivan Kupala by Henryk Siemiradzki, 1892">
+    <div class="caption">
+      <strong>Henryk Siemiradzki</strong> &mdash; <em>Night on the Eve of Ivan Kupala</em>, 1892<br>
+      Lviv National Art Gallery
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Siemiradzki&rsquo;s monumental canvas appeared earlier in this novel as the backdrop for Chapter&nbsp;1, and its return here is no accident. The painting depicts the Ivan Kupala Night &mdash; the ancient Slavic midsummer festival of fire and water, when young women float flower wreaths on dark rivers and couples leap through bonfires to test their devotion. Siemiradzki, a Polish-born painter who spent most of his career in Rome, brought a classicist&rsquo;s eye to a pagan ritual: the bodies are half-dressed and firelit, arranged with the compositional discipline of a Raphael <em>bacchanal</em> but suffused with a Romantic wildness that no Roman studio could contain. The result is one of the great paintings of collective surrender &mdash; a society temporarily unmoored from its own rules, dancing at the boundary between chaos and ceremony.</p>
+    <p>In Chapter&nbsp;1 the painting was context, atmosphere, a visual overture for a novel that had not yet declared its subject. Now it is a mirror. The same firelit bodies, the same dissolution of order &mdash; but seen after twenty-four chapters of accumulation, the image means something different. Gil demands the presidential office and summons Ruslan, conducting a negotiation from a position of borrowed power: a frog insisting he is a prince because the machinery of state has dressed him as one. The chapter&rsquo;s political maneuvering carries the same energy as the Kupala bonfire &mdash; a moment of suspension where the old rules are burned away and the new ones have not yet been written. Every demand Gil makes is met with resistance, and every resistance teaches him how to demand more effectively. The story is curving back toward its origin. What was background is now foreground.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Proverbs 21:1</h3>
+    <p>The Proverbs are Solomon&rsquo;s distilled wisdom, and this verse is among the most politically charged in the entire collection. It does not say the king is powerful. It does not say the king is wise. It says the king&rsquo;s heart is water in God&rsquo;s hand &mdash; turned wherever the Lord wills, as easily as an irrigator diverts a stream. The metaphor is drawn from the ancient Near Eastern practice of channeling water through fields: the farmer does not argue with the river, he simply redirects it. Solomon, himself a king, is acknowledging that even sovereignty is a channel, not a source.</p>
+    <p>Gil is not yet king, but the hand is already turning him. He entered Moscow as a captive, a bargaining chip extracted from an American jail cell and dressed in a dead president&rsquo;s suit. The negotiations in this chapter are the river bending &mdash; Gil learning, one demand at a time, that borrowed power is still power if you spend it before anyone can take it back. Proverbs 21:1 does not promise the king will know he is being directed. The water does not feel the hand. Gil bargains as though his authority is real, and in doing so, begins to make it real &mdash; which may have been the current&rsquo;s direction all along.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch25','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch25','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch25-kjv">
+    <p><strong>The king&rsquo;s heart is in the hand of the LORD, as the rivers of water: he turneth it whithersoever he will.</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 21:1 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch25-esv" style="display:none;">
+    <p><strong>The king&rsquo;s heart is a stream of water in the hand of the Lord; he turns it wherever he will.</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 21:1 (ESV)</span>
+  </blockquote>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 26: LOVER                                             -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-26">
+  <h2>Chapter 26 &mdash; Lover</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/titian_magdalene.jpg" alt="St. Mary Magdalene by Titian, c. 1531-35">
+    <div class="caption">
+      <strong>Titian</strong> &mdash; <em>St. Mary Magdalene</em>, c.&nbsp;1531&ndash;35<br>
+      Palazzo Pitti, Florence
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Titian painted Mary Magdalene weeping in the wilderness, her eyes lifted to heaven, her famous auburn hair cascading over her body as the only garment she has left. The painting &mdash; one of the Venetian master&rsquo;s most reproduced devotional works, now in the Palazzo Pitti &mdash; is a masterpiece of sanctified contradiction. The subject is repentance, but the execution is pure sensuality. The hair does not conceal; it frames. The tears do not diminish beauty; they add the pathos that makes beauty unbearable. For centuries the Church commissioned penitent Magdalenes, and every painter who took the commission understood the unspoken terms: show her suffering, make certain we want to look. Titian understood better than most. His Magdalene&rsquo;s upturned eyes are prayer; her skin, luminous against the darkening wilderness, is invitation. The painting holds both registers at once and refuses to resolve the tension.</p>
+    <p>The chapter moves from a hospital scene to Galina&rsquo;s apartment &mdash; from clinical wound to intimate embrace &mdash; and the painting tracks every step of that passage. Galina&rsquo;s body, like Magdalene&rsquo;s, carries both suffering and desire without distinguishing between them. Blood touches blood: the blood of illness and the blood of passion, the clinical and the carnal, flowing into each other without a clean boundary. What would otherwise be mere spectacle becomes, in Titian&rsquo;s logic, something approaching sacrament &mdash; not because suffering is holy, but because refusing to separate the body&rsquo;s pain from the body&rsquo;s pleasure is the most honest theology available. A society&rsquo;s complete moral collapse, compressed into a single evening.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>1 Corinthians 11:15</h3>
+    <p>Paul&rsquo;s discussion of head coverings in worship is one of the most contested passages in the New Testament, a knot of cultural assumption and theological argument that commentators have been pulling at for two millennia. The argument turns on this verse: if nature itself gave women long hair as a covering, then the covering is not a cultural imposition but a divine endowment. Hair is glory. Glory is given. What is given cannot be shameful. Paul&rsquo;s logic is more radical than it appears &mdash; he is saying that the woman&rsquo;s body came equipped with its own consecration, that the covering preceded the command to cover.</p>
+    <p>Titian&rsquo;s Magdalene takes that logic to its final conclusion: her hair is the only thing between her naked body and the viewer&rsquo;s gaze, and it is enough. Not because it hides her &mdash; it plainly does not &mdash; but because it transforms exposure into something consecrated. The chapter works the same way. The movement from hospital to apartment, from wound to desire, would be mere transgression without some covering to sanctify the passage. Galina&rsquo;s presence provides it &mdash; not concealment, but a frame that makes vulnerability bearable. What Paul calls &ldquo;glory,&rdquo; what Titian paints as cascading hair, the chapter enacts as intimacy that does not pretend the suffering wasn&rsquo;t there.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch26','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch26','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch26-kjv">
+    <p><strong>But if a woman have long hair, it is a glory to her: for her hair is given her for a covering.</strong></p>
+    <span class="verse-ref">&mdash; 1 Corinthians 11:15 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch26-esv" style="display:none;">
+    <p><strong>but if a woman has long hair, it is her glory? For her hair is given to her for a covering.</strong></p>
+    <span class="verse-ref">&mdash; 1 Corinthians 11:15 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/cabanel_venus.jpg" alt="The Birth of Venus by Alexandre Cabanel">
+      <div class="caption">
+        <strong>Alexandre Cabanel</strong> &mdash; <em>The Birth of Venus</em>, 1863<br>
+        Mus&eacute;e d&rsquo;Orsay, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Cabanel&rsquo;s Venus floats on waves, eyes half-open, cupids hovering above &mdash; sensuality dressed in mythology to make it acceptable. Galina&rsquo;s seduction of Gil is similarly layered: she is making love to a dead man through the body of a stranger, grief dressed as desire to make it bearable.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 27: PUZZLE                                            -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-27">
+  <h2>Chapter 27 &mdash; Puzzle</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/bluemenschein_frog.jpg" alt="The Princess and the Frog by Ernest L. Blumenschein, c. 1900">
+    <div class="caption">
+      <strong>Ernest L. Blumenschein</strong> &mdash; <em>The Princess and the Frog</em>, c.&nbsp;1900<br>
+      Brooklyn Museum
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Blumenschein&rsquo;s Art Nouveau illustration renders the Grimm fairy tale at its critical moment: the princess holds the frog, her expression poised between obligation and revulsion, forced by her father&rsquo;s command to honor a promise she made when she thought it would cost nothing. The image is lush with decorative tendrils and golden light, the ornamental style wrapping the scene in a beauty that almost disguises what the story is actually about. Because in the original Grimm version &mdash; not the sanitized retelling that replaced it &mdash; the princess does not kiss the frog. She hurls him against the bedroom wall in a spasm of rage and disgust, and that violence, not tenderness, is what breaks the enchantment. Transformation comes through refusal, not compliance. The fairy tale&rsquo;s deepest lesson is that you must reject the false form before the true one can emerge.</p>
+    <p>The chapter stages a &ldquo;Princess and the Frog&rdquo; television performance in which the director pressures Gil to perform a sexual act on camera &mdash; to comply, to play the role the machinery has written for him. Gil refuses. Like the Grimm princess, his act of defiance is the thing that transforms him. Blumenschein&rsquo;s painting captures the moment just before the decision: the frog is held, the wall is behind them, and the princess has not yet chosen. The ornamental beauty of the Art Nouveau frame is the lie the story tells about itself &mdash; that this is a scene of grace rather than a scene of violent self-assertion. The chapter strips the ornament away. Costume precedes transformation: you must act like royalty before you become it, and acting like royalty sometimes means throwing the role against the wall.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Romans 5:3</h3>
+    <p>Paul&rsquo;s chain of logic &mdash; tribulation produces patience, patience produces experience, experience produces hope &mdash; is one of the New Testament&rsquo;s most quoted passages and also one of its most counterintuitive. The Greek word Paul uses for &ldquo;tribulation,&rdquo; <em>thlipsis</em>, means pressure, the kind applied to grapes in a winepress or olives in a mill. Suffering is not merely endured; it is raw material subjected to force until it yields something it did not contain in its original form. You cannot develop patience without something to be patient about. You cannot develop hope without first exhausting every alternative.</p>
+    <p>Gil&rsquo;s resistance in this chapter is the Pauline chain made visible. The director applies pressure; Gil refuses. The refusal costs him, but the cost produces something his captors never intended &mdash; a man who knows what he will not do, which is the prerequisite for knowing what he will. Every resistance he endures teaches him to resist more effectively. The tribulation is producing endurance, the endurance is producing character, and character is producing a hope that the people who engineered his captivity did not budget for. Paul&rsquo;s logic is not optimism; it is mechanics. Apply pressure to the right material and you do not get compliance. You get wine.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch27','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch27','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch27-kjv">
+    <p><strong>And not only so, but we glory in tribulations also: knowing that tribulation worketh patience;</strong></p>
+    <span class="verse-ref">&mdash; Romans 5:3 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch27-esv" style="display:none;">
+    <p><strong>Not only that, but we rejoice in our sufferings, knowing that suffering produces endurance,</strong></p>
+    <span class="verse-ref">&mdash; Romans 5:3 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/bronzino_allegory.jpg" alt="An Allegory with Venus and Cupid by Agnolo Bronzino">
+      <div class="caption">
+        <strong>Agnolo Bronzino</strong> &mdash; <em>An Allegory with Venus and Cupid</em>, c.&nbsp;1545<br>
+        National Gallery, London
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Everything in Bronzino&rsquo;s painting is a puzzle &mdash; Venus and Cupid embrace while Deceit offers a honeycomb with a scorpion&rsquo;s tail, and Time pulls back the curtain. The Galois Field puzzle in this chapter has the same structure: mathematics concealing life-or-death stakes beneath elegant abstraction.</p>
+    </div>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <a href="https://upload.wikimedia.org/wikipedia/commons/5/50/E._Galois_Letter.jpg" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/E._Galois_Letter.jpg" alt="Évariste Galois's last letter, written the night before his fatal duel, 1832">
+      </a>
+      <div class="caption">
+        <strong>&Eacute;variste Galois</strong> &mdash; <em>Last letter, written the night before his fatal duel</em>, May 29, 1832<br>
+        Biblioth&egrave;que de l&rsquo;Institut de France, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Galois was twenty years old when he died in a duel over a woman. The night before, knowing he would likely not survive, he stayed up writing mathematics &mdash; scrawling theorems in the margins, crossing out and rewriting, racing against dawn. In the margins he wrote: <em>&ldquo;I have no time.&rdquo;</em> The letter founded an entire branch of algebra. Gil is the same age. He faces the same deadline. He is not writing theorems &mdash; but he is solving a puzzle that will determine whether he and his friends survive the morning.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 28: KUPALA                                            -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-28">
+  <h2>Chapter 28 &mdash; Kupala</h2>
+
+  <!-- HERO PAINTING -->
+  <div class="painting-full">
+    <img src="paintings/matisse_dance.jpg" alt="The Dance by Henri Matisse, 1910">
+    <div class="caption">
+      <strong>Henri Matisse</strong> &mdash; <em>The Dance (La Danse)</em>, 1910<br>
+      The Hermitage Museum, St.&nbsp;Petersburg
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Five figures hold hands in a circle, dancing on a green hill against a blue sky. Matisse reduced the human body to its simplest possible form &mdash; three colors, no detail, no faces, no individuality &mdash; and produced one of the most powerful images of collective ecstasy in the history of painting. Sergei Shchukin commissioned it for his Moscow staircase. The painting has lived in Russia ever since.</p>
+    <p>Ivan Kupala Night arrives &mdash; the midsummer celebration that has haunted the novel since Chapter 1. A ribbon-cutting ceremony, Klementina&rsquo;s hand under the table, hundreds gathered at a boarding school. Matisse&rsquo;s dancers are the image of what Kupala Night was before the state claimed jurisdiction over the body: figures joined in a circle, moving together, needing nothing but the music and each other. The painting hangs in the Hermitage, a few miles from the Kremlin where Gil sits pretending to be president. The dance it depicts is exactly what the sex tax would regulate.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Hosea 4:2</h3>
+    <p>Hosea was commanded by God to marry a prostitute &mdash; the most radical enacted metaphor in all of scripture. His marriage was itself the sermon: Israel&rsquo;s unfaithfulness to God made visible, made domestic, made inescapable in one man&rsquo;s daily life. By Chapter&nbsp;4, Hosea has moved from personal anguish to public indictment, and the rhetoric shifts accordingly. The sins arrive in staccato &mdash; swearing, lying, killing, stealing, committing adultery &mdash; each one a beat in a drumroll that builds toward the verse&rsquo;s devastating final image: &ldquo;blood toucheth blood.&rdquo; Violence so continuous that one act of bloodshed overlaps the next before the first has dried. The Hebrew carries a spatial sense &mdash; bloods <em>touching</em> bloods, plural, a pooling that admits no clean boundary between one crime and the next.</p>
+    <p>Ivan Kupala Night arrives, and the midsummer festival that has haunted the novel since Chapter&nbsp;1 finally takes center stage. A ribbon-cutting ceremony, Klementina&rsquo;s hand moving under the table, hundreds gathered at a boarding school for a celebration the state has claimed as its own. The ceremony Gil presides over is Hosea&rsquo;s catalogue enacted &mdash; the government&rsquo;s sins (swearing oaths it does not mean, lying about the nature of the tax, stealing the most intimate human force) conducted under the banner of festivity, dressed in midsummer garlands. Blood touches blood: the ritual fire and the political corruption, the festive and the criminal, flowing into each other without boundary. Hosea saw a nation whose crimes had become indistinguishable from its worship. The Kupala Night celebration is that indistinguishability made spectacle &mdash; a bonfire in which the sacred and the stolen burn together, and no one present can tell where one ends and the other begins.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch28','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch28','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch28-kjv">
+    <p><strong>By swearing, and lying, and killing, and stealing, and committing adultery, they break out, and blood toucheth blood.</strong></p>
+    <span class="verse-ref">&mdash; Hosea 4:2 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch28-esv" style="display:none;">
+    <p><strong>there is swearing, lying, murder, stealing, and committing adultery; they break all bounds, and bloodshed follows bloodshed.</strong></p>
+    <span class="verse-ref">&mdash; Hosea 4:2 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/canova_graces.jpg" alt="The Three Graces by Antonio Canova">
+      <div class="caption">
+        <strong>Antonio Canova</strong> &mdash; <em>The Three Graces</em>, 1814&ndash;17<br>
+        Victoria and Albert Museum, London
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Canova carved three women in an embrace so tender that the marble seems warm. Their hands rest on each other&rsquo;s shoulders and waists with a lightness that defies stone &mdash; you can almost see the fingertips yielding into flesh. The sculpture is about the beauty of communal touch, bodies that are separate but choose to stand together. On Kupala Night, with bonfires blazing and wreaths floating downriver, Gil watches hundreds of people surrender to exactly this: the ancient, wordless agreement to be close. Canova&rsquo;s Graces are the Kupala festival frozen in Carrara marble &mdash; three figures who embody the festival&rsquo;s deepest promise: that tenderness shared freely is more powerful than desire redistributed by force.</p>
+    </div>
+
+  <div class="text-block references">
+    <h3>References &amp; Sources</h3>
+    <ul>
+      <li><strong>Ivan Kupala Night</strong> &mdash; The ancient Slavic midsummer festival, celebrated on the night of June&nbsp;23&ndash;24 (Julian calendar: July&nbsp;6&ndash;7). Pre-Christian in origin, it was syncretized with the Feast of St.&nbsp;John the Baptist. Traditional customs include leaping over bonfires (three successful jumps portend marriage), floating flower wreaths on rivers (the wreath&rsquo;s path predicts romantic fate), and searching for the mythical fern flower, said to bloom only at midnight and grant wishes to whoever finds it.</li>
+      <li><strong>Chastushki</strong> &mdash; The bawdy four-line folk verses performed at the Kupala celebration are <em>chastushki</em> (частушки), a Russian oral tradition of humorous, often ribald, improvised couplets typically sung to accordion accompaniment. The form emerged in the late 19th century and became one of Russia&rsquo;s most distinctive folk genres. The verses in the novel follow attested formulas: the &ldquo;ice cracks / water trickles / but I want to&rdquo; structure echoes a well-documented chastushka pattern, and the nightingale-under-the-shirt motif appears across multiple collections.</li>
+      <li><strong>JFK / Gibran misattribution</strong> &mdash; Gil&rsquo;s speech attributes John F. Kennedy&rsquo;s famous 1961 inaugural line (&ldquo;Ask not what your country can do for you&rdquo;) to Kahlil Gibran. This is intentional: the misattribution satirizes Russian state propaganda&rsquo;s habit of rewriting Western cultural history. Kennedy&rsquo;s actual words were delivered on January&nbsp;20, 1961.</li>
+      <li><strong>Stoglav Synod</strong> &mdash; The Russian Orthodox Church council of 1551 (so named because its decisions were organized into one hundred chapters, <em>sto glav</em>) condemned Kupala Night celebrations as &ldquo;satanic singing and dancing.&rdquo; Despite repeated ecclesiastical prohibitions, the festival persisted as a folk tradition into the modern era.</li>
+    </ul>
+  </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 29: SIGNING                                           -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-29">
+  <h2>Chapter 29 &mdash; Signing</h2>
+
+  <div class="painting-full">
+    <img src="paintings/klimt_leda.jpg" alt="Leda by Gustav Klimt, 1917 (destroyed 1945)">
+    <div class="caption">
+      <strong>Gustav Klimt</strong> &mdash; <em>Leda</em>, 1917 (destroyed 1945)
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Klimt&rsquo;s <em>Leda</em> was burned by retreating SS troops at Schloss Immendorf in May 1945 &mdash; one of hundreds of artworks destroyed in the castle fire. What we have are photographs and later reconstructions: the ghost of a painting about a god who took the form of a swan to possess a mortal woman. Zeus&rsquo;s seduction of Leda is the mythological prototype of power disguised as desire &mdash; the state cloaking its force in beauty.</p>
+    <p>Gil is driven to the cemetery for the signing ceremony. His friends sit in the front row &mdash; Ruslan&rsquo;s threat made visible. The bill waits on a pedestal. Gil reads from a teleprompter, then departs from the script: he polls his friends, thumbs up or thumbs down. Four of five vote no. Ruslan grabs the bill and calls a break. Klimt&rsquo;s destroyed painting is the right image for this moment: something beautiful that power tried to own, and that was lost in the fire of a collapsing regime.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>Proverbs 5:20</h3>
+    <p>The verse returns. In Chapter 23, the father warned his son about the strange woman as Gil encountered Klementina inside the Kremlin &mdash; the question posed gently, almost rhetorically, as though the son might still choose wisely. Now, six chapters later, the same words carry a different weight. Repetition in Hebrew rhetoric is never accidental: when the same warning is given twice, the second time is not a reminder. It is a judgment. The father has watched his son approach the stranger, and the question &ldquo;why?&rdquo; is no longer curious. It is grieved.</p>
+    <p>The son must now choose: sign the law that redistributes desire by force, or refuse. The &ldquo;strange woman&rdquo; is no longer Klementina, no longer any single person. She is the seduction of compliance itself &mdash; the embrace of a system that promises comfort in exchange for conscience. Gil reads from a teleprompter, then departs from the script. He polls his friends. Four of five vote no. The verse, repeated across the novel&rsquo;s final arc, has become its moral spine &mdash; the father&rsquo;s voice that will not stop asking, even when the son has stopped listening.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch29','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch29','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch29-kjv">
+    <p><strong>And why wilt thou, my son, be ravished with a strange woman, and embrace the bosom of a stranger?</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 5:20 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch29-esv" style="display:none;">
+    <p><strong>Why should you be intoxicated, my son, with a forbidden woman and embrace the bosom of an adulteress?</strong></p>
+    <span class="verse-ref">&mdash; Proverbs 5:20 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/rubens_leda.jpg" alt="Leda and the Swan by Peter Paul Rubens">
+      <div class="caption">
+        <strong>Peter Paul Rubens</strong> &mdash; <em>Leda and the Swan</em>, c.&nbsp;1600<br>
+        Gem&auml;ldegalerie Alte Meister, Dresden
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Where Klimt&rsquo;s destroyed <em>Leda</em> exists only as a ghost, Rubens&rsquo;s version survives in full Baroque splendor &mdash; flesh luminous, the swan&rsquo;s neck curving against Leda&rsquo;s body with an intimacy that makes the myth feel domestic rather than divine. Rubens understood that Zeus&rsquo;s disguise was the point: power is most dangerous when it arrives wearing beauty. The signing ceremony is built on the same deception &mdash; a democratic ritual concealing authoritarian force, a president who is actually a captive, a bill dressed in the language of public good that mandates the theft of the body&rsquo;s most private energy.</p>
+    </div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/correggio_jupiter_io.jpg" alt="Jupiter and Io by Correggio">
+      <div class="caption">
+        <strong>Correggio</strong> &mdash; <em>Jupiter and Io</em>, c.&nbsp;1530<br>
+        Kunsthistorisches Museum, Vienna
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Jupiter appears to Io not as an animal or a man but as a dark cloud &mdash; formless, enveloping, impossible to resist or even identify. Io&rsquo;s head tilts back in ecstasy, her body yielding to something she cannot see or name. Correggio painted desire as atmosphere: you don&rsquo;t choose it, you breathe it in. The sex tax operates on the same principle &mdash; invisible, pervasive, impossible to refuse. Gil stands at the podium, surrounded by the apparatus of state power he cannot see clearly, and must decide whether to breathe or hold his breath.</p>
+    </div>
+
+</section>
+
+<!-- ============================================================ -->
+<!-- CHAPTER 30: FIGHT                                             -->
+<!-- ============================================================ -->
+
+<section class="chapter" id="chapter-30">
+  <h2>Chapter 30 &mdash; Fight</h2>
+
+  <div class="painting-full">
+    <img src="paintings/schiele_friendship.jpg" alt="Friendship by Egon Schiele, 1913">
+    <div class="caption">
+      <strong>Egon Schiele</strong> &mdash; <em>Friendship</em>, 1913
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p>Schiele died at twenty-eight, three days after his pregnant wife, both taken by the 1918 influenza pandemic. <em>Friendship</em> shows two figures pressed together with his characteristic angular intensity &mdash; the line between intimacy and aggression deliberately blurred. The title is either a euphemism or a provocation. Every tendon, every rib, every point of contact is drawn with the precision of someone who knew time was short.</p>
+    <p>Ruslan warns Gil: sign or die with your friends. Gil steps to the microphone. &ldquo;I find this bill bad for the Russian people and I am not going to sign it.&rdquo; A debate erupts between the two men &mdash; Gil arguing that the sex tax is theft of the most intimate human force, Ruslan insisting it is civic duty like any other tax. The crowd applauds. Sirens approach. Schiele&rsquo;s <em>Friendship</em> captures what the novel has been building toward: two people locked together in a bond that is neither love nor hatred but something that contains both, drawn with an urgency that knows the end is coming.</p>
+  </div>
+
+  <div class="divider">&#10038;</div>
+
+  <!-- BIBLE VERSE -->
+  <div class="text-block">
+    <h3>1 John 3:11</h3>
+    <p>The simplest verse assigned to any chapter in the novel, and the last. &ldquo;That we should love one another.&rdquo; Seven words. No metaphor, no allegory, no anatomical imagery, no wormwood, no two-edged swords. After Ezekiel&rsquo;s fury and Hosea&rsquo;s catalogue of sins and the three-fold repetition of Proverbs&rsquo; warning, the Bible&rsquo;s final word on the matter is this: love one another. That is the message from the beginning. That is the message at the end.</p>
+    <p>Gil refuses to sign. A debate erupts. The crowd applauds. Sirens approach. The novel ends not with resolution but with the sound of consequence arriving &mdash; the law unsigned, the system unbroken but challenged, the man who was brought to Russia as a puppet discovering that he is, in fact, a person. The verse is the smallest and largest thing the book can say. After all the erotic theology and political machinery and mathematical riddles, the answer is six words long and was there from the beginning.</p>
+  </div>
+
+  <div class="version-toggle">
+    <button class="active" onclick="toggleVerse('ch30','kjv')">King James (1611)</button>
+    <button onclick="toggleVerse('ch30','esv')">English Standard Version</button>
+  </div>
+
+  <blockquote id="ch30-kjv">
+    <p><strong>For this is the message that ye heard from the beginning, that we should love one another.</strong></p>
+    <span class="verse-ref">&mdash; 1 John 3:11 (KJV)</span>
+  </blockquote>
+
+  <blockquote id="ch30-esv" style="display:none;">
+    <p><strong>For this is the message that you have heard from the beginning, that we should love one another.</strong></p>
+    <span class="verse-ref">&mdash; 1 John 3:11 (ESV)</span>
+  </blockquote>
+
+    <div class="divider">&#10038;</div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/rodin_kiss.jpg" alt="The Kiss by Auguste Rodin">
+      <div class="caption">
+        <strong>Auguste Rodin</strong> &mdash; <em>The Kiss</em>, 1882<br>
+        Mus&eacute;e Rodin, Paris
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Rodin&rsquo;s marble lovers are caught in a kiss so consuming that the stone itself seems to soften. Originally titled <em>Francesca da Rimini</em> &mdash; after the adulterous lovers in Dante&rsquo;s <em>Inferno</em> who are condemned to an eternal whirlwind for a single kiss over a book &mdash; the sculpture insists that the kiss was worth damnation. The novel ends with six people huddled together in the last row of an Aeroflot plane, hidden under Jezebel&rsquo;s dark cone, holding each other. They are fugitives. They may be condemned. But they are together, and the kiss &mdash; the human connection at the center of everything &mdash; was worth every cost.</p>
+    </div>
+
+    <div class="painting-full">
+      <img src="paintings/extras/schiele_reclining.jpg" alt="Reclining Woman by Egon Schiele">
+      <div class="caption">
+        <strong>Egon Schiele</strong> &mdash; <em>Reclining Woman</em>, 1917<br>
+        Leopold Museum, Vienna
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Schiele&rsquo;s second appearance in this chapter is deliberate. Where <em>Friendship</em> above showed two figures locked in angular tension, <em>Reclining Woman</em> shows a single figure at rest &mdash; vulnerable, exposed, but no longer fighting. The novel&rsquo;s final image is not a battle won or a law defeated. It is a heartbeat heard in the dark: &ldquo;You are all so beautiful; you are all my true friends, I love you!&rdquo; After thirty chapters of desire weaponized, redistributed, taxed, and fought over, the last word is simply love &mdash; a body at rest, a Schiele figure who has stopped performing and simply exists.</p>
+    </div>
+
+</section>
+
+</div><!-- end all-chapters-content -->
+
+  <footer>
+    <a href="index.html">sextax.org</a> &nbsp;&middot;&nbsp; &copy; 2026 Zak Maymin
+  </footer>
+
+  <script>
+    // Author's Note verse toggle (legacy IDs)
+    function showVersion(v) {
+      document.getElementById('bible-kjv').style.display = v === 'kjv' ? '' : 'none';
+      document.getElementById('bible-esv').style.display = v === 'esv' ? '' : 'none';
+      var btns = document.querySelectorAll('#authors-note .version-toggle button');
+      btns[0].className = v === 'kjv' ? 'active' : '';
+      btns[1].className = v === 'esv' ? 'active' : '';
+    }
+    // Chapter 1 verse toggle (legacy IDs)
+    function showVersion2(v) {
+      document.getElementById('lev-kjv').style.display = v === 'kjv' ? '' : 'none';
+      document.getElementById('lev-esv').style.display = v === 'esv' ? '' : 'none';
+      var btns = document.querySelectorAll('#chapter-1 .version-toggle button');
+      btns[0].className = v === 'kjv' ? 'active' : '';
+      btns[1].className = v === 'esv' ? 'active' : '';
+    }
+    // Generalized toggle for chapters 2-30
+    function toggleVerse(ch, v) {
+      document.getElementById(ch + '-kjv').style.display = v === 'kjv' ? '' : 'none';
+      document.getElementById(ch + '-esv').style.display = v === 'esv' ? '' : 'none';
+      var section = document.getElementById(ch.replace('ch', 'chapter-'));
+      if (section) {
+        var btns = section.querySelectorAll('.version-toggle button');
+        btns[0].className = v === 'kjv' ? 'active' : '';
+        btns[1].className = v === 'esv' ? 'active' : '';
+      }
+    }
+
+    // Sidebar toggle (mobile)
+    (function() {
+      var sidebar = document.getElementById('sidebar');
+      var toggle = document.getElementById('sidebar-toggle');
+      var overlay = document.getElementById('sidebar-overlay');
+
+      function openSidebar() {
+        sidebar.classList.add('open');
+        overlay.classList.add('open');
+      }
+      function closeSidebar() {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('open');
+      }
+      toggle.addEventListener('click', function() {
+        sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+      });
+      overlay.addEventListener('click', closeSidebar);
+
+      // Close sidebar on link click (mobile)
+      sidebar.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          if (window.innerWidth <= 768) closeSidebar();
+        });
+      });
+
+      // Scroll-spy: highlight current chapter in sidebar
+      var sections = document.querySelectorAll('.chapter, #authors-note');
+      var sidebarLinks = sidebar.querySelectorAll('a[data-ch]');
+      var linkMap = {};
+      sidebarLinks.forEach(function(a) { linkMap[a.dataset.ch] = a; });
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            sidebarLinks.forEach(function(a) { a.classList.remove('active'); });
+            var link = linkMap[entry.target.id];
+            if (link) {
+              link.classList.add('active');
+              // Scroll sidebar to keep active link visible
+              link.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            }
+          }
+        });
+      }, { rootMargin: '-20% 0px -60% 0px' });
+
+      sections.forEach(function(s) { observer.observe(s); });
+    })();
+  </script>
+
+
+</body>
+</html>

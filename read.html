@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Read &mdash; Sex Tax by Zak Maymin</title>
+  <meta name="description" content="Read the Author's Note and opening chapter of Sex Tax, a political thriller by Zak Maymin.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Read &mdash; Sex Tax by Zak Maymin">
+  <meta property="og:description" content="Free preview: Author&rsquo;s Note and Chapter 1 of Sex Tax &mdash; a political thriller about power, desire, and a tax on sexual energy.">
+  <meta property="og:image" content="https://sextax.org/cover.jpg">
+  <meta property="og:url" content="https://sextax.org/read.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e0d0;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.8;
+    }
+
+    /* TAB NAV */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-bottom: 1px solid #1e1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0a0a0a;
+    }
+    .tab-nav a {
+      display: block;
+      padding: 1rem 2.5rem;
+      color: #666;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-nav a:hover { color: #b89060; }
+    .tab-nav a.active {
+      color: #c8860a;
+      border-bottom-color: #c8860a;
+    }
+
+    /* CHAPTER HEADER */
+    .chapter-header {
+      text-align: center;
+      padding: 4rem 2rem 1rem;
+    }
+    .chapter-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      color: #c8860a;
+      text-shadow: 0 0 30px rgba(200,120,10,0.2);
+      margin-bottom: 0.5rem;
+    }
+    .chapter-header .countdown {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+    .chapter-header .epigraph {
+      font-style: italic;
+      color: #999;
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .chapter-header .epigraph-source {
+      color: #666;
+      font-size: 0.9rem;
+      font-style: normal;
+      margin-top: 0.3rem;
+    }
+
+    /* CHAPTER TEXT */
+    .chapter-text {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+    .chapter-text p {
+      font-size: 1.05rem;
+      color: #d8d0c0;
+      margin-bottom: 1.2rem;
+      text-indent: 0;
+    }
+    .chapter-text p.scene-break {
+      text-align: center;
+      color: #c8860a;
+      font-size: 1.2rem;
+      letter-spacing: 0.5em;
+      margin: 2.5rem 0;
+      opacity: 0.5;
+    }
+    .chapter-text p.dialogue {
+      text-indent: 0;
+    }
+    .chapter-text p.first {
+      font-size: 1.15rem;
+      color: #e8e0d0;
+    }
+
+    /* AUTHOR'S NOTE */
+    .authors-note-header {
+      text-align: center;
+      padding: 4rem 2rem 1rem;
+    }
+    .authors-note-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      color: #c8860a;
+      text-shadow: 0 0 30px rgba(200,120,10,0.2);
+      margin-bottom: 0.5rem;
+    }
+    .authors-note-header .epigraph {
+      font-style: italic;
+      color: #999;
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .authors-note-header .epigraph-source {
+      color: #666;
+      font-size: 0.9rem;
+      font-style: normal;
+      margin-top: 0.3rem;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      border-top: 1px solid #1e1e1e;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .cta-section p {
+      color: #888;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .btn {
+      display: inline-block;
+      background: #c8860a;
+      color: #0a0a0a;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 2.5rem;
+      border-radius: 2px;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 20px rgba(200,120,10,0.3);
+    }
+    .btn:hover {
+      background: #e09a20;
+      box-shadow: 0 0 30px rgba(200,120,10,0.6);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #c8860a;
+      border: 1px solid #c8860a;
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: rgba(200,134,10,0.1);
+      box-shadow: none;
+    }
+
+    /* BUY SECTION */
+    .buy-section {
+      text-align: center;
+      padding: 2rem 2rem 4rem;
+      border-top: 1px solid #1e1e1e;
+    }
+    .buy-section h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+    }
+
+    /* DIVIDER */
+    .divider {
+      text-align: center;
+      color: #c8860a;
+      font-size: 1.4rem;
+      letter-spacing: 0.5em;
+      padding: 1rem 0 3rem;
+      opacity: 0.5;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #151515;
+      color: #444;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    footer a {
+      color: #666;
+      text-decoration: none;
+    }
+    footer a:hover { color: #c8860a; }
+  </style>
+</head>
+<body>
+
+  <nav class="tab-nav">
+    <a href="index.html">The Novel</a>
+    <a href="read.html" class="active">Read</a>
+    <a href="background.html">Background</a>
+  </nav>
+
+  <!-- ====== AUTHOR'S NOTE ====== -->
+
+  <div id="authors-note" class="authors-note-header">
+    <h1>AUTHOR&rsquo;S NOTE</h1>
+    <div class="epigraph">
+      &ldquo;They promise freedom, but they themselves are slaves of sin and corruption.&rdquo;
+      <div class="epigraph-source">&mdash; 2 Peter 2:19</div>
+    </div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p>Have you heard of the Liberal Paradox? It&rsquo;s sometimes called Sen&rsquo;s Paradox, after Amartya Sen&rsquo;s article in the <em>Journal of Political Economy</em>, 1970, titled &ldquo;The Impossibility of a Paretian Liberal.&rdquo;</p>
+
+    <p>Suppose you are looking forward to reading this book. You know you&rsquo;ll enjoy it. You think there&rsquo;s nothing wrong with books like these and it&rsquo;s healthy and normal to read them. Following Sen, let&rsquo;s call you Lewd.</p>
+
+    <p>Or suppose you think that books like these are indecent, unhealthy, abnormal, and should be burned unread. Again, following Sen, let&rsquo;s call you Prude.</p>
+
+    <p>Now suppose that Lewd would prefer convincing Prude to read it even more than reading it herself. She thinks it&rsquo;ll open his horizons and will help him to live a more enjoyable life. That&rsquo;s the kind of girl Lewd is.</p>
+
+    <p>As to Prude, he thinks it&rsquo;s simply wrong to enjoy reading such books. So if the book isn&rsquo;t burned, and if someone does read it, he&rsquo;d prefer to read it himself rather than let Lewd read it. That&rsquo;s the kind of guy Prude is.</p>
+
+    <p>Who should read it? It&rsquo;s a conundrum, right?</p>
+
+    <p>A government worker to the rescue. Let&rsquo;s call her Shrewd. Being a part of the government, she has real power and can make things happen. As any government employee, she is a good person and makes her decisions carefully. She wants to make the best decision in the best interest of people, of course. Should Shrewd make Lewd read this book, make Prude read it, or burn it unread?</p>
+
+    <p>Shrewd knows her constituents and takes their wishes into account, trying to satisfy them as best as possible. She ranks &ldquo;Lewd reads&rdquo; higher than &ldquo;Burn it&rdquo; because Lewd wanted to read the book, and ranks &ldquo;Burn it&rdquo; higher than &ldquo;Prude reads&rdquo; because Prude thinks it&rsquo;s an indecent book and should be burned rather than read. Therefore &ldquo;Lewd reads&rdquo; is ranked higher than &ldquo;Prude reads,&rdquo; and Shrewd&rsquo;s final judgement is for Lewd to read the book.</p>
+
+    <p>So what&rsquo;s the problem?</p>
+
+    <p>The problem is that both Prude and Lewd regard this outcome as worse than &ldquo;Prude reads.&rdquo; Lewd wanted Prude to read it more than reading it herself, remember? And Prude preferred to read it himself rather than let Lewd enjoy it. Both got the outcome neither wanted.</p>
+
+    <p>This is just one example, but Sen proved in general that no social decision rule can simultaneously respect individual liberty and produce Pareto-efficient outcomes. In plain language: even a perfectly fair government, with perfect information and the best intentions, will make choices that leave everyone worse off than if they&rsquo;d been left alone.</p>
+
+    <p>Three lessons. One: talk to each other about your preferences &mdash; be open, be sincere. Two: don&rsquo;t count on the government, or anybody else, to decide for you, because even with expertise and goodwill, they will screw it up. Three &mdash; the most important lesson of all &mdash; whether you are Lewd, or Prude, or Shrewd: read this book.</p>
+
+    <p>You may &mdash; no, you will &mdash; learn something you didn&rsquo;t know before. Something important. And who knows, upon reflection, you might even change your views on some familiar and universally accepted social constructs that reduce our freedom in the name of fairness. But above all &mdash; enjoy it.</p>
+
+  </div>
+
+  <!-- ====== CHAPTER ONE ====== -->
+
+  <div id="chapter-1" class="chapter-header">
+    <h1>CHAPTER ONE: CORRECTION</h1>
+    <div class="countdown">15 Days Before the Signing</div>
+    <div class="epigraph">
+      &ldquo;You shall not uncover the nakedness of a woman and her daughter.&rdquo;
+      <div class="epigraph-source">&mdash; Leviticus 18:17</div>
+    </div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p class="first">The correction was coming.</p>
+
+    <p>From above, they looked like ants &mdash; determined ants crawling home from all directions. Old and young, dressed up and dressed down, in small groups and alone. A diverse crowd, except for one thing.</p>
+
+    <p>There were no women. Only men.</p>
+
+    <p>And another puzzle: in a determined crowd, people usually move in the same direction. Here, at the origin, their paths diverged &mdash; from the north along the two-lane road from Ryazan, from the east through the birch forest, from the south across harvested wheat fields &mdash; yet their destination was the same: a small wooden house surrounded by cornfields in a valley a hundred and ninety kilometers south of Moscow.</p>
+
+    <p>They hadn&rsquo;t realized yet, but the correction was coming from above. A point in the sky, the center of an ever-increasing sound of rotors.</p>
+
+    <p>Camouflaged in gray, red, and blue, a Mil Mi-8MTV-5 transport helicopter carried twenty Spetsnaz officers of the Federal Security Service on a classified mission. They wore black tactical uniforms and K6-3 titanium helmets with ballistic visors pushed up on their foreheads. They sat in the leather seats and sofas of the Presidential variant &mdash; a machine designed for war but furnished for heads of state, its cabin walls lined with Karelian birch veneer, its floor carpeted in navy blue, its overhead bins stocked with crystal tumblers and bottles of Beluga Noble that rattled gently with the vibration of the twin Klimov TV3-117 turboshaft engines. Through the oval windows, they could see the men below: running, driving, biking, walking, all converging on the farmhouse like filings drawn to a magnet.</p>
+
+    <p>They were in a good mood. A communications officer from their support group was telling a story about a panic call he&rsquo;d received on the FSB hotline. He performed both voices, hamming it up.</p>
+
+    <p>&ldquo;There is a woman.&rdquo;</p>
+    <p>&ldquo;What?&rdquo;</p>
+    <p>&ldquo;A woman.&rdquo;</p>
+    <p>&ldquo;Good.&rdquo;</p>
+    <p>&ldquo;You don&rsquo;t understand. She is attractive.&rdquo;</p>
+
+    <p>The officers glanced at each other, grinning. One said, chuckling: &ldquo;She&rsquo;s hot, so he&rsquo;s calling the hotline.&rdquo;</p>
+
+    <p>&ldquo;You don&rsquo;t understand. She is very attractive.&rdquo;</p>
+    <p>&ldquo;How attractive?&rdquo;</p>
+    <p>&ldquo;Great eyes, unbelievable breasts, great ass.&rdquo;</p>
+
+    <p>Laughter. &ldquo;Great ass! Calling the FSB because only we can handle that!&rdquo;</p>
+
+    <p>&ldquo;Why is it a problem?&rdquo;</p>
+    <p>&ldquo;She creates a disorder.&rdquo;</p>
+    <p>&ldquo;Because she&rsquo;s attractive?&rdquo;</p>
+    <p>&ldquo;Yes. Because everybody wants to have sex with her.&rdquo;</p>
+    <p>&ldquo;And why is that a problem?&rdquo;</p>
+    <p>&ldquo;Because men are quitting their jobs and leaving their families to pursue her. Work has stopped. The crops are rotting.&rdquo;</p>
+
+    <p>&ldquo;So, what did you tell him?&rdquo;</p>
+
+    <p>&ldquo;I calmed him down. I said we know. The governor called us. We are on our&mdash;&rdquo;</p>
+
+    <p>He didn&rsquo;t finish.</p>
+
+    <p>His face went red. His hands clawed at his throat, fighting something invisible. A choking sound &mdash; wet, strained, animal &mdash; and then silence. He couldn&rsquo;t breathe.</p>
+
+    <p>At the entrance to the forward compartment, six feet away, stood the Director.</p>
+
+    <p>Ruslan Olegovich Kedrov was four feet six inches tall. The deficit was concentrated entirely in his legs, which gave his torso the proportions of a much larger man folded into a smaller frame. He wore a charcoal suit tailored in Milan, a white shirt with no tie, and handmade shoes with lifts he believed no one noticed. Everyone noticed. No one mentioned it. He stood perfectly still, his pale eyes fixed on the communications officer.</p>
+
+    <p>The man&rsquo;s face turned from red to blue. His body gave a single violent jolt, then went slack against the seat.</p>
+
+    <p>Ruslan walked to the body. He opened its mouth. From his breast pocket he produced a small knife &mdash; old, ceremonial-looking, with a handle of dark bone &mdash; and cut off the tip of the tongue. No blood came. He raised the severed tip above his head and turned a full, slow circle, forcing every man to meet his eyes.</p>
+
+    <p>Then he said to the two nearest officers: &ldquo;Throw him away.&rdquo;</p>
+
+    <p>They carried the body to the tail section. The rear clamshell doors opened. The body tumbled into the slipstream and disappeared. Before the doors closed, Ruslan tossed out the tip of the tongue and walked back to the front.</p>
+
+    <p>The cabin was silent. No one moved. No one breathed louder than necessary.</p>
+
+    <p>Ruslan turned on the cabin television. A video began to play.</p>
+
+    <p>&ldquo;Take them out,&rdquo; he said.</p>
+
+    <p>Twenty zippers came down.</p>
+
+    <p>He inspected the compliance. Most had followed the order precisely; a few had been conservative; two went for full display. After what they had just witnessed, no one was aroused. Their exposed flesh hung inert.</p>
+
+    <p>&ldquo;Now.&rdquo;</p>
+
+    <p>The command was clear. They began, eyes fixed on the screen. Ruslan increased the volume to mask their sounds. He walked to the galley, returned with a box of tissues, and circulated through the cabin distributing them individually, pausing at each man like a flight attendant offering refreshments on a long-haul flight. One by one, they finished. Two officers at the back struggled with the assignment &mdash; their hands shaking, their eyes wet, unable to separate what they&rsquo;d just seen from what they&rsquo;d been ordered to do. The rest waited. When the last man was done, Ruslan said: &ldquo;Zip up.&rdquo;</p>
+
+    <p>He returned to the forward section.</p>
+
+    <p>Here is what they did not understand, and what Ruslan would never explain: a Spetsnaz team about to encounter a woman of extraordinary sexual power needed to be drained. A man carrying a loaded weapon into the presence of a woman who could make him abandon his post, his mission, and his identity with a single glance &mdash; that man needed to arrive empty. The cruelty was not incidental. It was the protocol.</p>
+
+    <p>The Mi-8 settled on the dirt road beside the farmhouse, and the operation went by the book: officers sprinting in tactical formation, securing exits and windows, smoke grenades through shattered glass, the battering ram splintering the front door. Two shots from inside. A naked man bolting through the yard. Then the woman emerged &mdash; naked, an officer gripping each arm, heads down, moving fast toward the helicopter.</p>
+
+    <p>The crowd of men surrounding the house screamed. Someone fired a pistol. The door-mounted PKM answered &mdash; a five-second burst that scattered the mob and left three bodies in the dirt. Sixty seconds later, the last officers were aboard and the Mi-8 lifted off, hovered for a moment as if remembering where Moscow was, then banked north.</p>
+
+    <p>Inside, the woman was in the forward compartment with Ruslan. No one saw her.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>Two hours later, the helicopter touched down on the helipad atop the Senate building inside the Kremlin walls. The woman, wrapped in a gray wool blanket, was escorted through a steel service door and down two flights of stairs to Ruslan&rsquo;s suite, where a preparation team of six female officers was waiting: stylist, physician, two makeup artists, manicurist, hairdresser. They worked in coordinated silence. In thirty minutes she was ready. She was transferred to the adjacent office &mdash; the office of the President of the Russian Federation.</p>
+
+    <p>Ruslan checked his watch. He was on time for his regular afternoon meeting with the President&rsquo;s wife. He walked to her office, on the other side of the President&rsquo;s.</p>
+
+    <p>They started with sex, as they always did.</p>
+
+    <p>An outsider would never have guessed they were lovers. They couldn&rsquo;t look more different. Ruslan &mdash; compact, smooth-faced, almost boyish at fifty-three. Klementina Arkadyevna Savina &mdash; six feet tall, past sixty, but looking no older than thirty: no lines, no slack, a complexion sustained by decades of work with elixirs and preparations that had nothing to do with any pharmacy. His youthful appearance was anatomical; hers was something else entirely.</p>
+
+    <p>They were busy today &mdash; too much to discuss &mdash; so they selected the fastest setting on the Romantic Enhancer, a device Klementina kept in a lacquered cabinet beside her desk. The session was brief, practiced, efficient. Ruslan wasn&rsquo;t concerned about performance. A half-dozen sessions a day had never been a problem, and today had been no exception. It wasn&rsquo;t a problem for Klementina either. They showed each other appropriate appreciation &mdash; kisses, sounds, the choreography of two people who had been doing this for years and still derived genuine, if familiar, pleasure. They were not committed to each other. Both knew. Both were comfortable.</p>
+
+    <p>Afterward, they drank mineral water &mdash; always mineral water, always immediately &mdash; and moved to the business section of her office.</p>
+
+    <p>The main issue: the President&rsquo;s worsening behavior.</p>
+
+    <p>They had invested too much in the installation of Valery Zamogilny to take it lightly. The mood swings were a symptom. The disease was that Valera, surrounded by flatterers &mdash; politicians, generals, oligarchs, cultural figures &mdash; had begun to believe he could operate without their guidance. Ruslan and Klementina required no credit. They wanted only stability, reasonable policies, and the continuation of the programs they&rsquo;d built. But Valera&rsquo;s growing independence was alarming.</p>
+
+    <p>Ruslan raised a hypothesis he&rsquo;d mentioned before: perhaps Klementina, who was Valera&rsquo;s primary and usually sole sexual partner, was no longer sufficient. The tantrums might be sexual frustration displaced onto politics.</p>
+
+    <p>Klementina dismissed this.</p>
+
+    <p>Ruslan pressed. He cited the Coolidge Effect &mdash; male rats, exhausted from mating, become instantly aroused when a new female is introduced. The stimulus isn&rsquo;t quality. It&rsquo;s novelty.</p>
+
+    <p>She replied that she was, in effect, a multitude of females. She could change not only her technique and personality but her physical characteristics with an ease that other women brought to changing earrings.</p>
+
+    <p>True. He knew it. But he remained unconvinced, which was why the woman from Ryazan was now in the next room.</p>
+
+    <p>He also told Klementina about the consultancy in Milan &mdash; Gemini Profiling &mdash; that maintained a global photographic database and could usually locate a physical double for any individual within seventy-two hours. A contingency plan, in case Valera became unmanageable.</p>
+
+    <p>&ldquo;Should we explore that option?&rdquo; he asked.</p>
+
+    <p>&ldquo;Perhaps later,&rdquo; she said. &ldquo;First, let&rsquo;s fix what we have. We don&rsquo;t have time for experiments.&rdquo;</p>
+
+    <p>She was right about time. In two weeks &mdash; on Ivan Kupala&rsquo;s Night, June 23rd, the ancient midsummer festival &mdash; the President was required to publicly sign the annual renewal of the Citizen Sex Tax Bill. If the bill went unsigned, the entire apparatus of sexual energy redistribution would collapse. Every ROMUS device in every clinic, military base, police station, and school in Russia would go dark. And every device they had quietly delivered to allies abroad would become evidence of an illegal program conducted without the knowledge of those nations&rsquo; citizens.</p>
+
+    <p>Ruslan opened the nightstand, took two Havana cigars from the box, cut them, and lit both. He offered one to Klementina. She took it.</p>
+
+    <p>His phone rang. The President.</p>
+
+    <p>&ldquo;Ruslan. The damn Enhancer didn&rsquo;t work. Come here and clean this up.&rdquo;</p>
+
+    <p>He dropped his cigar in the ashtray and ran.</p>
+
+    <p>The President was in his office, pale as paper, pulling on his trousers. He gestured toward the bathroom with the expression of a man who has broken something expensive and wants someone else to deal with it.</p>
+
+  </div>
+
+  <!-- ====== CTA ====== -->
+
+  <div class="cta-section">
+    <p>Want to keep reading? Subscribe for free chapters 2&ndash;4 and the full background material.</p>
+    <a href="index.html" class="btn" style="margin-bottom: 1.5rem;">Subscribe Free</a>
+  </div>
+
+  <div class="divider">&#10038; &nbsp; &#10038; &nbsp; &#10038;</div>
+
+  <section class="buy-section">
+    <h2>Available Soon</h2>
+    <a href="https://www.amazon.com/Sex-Tax-Zak-Maymin-ebook/dp/B0GSQ715Y5" class="btn" target="_blank">Pre-Order on Amazon &mdash; $0.99</a>
+  </section>
+
+  <footer>
+    <a href="index.html">sextax.org</a> &nbsp;&middot;&nbsp; &copy; 2026 Zak Maymin
+  </footer>
+
+</body>
+</html>

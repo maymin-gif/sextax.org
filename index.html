@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sex Tax — A Novel by Zak Maymin</title>
+  <meta name="description" content="A political thriller with even more heat and more intelligence than the title suggests.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Sex Tax — A Novel by Zak Maymin">
+  <meta property="og:description" content="What if the government could tax desire? A political thriller with even more heat and more intelligence than the title suggests.">
+  <meta property="og:image" content="https://sextax.org/cover.jpg">
+  <meta property="og:url" content="https://sextax.org">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e0d0;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.7;
+    }
+
+    /* TAB NAV */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-bottom: 1px solid #1e1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0a0a0a;
+    }
+    .tab-nav a {
+      display: block;
+      padding: 1rem 2.5rem;
+      color: #666;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-nav a:hover { color: #b89060; }
+    .tab-nav a.active {
+      color: #c8860a;
+      border-bottom-color: #c8860a;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 2rem;
+      position: relative;
+      background: radial-gradient(ellipse at center, #1a0a00 0%, #0a0a0a 70%);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 60%, rgba(200,80,0,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cover-img {
+      width: min(340px, 80vw);
+      box-shadow: 0 0 60px rgba(200,80,0,0.4), 0 0 120px rgba(200,40,0,0.15);
+      border-radius: 4px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 8vw, 5.5rem);
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      color: #c8860a;
+      text-shadow: 0 0 40px rgba(200,120,10,0.5);
+      line-height: 1.1;
+    }
+
+    .hero .author {
+      font-size: 1.1rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #888;
+      margin-top: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .tagline {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-style: italic;
+      color: #b89060;
+      max-width: 540px;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #c8860a;
+      color: #0a0a0a;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 2.5rem;
+      border-radius: 2px;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 20px rgba(200,120,10,0.3);
+    }
+    .btn:hover {
+      background: #e09a20;
+      box-shadow: 0 0 30px rgba(200,120,10,0.6);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #c8860a;
+      border: 1px solid #c8860a;
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: rgba(200,134,10,0.1);
+      box-shadow: none;
+    }
+
+    /* HERO SIGNUP */
+    .hero-signup {
+      margin-top: 2rem;
+      max-width: 420px;
+    }
+    .hero-signup-label {
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      color: #888;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    /* HOOK QUOTE */
+    .hook {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+      border-top: 1px solid #1e1e1e;
+    }
+    .hook p {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      font-style: italic;
+      color: #b89060;
+      margin-bottom: 0.8rem;
+    }
+    .hook .hook-source {
+      font-size: 0.85rem;
+      color: #555;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 1rem;
+    }
+    .hook .read-link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #c8860a;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid rgba(200,134,10,0.3);
+      transition: border-color 0.2s;
+    }
+    .hook .read-link:hover { border-bottom-color: #c8860a; }
+
+    /* DESCRIPTION */
+    .description {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 1px solid #1e1e1e;
+    }
+
+    .description p {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: #c8bfb0;
+      margin-bottom: 1.2rem;
+    }
+
+    .description p:first-child {
+      font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+      color: #d8cfc0;
+    }
+
+    /* SIGNUP */
+    .signup-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 1px solid #1e1e1e;
+    }
+    .signup-section h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 0.8rem;
+      font-weight: normal;
+    }
+    .signup-section p {
+      color: #888;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-family: Arial, sans-serif;
+    }
+
+    /* DIVIDER */
+    .divider {
+      text-align: center;
+      color: #c8860a;
+      font-size: 1.4rem;
+      letter-spacing: 0.5em;
+      padding: 1rem 0 3rem;
+      opacity: 0.5;
+    }
+
+    /* BUY SECTION */
+    .buy-section {
+      text-align: center;
+      padding: 2rem 2rem 4rem;
+      border-top: 1px solid #1e1e1e;
+    }
+
+    .buy-section h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+    }
+
+    /* AUTHOR */
+    .author-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      border-top: 1px solid #1e1e1e;
+    }
+    .author-section h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 2rem;
+      font-weight: normal;
+      text-align: center;
+    }
+    .author-inner {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+    .author-photo {
+      width: 160px;
+      min-width: 160px;
+      border-radius: 4px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .author-bio p {
+      font-size: 1rem;
+      color: #b8b0a0;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 600px) {
+      .author-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .author-photo { width: 140px; min-width: 140px; }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #151515;
+      color: #444;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="tab-nav">
+    <a href="index.html" class="active">The Novel</a>
+    <a href="chapters_1_4.html">Read Free Chapters</a>
+    <a href="background.html">Background</a>
+  </nav>
+
+  <section class="hero">
+    <img src="cover.jpg" alt="Sex Tax book cover" class="cover-img">
+    <h1>SEX TAX</h1>
+    <div class="author">A Novel by Zak Maymin</div>
+    <p class="tagline">What if the government could tax desire?</p>
+    <a href="https://www.amazon.com/Sex-Tax-Zak-Maymin-ebook/dp/B0GSQ715Y5" class="btn" target="_blank">Pre-Order on Amazon &mdash; $0.99</a>
+    <p style="color:#888; font-family: Arial, sans-serif; font-size: 0.85rem; margin-top: 0.8rem;">Pre-order price $0.99 &mdash; $7.99 after launch</p>
+  </section>
+
+  <section class="hook">
+    <p>&ldquo;There is a woman.&rdquo;</p>
+    <p>&ldquo;She is very attractive.&rdquo;</p>
+    <p>&ldquo;Because everybody wants to have sex with her.&rdquo;</p>
+    <p>&ldquo;The crops are rotting.&rdquo;</p>
+    <div class="hook-source">From Chapter 1</div>
+    <a href="chapters_1_4.html" class="read-link">Read the first three chapters free &rarr;</a>
+  </section>
+
+  <section class="description">
+    <p><strong>Gil is a PhD student. He is nineteen years old. He is a virgin. He understands math. He does not understand women. He probably never will.</strong></p>
+    <p>A criminal charge he didn&rsquo;t see coming leaves him with one exit. That exit leads to Moscow, to a man in a coma. One signature will change the country &mdash; and maybe the world &mdash; forever. Gil has the right face to do it. He has every reason to sign. And every reason not to.</p>
+    <p>Between his arrival and that signature: an ancient war between Black and White Witches converging on this exact moment. The Book of Exodus &mdash; read in a way you have not read it before, and that Moses himself did not anticipate. Mathematical riddles with real consequences. And desire &mdash; specific, burning, and nothing like the theory.</p>
+    <p><em>Sex Tax is a political thriller with even more heat and more intelligence than the title suggests.</em></p>
+    <p style="color:#888; margin-top:1rem;">For the background and related academic papers, folklore, biblical passages, historical paintings, videos, and more &mdash; <a href="background.html" style="color:#c8860a; text-decoration:none; border-bottom:1px solid rgba(200,134,10,0.3);">explore the companion material</a></p>
+  </section>
+
+  <div class="divider">&#10038; &nbsp; &#10038; &nbsp; &#10038;</div>
+
+  <section class="buy-section">
+    <h2>Available Soon</h2>
+    <a href="https://www.amazon.com/Sex-Tax-Zak-Maymin-ebook/dp/B0GSQ715Y5" class="btn" target="_blank">Pre-Order on Amazon &mdash; $0.99</a>
+    <p style="color:#888; font-family: Arial, sans-serif; font-size: 0.85rem; margin-top: 0.8rem;">Pre-order price $0.99 &mdash; $7.99 after launch</p>
+    <p style="color:#888; font-family: Arial, sans-serif; font-size: 0.95rem; margin-top: 2rem;">Already read it? <a href="https://www.amazon.com/Sex-Tax-Zak-Maymin-ebook/dp/B0GSQ715Y5" style="color:#c8860a; text-decoration:none; border-bottom:1px solid rgba(200,134,10,0.3);" target="_blank">Leave a review on Amazon</a> &mdash; it makes a real difference.</p>
+  </section>
+
+  <div class="divider">&#10038; &nbsp; &#10038; &nbsp; &#10038;</div>
+
+  <section class="author-section">
+    <h2>About the Author</h2>
+    <div class="author-inner">
+      <img src="author.jpg" alt="Zak Maymin" class="author-photo">
+      <div class="author-bio">
+        <p><strong>Zak Maymin</strong> is an award-winning and best-selling author with a Ph.D. in mathematics from MIT. He has published fiction and non-fiction for children and adults on ethical and moral issues, using mathematical training and first-principles thinking to analyze social problems through the Socratic method.</p>
+        <p>Before he started writing books, he was a professor, portfolio manager, and chess player.</p>
+        <p>As an immigrant from Russia, Zak recognizes the warning signs of a country turning itself into a totalitarian state &mdash; and writes about what that looks like from the inside.</p>
+        <p>He has many children and grandchildren and lives in Connecticut.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Zak Maymin &nbsp;&middot;&nbsp; sextax.org &nbsp;&middot;&nbsp; <a href="mailto:gilgabler@gmail.com" style="color:#666;text-decoration:none;border-bottom:1px solid #333;">gilgabler@gmail.com</a>
+  </footer>
+
+</body>
+</html>

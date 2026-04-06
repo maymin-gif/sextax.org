@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chapters 1&ndash;4 &mdash; Sex Tax by Zak Maymin</title>
+  <meta name="description" content="Read the Author's Note and Chapters 1–4 of Sex Tax, a political thriller by Zak Maymin.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Chapters 1&ndash;4 &mdash; Sex Tax">
+  <meta property="og:description" content="Read the Author's Note and first four chapters of Sex Tax free &mdash; a political thriller about power, desire, and a tax on sexual energy.">
+  <meta property="og:image" content="https://sextax.org/cover.jpg">
+  <meta property="og:url" content="https://sextax.org/chapters.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0a0a0a;
+      color: #e8e0d0;
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.8;
+    }
+
+    /* TAB NAV */
+    .tab-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      border-bottom: 1px solid #1e1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #0a0a0a;
+    }
+    .tab-nav a {
+      display: block;
+      padding: 1rem 2.5rem;
+      color: #666;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .tab-nav a:hover { color: #b89060; }
+    .tab-nav a.active {
+      color: #c8860a;
+      border-bottom-color: #c8860a;
+    }
+
+    /* CHAPTER NAV */
+    .chapter-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.5rem;
+      padding: 1.2rem 1rem;
+      border-bottom: 1px solid #1e1e1e;
+      background: #0a0a0a;
+    }
+    .chapter-nav a {
+      color: #c8860a;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.5rem;
+      transition: color 0.2s;
+    }
+    .chapter-nav a:hover {
+      color: #e09a20;
+    }
+
+    /* CHAPTER HEADER */
+    .chapter-header {
+      text-align: center;
+      padding: 4rem 2rem 1rem;
+    }
+    .chapter-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      color: #c8860a;
+      text-shadow: 0 0 30px rgba(200,120,10,0.2);
+      margin-bottom: 0.5rem;
+    }
+    .chapter-header .countdown {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #888;
+      margin-bottom: 1.5rem;
+    }
+    .chapter-header .epigraph {
+      font-style: italic;
+      color: #999;
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .chapter-header .epigraph-source {
+      color: #666;
+      font-size: 0.9rem;
+      font-style: normal;
+      margin-top: 0.3rem;
+    }
+
+    /* CHAPTER TEXT */
+    .chapter-text {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+    .chapter-text p {
+      font-size: 1.05rem;
+      color: #d8d0c0;
+      margin-bottom: 1.2rem;
+      text-indent: 0;
+    }
+    .chapter-text p.scene-break {
+      text-align: center;
+      color: #c8860a;
+      font-size: 1.2rem;
+      letter-spacing: 0.5em;
+      margin: 2.5rem 0;
+      opacity: 0.5;
+    }
+    .chapter-text p.dialogue {
+      text-indent: 0;
+    }
+    .chapter-text p.first {
+      font-size: 1.15rem;
+      color: #e8e0d0;
+    }
+
+    /* AUTHOR'S NOTE */
+    .authors-note-header {
+      text-align: center;
+      padding: 4rem 2rem 1rem;
+    }
+    .authors-note-header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: normal;
+      letter-spacing: 0.08em;
+      color: #c8860a;
+      text-shadow: 0 0 30px rgba(200,120,10,0.2);
+      margin-bottom: 0.5rem;
+    }
+    .authors-note-header .epigraph {
+      font-style: italic;
+      color: #999;
+      font-size: 1rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .authors-note-header .epigraph-source {
+      color: #666;
+      font-size: 0.9rem;
+      font-style: normal;
+      margin-top: 0.3rem;
+    }
+
+    /* CTA */
+    .cta-section {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      border-top: 1px solid #1e1e1e;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .cta-section p {
+      color: #888;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .btn {
+      display: inline-block;
+      background: #c8860a;
+      color: #0a0a0a;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.85rem 2.5rem;
+      border-radius: 2px;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 20px rgba(200,120,10,0.3);
+    }
+    .btn:hover {
+      background: #e09a20;
+      box-shadow: 0 0 30px rgba(200,120,10,0.6);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #c8860a;
+      border: 1px solid #c8860a;
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: rgba(200,134,10,0.1);
+      box-shadow: none;
+    }
+
+    /* BUY SECTION */
+    .buy-section {
+      text-align: center;
+      padding: 2rem 2rem 4rem;
+      border-top: 1px solid #1e1e1e;
+    }
+    .buy-section h2 {
+      font-size: 1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #666;
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+    }
+
+    /* DIVIDER */
+    .divider {
+      text-align: center;
+      color: #c8860a;
+      font-size: 1.4rem;
+      letter-spacing: 0.5em;
+      padding: 1rem 0 3rem;
+      opacity: 0.5;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #151515;
+      color: #444;
+      font-family: Arial, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    footer a {
+      color: #666;
+      text-decoration: none;
+    }
+    footer a:hover { color: #c8860a; }
+  </style>
+</head>
+<body>
+
+  <nav class="tab-nav">
+    <a href="index.html">The Novel</a>
+    <a href="read.html" class="active">Read</a>
+    <a href="background.html">Background</a>
+  </nav>
+
+  <nav class="chapter-nav">
+    <a href="#authors-note">Author&rsquo;s Note</a>
+    <a href="#chapter-1">Ch 1</a>
+    <a href="#chapter-2">Ch 2</a>
+    <a href="#chapter-3">Ch 3</a>
+    <a href="#chapter-4">Ch 4</a>
+  </nav>
+
+  <!-- ====== AUTHOR'S NOTE ====== -->
+
+  <div id="authors-note" class="authors-note-header">
+    <h1>AUTHOR&rsquo;S NOTE</h1>
+    <div class="epigraph">
+      &ldquo;They promise freedom, but they themselves are slaves of sin and corruption.&rdquo;
+      <div class="epigraph-source">&mdash; 2 Peter 2:19</div>
+    </div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p>Have you heard of the Liberal Paradox? It&rsquo;s sometimes called Sen&rsquo;s Paradox, after Amartya Sen&rsquo;s article in the <em>Journal of Political Economy</em>, 1970, titled &ldquo;The Impossibility of a Paretian Liberal.&rdquo;</p>
+
+    <p>Suppose you are looking forward to reading this book. You know you&rsquo;ll enjoy it. You think there&rsquo;s nothing wrong with books like these and it&rsquo;s healthy and normal to read them. Following Sen, let&rsquo;s call you Lewd.</p>
+
+    <p>Or suppose you think that books like these are indecent, unhealthy, abnormal, and should be burned unread. Again, following Sen, let&rsquo;s call you Prude.</p>
+
+    <p>Now suppose that Lewd would prefer convincing Prude to read it even more than reading it herself. She thinks it&rsquo;ll open his horizons and will help him to live a more enjoyable life. That&rsquo;s the kind of girl Lewd is.</p>
+
+    <p>As to Prude, he thinks it&rsquo;s simply wrong to enjoy reading such books. So if the book isn&rsquo;t burned, and if someone does read it, he&rsquo;d prefer to read it himself rather than let Lewd read it. That&rsquo;s the kind of guy Prude is.</p>
+
+    <p>Who should read it? It&rsquo;s a conundrum, right?</p>
+
+    <p>A government worker to the rescue. Let&rsquo;s call her Shrewd. Being a part of the government, she has real power and can make things happen. As any government employee, she is a good person and makes her decisions carefully. She wants to make the best decision in the best interest of people, of course. Should Shrewd make Lewd read this book, make Prude read it, or burn it unread?</p>
+
+    <p>Shrewd knows her constituents and takes their wishes into account, trying to satisfy them as best as possible. She ranks &ldquo;Lewd reads&rdquo; higher than &ldquo;Burn it&rdquo; because Lewd wanted to read the book, and ranks &ldquo;Burn it&rdquo; higher than &ldquo;Prude reads&rdquo; because Prude thinks it&rsquo;s an indecent book and should be burned rather than read. Therefore &ldquo;Lewd reads&rdquo; is ranked higher than &ldquo;Prude reads,&rdquo; and Shrewd&rsquo;s final judgement is for Lewd to read the book.</p>
+
+    <p>So what&rsquo;s the problem?</p>
+
+    <p>The problem is that both Prude and Lewd regard this outcome as worse than &ldquo;Prude reads.&rdquo; Lewd wanted Prude to read it more than reading it herself, remember? And Prude preferred to read it himself rather than let Lewd enjoy it. Both got the outcome neither wanted.</p>
+
+    <p>This is just one example, but Sen proved in general that no social decision rule can simultaneously respect individual liberty and produce Pareto-efficient outcomes. In plain language: even a perfectly fair government, with perfect information and the best intentions, will make choices that leave everyone worse off than if they&rsquo;d been left alone.</p>
+
+    <p>Three lessons. One: talk to each other about your preferences &mdash; be open, be sincere. Two: don&rsquo;t count on the government, or anybody else, to decide for you, because even with expertise and goodwill, they will screw it up. Three &mdash; the most important lesson of all &mdash; whether you are Lewd, or Prude, or Shrewd: read this book.</p>
+
+    <p>You may &mdash; no, you will &mdash; learn something you didn&rsquo;t know before. Something important. And who knows, upon reflection, you might even change your views on some familiar and universally accepted social constructs that reduce our freedom in the name of fairness. But above all &mdash; enjoy it.</p>
+
+  </div>
+
+  <!-- ====== CHAPTER ONE ====== -->
+
+  <div id="chapter-1" class="chapter-header">
+    <h1>CHAPTER ONE: CORRECTION</h1>
+    <div class="countdown">15 Days Before the Signing</div>
+    <div class="epigraph">
+      &ldquo;You shall not uncover the nakedness of a woman and her daughter.&rdquo;
+      <div class="epigraph-source">&mdash; Leviticus 18:17</div>
+    </div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p class="first">The correction was coming.</p>
+
+    <p>From above, they looked like ants &mdash; determined ants crawling home from all directions. Old and young, dressed up and dressed down, in small groups and alone. A diverse crowd, except for one thing.</p>
+
+    <p>There were no women. Only men.</p>
+
+    <p>And another puzzle: in a determined crowd, people usually move in the same direction. Here, at the origin, their paths diverged &mdash; from the north along the two-lane road from Ryazan, from the east through the birch forest, from the south across harvested wheat fields &mdash; yet their destination was the same: a small wooden house surrounded by cornfields in a valley a hundred and ninety kilometers south of Moscow.</p>
+
+    <p>They hadn&rsquo;t realized yet, but the correction was coming from above. A point in the sky, the center of an ever-increasing sound of rotors.</p>
+
+    <p>Camouflaged in gray, red, and blue, a Mil Mi-8MTV-5 transport helicopter carried twenty Spetsnaz officers of the Federal Security Service on a classified mission. They wore black tactical uniforms and K6-3 titanium helmets with ballistic visors pushed up on their foreheads. They sat in the leather seats and sofas of the Presidential variant &mdash; a machine designed for war but furnished for heads of state, its cabin walls lined with Karelian birch veneer, its floor carpeted in navy blue, its overhead bins stocked with crystal tumblers and bottles of Beluga Noble that rattled gently with the vibration of the twin Klimov TV3-117 turboshaft engines. Through the oval windows, they could see the men below: running, driving, biking, walking, all converging on the farmhouse like filings drawn to a magnet.</p>
+
+    <p>They were in a good mood. A communications officer from their support group was telling a story about a panic call he&rsquo;d received on the FSB hotline. He performed both voices, hamming it up.</p>
+
+    <p>&ldquo;There is a woman.&rdquo;</p>
+    <p>&ldquo;What?&rdquo;</p>
+    <p>&ldquo;A woman.&rdquo;</p>
+    <p>&ldquo;Good.&rdquo;</p>
+    <p>&ldquo;You don&rsquo;t understand. She is attractive.&rdquo;</p>
+
+    <p>The officers glanced at each other, grinning. One said, chuckling: &ldquo;She&rsquo;s hot, so he&rsquo;s calling the hotline.&rdquo;</p>
+
+    <p>&ldquo;You don&rsquo;t understand. She is very attractive.&rdquo;</p>
+    <p>&ldquo;How attractive?&rdquo;</p>
+    <p>&ldquo;Great eyes, unbelievable breasts, great ass.&rdquo;</p>
+
+    <p>Laughter. &ldquo;Great ass! Calling the FSB because only we can handle that!&rdquo;</p>
+
+    <p>&ldquo;Why is it a problem?&rdquo;</p>
+    <p>&ldquo;She creates a disorder.&rdquo;</p>
+    <p>&ldquo;Because she&rsquo;s attractive?&rdquo;</p>
+    <p>&ldquo;Yes. Because everybody wants to have sex with her.&rdquo;</p>
+    <p>&ldquo;And why is that a problem?&rdquo;</p>
+    <p>&ldquo;Because men are quitting their jobs and leaving their families to pursue her. Work has stopped. The crops are rotting.&rdquo;</p>
+
+    <p>&ldquo;So, what did you tell him?&rdquo;</p>
+
+    <p>&ldquo;I calmed him down. I said we know. The governor called us. We are on our&mdash;&rdquo;</p>
+
+    <p>He didn&rsquo;t finish.</p>
+
+    <p>His face went red. His hands clawed at his throat, fighting something invisible. A choking sound &mdash; wet, strained, animal &mdash; and then silence. He couldn&rsquo;t breathe.</p>
+
+    <p>At the entrance to the forward compartment, six feet away, stood the Director.</p>
+
+    <p>Ruslan Olegovich Kedrov was four feet six inches tall. The deficit was concentrated entirely in his legs, which gave his torso the proportions of a much larger man folded into a smaller frame. He wore a charcoal suit tailored in Milan, a white shirt with no tie, and handmade shoes with lifts he believed no one noticed. Everyone noticed. No one mentioned it. He stood perfectly still, his pale eyes fixed on the communications officer.</p>
+
+    <p>The man&rsquo;s face turned from red to blue. His body gave a single violent jolt, then went slack against the seat.</p>
+
+    <p>Ruslan walked to the body. He opened its mouth. From his breast pocket he produced a small knife &mdash; old, ceremonial-looking, with a handle of dark bone &mdash; and cut off the tip of the tongue. No blood came. He raised the severed tip above his head and turned a full, slow circle, forcing every man to meet his eyes.</p>
+
+    <p>Then he said to the two nearest officers: &ldquo;Throw him away.&rdquo;</p>
+
+    <p>They carried the body to the tail section. The rear clamshell doors opened. The body tumbled into the slipstream and disappeared. Before the doors closed, Ruslan tossed out the tip of the tongue and walked back to the front.</p>
+
+    <p>The cabin was silent. No one moved. No one breathed louder than necessary.</p>
+
+    <p>Ruslan turned on the cabin television. A video began to play.</p>
+
+    <p>&ldquo;Take them out,&rdquo; he said.</p>
+
+    <p>Twenty zippers came down.</p>
+
+    <p>He inspected the compliance. Most had followed the order precisely; a few had been conservative; two went for full display. After what they had just witnessed, no one was aroused. Their exposed flesh hung inert.</p>
+
+    <p>&ldquo;Now.&rdquo;</p>
+
+    <p>The command was clear. They began, eyes fixed on the screen. Ruslan increased the volume to mask their sounds. He walked to the galley, returned with a box of tissues, and circulated through the cabin distributing them individually, pausing at each man like a flight attendant offering refreshments on a long-haul flight. One by one, they finished. Two officers at the back struggled with the assignment &mdash; their hands shaking, their eyes wet, unable to separate what they&rsquo;d just seen from what they&rsquo;d been ordered to do. The rest waited. When the last man was done, Ruslan said: &ldquo;Zip up.&rdquo;</p>
+
+    <p>He returned to the forward section.</p>
+
+    <p>Here is what they did not understand, and what Ruslan would never explain: a Spetsnaz team about to encounter a woman of extraordinary sexual power needed to be drained. A man carrying a loaded weapon into the presence of a woman who could make him abandon his post, his mission, and his identity with a single glance &mdash; that man needed to arrive empty. The cruelty was not incidental. It was the protocol.</p>
+
+    <p>The Mi-8 settled on the dirt road beside the farmhouse, and the operation went by the book: officers sprinting in tactical formation, securing exits and windows, smoke grenades through shattered glass, the battering ram splintering the front door. Two shots from inside. A naked man bolting through the yard. Then the woman emerged &mdash; naked, an officer gripping each arm, heads down, moving fast toward the helicopter.</p>
+
+    <p>The crowd of men surrounding the house screamed. Someone fired a pistol. The door-mounted PKM answered &mdash; a five-second burst that scattered the mob and left three bodies in the dirt. Sixty seconds later, the last officers were aboard and the Mi-8 lifted off, hovered for a moment as if remembering where Moscow was, then banked north.</p>
+
+    <p>Inside, the woman was in the forward compartment with Ruslan. No one saw her.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>Two hours later, the helicopter touched down on the helipad atop the Senate building inside the Kremlin walls. The woman, wrapped in a gray wool blanket, was escorted through a steel service door and down two flights of stairs to Ruslan&rsquo;s suite, where a preparation team of six female officers was waiting: stylist, physician, two makeup artists, manicurist, hairdresser. They worked in coordinated silence. In thirty minutes she was ready. She was transferred to the adjacent office &mdash; the office of the President of the Russian Federation.</p>
+
+    <p>Ruslan checked his watch. He was on time for his regular afternoon meeting with the President&rsquo;s wife. He walked to her office, on the other side of the President&rsquo;s.</p>
+
+    <p>They started with sex, as they always did.</p>
+
+    <p>An outsider would never have guessed they were lovers. They couldn&rsquo;t look more different. Ruslan &mdash; compact, smooth-faced, almost boyish at fifty-three. Klementina Arkadyevna Savina &mdash; six feet tall, past sixty, but looking no older than thirty: no lines, no slack, a complexion sustained by decades of work with elixirs and preparations that had nothing to do with any pharmacy. His youthful appearance was anatomical; hers was something else entirely.</p>
+
+    <p>They were busy today &mdash; too much to discuss &mdash; so they selected the fastest setting on the Romantic Enhancer, a device Klementina kept in a lacquered cabinet beside her desk. The session was brief, practiced, efficient. Ruslan wasn&rsquo;t concerned about performance. A half-dozen sessions a day had never been a problem, and today had been no exception. It wasn&rsquo;t a problem for Klementina either. They showed each other appropriate appreciation &mdash; kisses, sounds, the choreography of two people who had been doing this for years and still derived genuine, if familiar, pleasure. They were not committed to each other. Both knew. Both were comfortable.</p>
+
+    <p>Afterward, they drank mineral water &mdash; always mineral water, always immediately &mdash; and moved to the business section of her office.</p>
+
+    <p>The main issue: the President&rsquo;s worsening behavior.</p>
+
+    <p>They had invested too much in the installation of Valery Zamogilny to take it lightly. The mood swings were a symptom. The disease was that Valera, surrounded by flatterers &mdash; politicians, generals, oligarchs, cultural figures &mdash; had begun to believe he could operate without their guidance. Ruslan and Klementina required no credit. They wanted only stability, reasonable policies, and the continuation of the programs they&rsquo;d built. But Valera&rsquo;s growing independence was alarming.</p>
+
+    <p>Ruslan raised a hypothesis he&rsquo;d mentioned before: perhaps Klementina, who was Valera&rsquo;s primary and usually sole sexual partner, was no longer sufficient. The tantrums might be sexual frustration displaced onto politics.</p>
+
+    <p>Klementina dismissed this.</p>
+
+    <p>Ruslan pressed. He cited the Coolidge Effect &mdash; male rats, exhausted from mating, become instantly aroused when a new female is introduced. The stimulus isn&rsquo;t quality. It&rsquo;s novelty.</p>
+
+    <p>She replied that she was, in effect, a multitude of females. She could change not only her technique and personality but her physical characteristics with an ease that other women brought to changing earrings.</p>
+
+    <p>True. He knew it. But he remained unconvinced, which was why the woman from Ryazan was now in the next room.</p>
+
+    <p>He also told Klementina about the consultancy in Milan &mdash; Gemini Profiling &mdash; that maintained a global photographic database and could usually locate a physical double for any individual within seventy-two hours. A contingency plan, in case Valera became unmanageable.</p>
+
+    <p>&ldquo;Should we explore that option?&rdquo; he asked.</p>
+
+    <p>&ldquo;Perhaps later,&rdquo; she said. &ldquo;First, let&rsquo;s fix what we have. We don&rsquo;t have time for experiments.&rdquo;</p>
+
+    <p>She was right about time. In two weeks &mdash; on Ivan Kupala&rsquo;s Night, June 23rd, the ancient midsummer festival &mdash; the President was required to publicly sign the annual renewal of the Citizen Sex Tax Bill. If the bill went unsigned, the entire apparatus of sexual energy redistribution would collapse. Every ROMUS device in every clinic, military base, police station, and school in Russia would go dark. And every device they had quietly delivered to allies abroad would become evidence of an illegal program conducted without the knowledge of those nations&rsquo; citizens.</p>
+
+    <p>Ruslan opened the nightstand, took two Havana cigars from the box, cut them, and lit both. He offered one to Klementina. She took it.</p>
+
+    <p>His phone rang. The President.</p>
+
+    <p>&ldquo;Ruslan. The damn Enhancer didn&rsquo;t work. Come here and clean this up.&rdquo;</p>
+
+    <p>He dropped his cigar in the ashtray and ran.</p>
+
+    <p>The President was in his office, pale as paper, pulling on his trousers. He gestured toward the bathroom with the expression of a man who has broken something expensive and wants someone else to deal with it.</p>
+
+  </div>
+
+  <!-- ====== CHAPTER TWO ====== -->
+
+  <div id="chapter-2" class="chapter-header">
+    <h1>CHAPTER TWO: DAUGHTER</h1>
+    <div class="countdown">15 Days Before</div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p class="first">In the bathtub: the woman from Ryazan. Naked, motionless, lying in the water. Several red wires from the Romantic Enhancer were coiled around her body like the tendrils of something that had fed on her and finished.</p>
+
+    <p>&ldquo;Did you use the Enhancer in the water?&rdquo; Ruslan asked, though the answer was obvious.</p>
+
+    <p>The President didn&rsquo;t answer. He screamed. &ldquo;You always give me faulty devices! Look at this!&rdquo; He pointed at his belt. &ldquo;You gave me this as a gift &mdash; it doesn&rsquo;t work!&rdquo; Ruslan stepped closer and fastened the buckle with a click. Valera ripped the belt off and hurled it into the corner. &ldquo;I don&rsquo;t want to waste my time with you.&rdquo; He stormed out.</p>
+
+    <p>Ruslan knelt by the tub and opened the drain. Water began to empty around the girl&rsquo;s body.</p>
+
+    <p>Behind him: a scream. Not anger &mdash; something deeper, older.</p>
+
+    <p>&ldquo;Ilona!&rdquo;</p>
+
+    <p>Klementina shoved past him and plunged into the bath. She ripped the wires from the body and shook it &mdash; not gently, not the way you shake someone awake, but the way you shake something you refuse to accept is broken.</p>
+
+    <p>&ldquo;Do something!&rdquo;</p>
+
+    <p>&ldquo;She&rsquo;s dead,&rdquo; Ruslan said. &ldquo;The discharge in the water was too strong. There&rsquo;s nothing&mdash;&rdquo;</p>
+
+    <p>&ldquo;Do something, you idiot! She is our daughter!&rdquo;</p>
+
+    <p>Our daughter. Ruslan stared at her. Her face was torn open with grief &mdash; tears streaming, mouth wide, gasping. She looked, for the first time since he&rsquo;d known her, like an ordinary woman.</p>
+
+    <p>&ldquo;You never told me,&rdquo; he said.</p>
+
+    <p>&ldquo;To protect her.&rdquo;</p>
+
+    <p>He lifted the body from the water. It was light &mdash; lighter than it should have been, as if something essential had already departed. He held it in the air and then released his hands. The body stayed, floating.</p>
+
+    <p>&ldquo;Can you hold her?&rdquo; he asked Klementina.</p>
+
+    <p>&ldquo;Yes.&rdquo; Her voice was raw, but the tears had stopped. She was focused now &mdash; concentrating on the body with the intensity that, in another context, she brought to the Romantic Enhancer, to the preparation of elixirs, to the slow patient work of bending reality to her will.</p>
+
+    <p>Ruslan took out his knife &mdash; the same bone-handled blade he&rsquo;d used to cut the dead man&rsquo;s tongue &mdash; and opened a vein in his left wrist. Dark blood, almost black, welled up. He cut deeper, raised his arm, and let the blood flow across Ilona&rsquo;s lips and closed eyes.</p>
+
+    <p>He watched. Her body became translucent &mdash; crystalline &mdash; and through the glass-like skin he could see his blood circulating in small, hesitant drops, looking for pathways that had closed. But her eyes stayed shut. Her chest didn&rsquo;t move. No breath. No flicker.</p>
+
+    <p>&ldquo;Are you certain she&rsquo;s mine?&rdquo; he asked.</p>
+
+    <p>&ldquo;As certain as any woman can be.&rdquo;</p>
+
+    <p>He cut Klementina&rsquo;s hand without asking. She didn&rsquo;t flinch. He covered Ilona&rsquo;s face again &mdash; lips, eyelids &mdash; with her mother&rsquo;s blood, and began to chant: words in a language older than Russian, older than Church Slavonic, older than any alphabet. The syllables had no vowels a modern ear could recognize. They sounded like the wind through a door left open in a house where no one lives.</p>
+
+    <p>The blood drops inside the translucent body moved faster. For a moment &mdash; half a second, less &mdash; something flickered behind the girl&rsquo;s eyelids. Klementina gasped.</p>
+
+    <p>Then it stopped. The drops slowed. The translucence faded. The body became a body again.</p>
+
+    <p>Ruslan lowered his head. He gathered Ilona in his arms and placed her on the marble floor. He knelt beside her for a long moment, his hand on her forehead, his lips moving without sound.</p>
+
+    <p>Her hands were small. He turned one over and looked at the fingers &mdash; short, square-nailed, the exact shape of his own. The same blunt thumbs. The same slight crook in the index finger. He had never met this girl, never held her, never spoken her name aloud until ten minutes ago. And now he was kneeling on the marble floor of a presidential bathroom, holding the only evidence that he had ever made anything in this world that was not built to destroy.</p>
+
+    <p>&ldquo;Nothing can be done,&rdquo; he said.</p>
+
+    <p>&ldquo;No.&rdquo; Klementina&rsquo;s voice was barely a whisper. Then louder: &ldquo;No!&rdquo; She dropped to the floor beside the body. &ldquo;Get up! Can you hear me? Open your eyes! Get up!&rdquo;</p>
+
+    <p>But the girl lay still. Klementina pressed her face against her daughter&rsquo;s chest and wept &mdash; deep, shuddering sobs that echoed off the marble and the tile and the chrome fixtures of the Presidential bathroom.</p>
+
+    <p>Then she stopped.</p>
+
+    <p>Something practical and ancient rose through the grief &mdash; the same instinct that had kept her alive through thirty years of navigating men who could destroy her with a phone call. Ilona was gone. Nothing would change that. But the man who had killed her was still breathing, still in power, still shielded by the very magic Klementina herself had built around him like armor.</p>
+
+    <p>She stood. She wiped her face with both hands. And when she looked at Ruslan, he saw that something behind her eyes had rearranged itself into a new configuration. Not grief &mdash; grief was still there, compressed, loaded. Something colder. Something that had made a decision.</p>
+
+    <p>&ldquo;Take his protection off,&rdquo; she whispered.</p>
+
+    <p>&ldquo;What?&rdquo;</p>
+
+    <p>&ldquo;Drop his protection!&rdquo; she screamed. Her eyes were wide and flat and certain.</p>
+
+    <p>Ruslan looked at her. He looked at his daughter on the floor. He thought about the nineteen years he hadn&rsquo;t known Ilona existed, and the zero years he would have to know her now.</p>
+
+    <p>He nodded.</p>
+
+    <p>Klementina ran from the bathroom. Her footsteps echoed down the corridor &mdash; not running away, but running toward. Running toward the man who had killed her daughter with a faulty device and a bathtub full of water and the carelessness of a person who had never been told no by anyone who could make it stick.</p>
+
+    <p>Ruslan sat on the edge of the tub. Head down. Breathing.</p>
+
+    <p>He was four feet six inches tall. He had killed eleven men with his own hands and directed the deaths of others he had stopped counting. He had built the most feared intelligence directorate in the history of the Federation. None of it had prepared him for this &mdash; the specific weight of a girl he had never known, the specific lightness of her body when he lifted it from the water, the way her head had fallen against his shoulder as if she trusted him.</p>
+
+    <p>Ilona lay before him on the cold marble. She was nineteen. As he looked at her face, he noticed something he could not explain: her eyes, which had been closed, were now slightly open &mdash; pale blue, the same shade as Klementina&rsquo;s, but with an intensity behind them that had nothing to do with life. They were focused on something impossibly far away, as if in the final moment before the light went out, she had found someone across a great distance and called for him.</p>
+
+    <p>Then they dimmed. The intensity left. Her eyes were just eyes again &mdash; empty, still, nineteen years old.</p>
+
+    <p>Ruslan closed them with his thumb and forefinger. His hands were shaking. He knew only that his daughter was dead, that the President had killed her, that the signing ceremony was fifteen days away, and that Klementina was about to do something irreversible.</p>
+
+    <p>He heard footsteps &mdash; slow, heavy, deliberate. He raised his head.</p>
+
+    <p>Klementina stood in the doorway. Her expression held two things that should not coexist: fear, and satisfaction.</p>
+
+    <p>&ldquo;He&rsquo;s in a coma,&rdquo; she said.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>&ldquo;You&rsquo;re sweating.&rdquo;</p>
+
+    <p>&ldquo;Yes.&rdquo;</p>
+
+    <p>&ldquo;You&rsquo;re good,&rdquo; she said, and released my arm. Then she looked at me with eyes that contained something I would only later recognize as assessment &mdash; as if she were reading me, not my drawing, filing away information about a specimen she might need to reference later.</p>
+
+    <p>I couldn&rsquo;t tell if she was teasing me. Her expression gave nothing away. I had never in my life met anyone &mdash; male or female &mdash; who could stand half-naked in front of a stranger and radiate less self-consciousness than I felt fully clothed.</p>
+
+    <p>&ldquo;Yes.&rdquo;</p>
+
+    <p>&ldquo;Don&rsquo;t lose it,&rdquo; she said of the notebook.</p>
+
+  </div>
+
+  <!-- ====== CHAPTER THREE ====== -->
+
+  <div id="chapter-3" class="chapter-header">
+    <h1>CHAPTER THREE: ROMUS</h1>
+    <div class="countdown">14 Days Before &mdash; Night</div>
+    <div class="epigraph">
+      &ldquo;If anyone hears the trumpet but does not heed the warning, their blood will be on their own head.&rdquo;
+      <div class="epigraph-source">&mdash; Ezekiel 33:4</div>
+    </div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p class="first">I am flying with all my strength, ignoring the pain in my arms, rising higher and higher through a dense canopy of crimson rays &mdash; not light exactly, more like hair, vast curtains of luminous red hair &mdash; toward a giant incandescent shape, unmistakably feminine, pulsing with heat. When I am about to touch the captivating oval, trembling with the fear of being burned, fiery letters form the word ROMUS. I stop, collecting all my strength, as if someone across a great distance called for me and I need to answer the call. And at this moment, red-and-white-hot, they attack me, melting my wings, and I fall slowly into the rhythmic dark waves of an ocean.</p>
+
+    <p>My phone buzzes the alarm. I slap it silent.</p>
+
+    <p>Ikarus? Rimarus? Romus? Who or what is ROMUS?</p>
+
+    <p>4:30 AM. I&rsquo;ve been asleep twenty minutes &mdash; it might have been a mistake, I may not have enough time now, but I needed the break.</p>
+
+    <p>I stumble to the bathroom, take a leak, dry myself, change my soiled boxers &mdash; too much flying &mdash; and rush back to bed. The textbook example that defeated me before the nap is still defeating me. Something about particles in a box and a distribution used in quantum mechanics. The twenty-minute break hasn&rsquo;t helped at all.</p>
+
+    <p>I take a deep breath, twist my neck, and look around my room.</p>
+
+    <p>I am alone, as always. I don&rsquo;t invite anyone here. The place suits me: a bed, a plastic folding table &mdash; cheap, light, and large enough for my books &mdash; a small closet near the door. On the opposite wall: a miniature refrigerator in one corner, a bathroom door in the other, and between them a stove with a few shelves above it. That&rsquo;s it.</p>
+
+    <p>I live in a senior citizens&rsquo; building on Easton Avenue in New Brunswick, one block from the Rutgers campus. The building cut some deal with the city, which is why the rent is two hundred dollars a month. After this room sat empty for months &mdash; no senior wanted it, something about the pipes &mdash; they let me in temporarily. That was two years ago.</p>
+
+    <p>In a few hours I have a statistics exam. It&rsquo;s crucial that I get an A. I need the grade to keep my stipend, and I need the stipend to keep eating. If this problem stands between me and my A, I have to crush it.</p>
+
+    <p>There are <em>n</em> particles in a box. Depending on whether they are distinguishable, they follow the Maxwell-Boltzmann distribution or the Bose-Einstein distribution. I reach for my phone to search for more &mdash; and stop. The screen is dark. I press the button. Nothing.</p>
+
+    <p>Dead. That&rsquo;s right. I remember now.</p>
+
+    <p>Before I dropped off to sleep, I&rsquo;d been searching for information about the distributions &mdash; Bose-Einstein, Fermi-Dirac, Maxwell-Boltzmann. The usual rabbit hole: one link leading to another, a Wikipedia article branching into a forum, the forum into a thread about cognitive enhancers used by physicists. And there, buried in a comment section on a website I&rsquo;d never heard of, I stumbled on something.</p>
+
+    <p>A conversation fragment. Someone had written: &ldquo;Had my ROMUS session last Thursday. Best week of my life. Performance through the roof &mdash; my partner didn&rsquo;t know what hit her. Worth every penny.&rdquo; The reply was a laughing emoji and what looked like a price &mdash; numbers with no currency symbol, followed by a string of characters that might have been an encrypted address.</p>
+
+    <p>ROMUS. The word snagged on something in my brain. I scrolled further. Another mention, on a different thread: &ldquo;After ROMUS, my libido through the roof. IQ seems to go up as well.&rdquo; And another: &ldquo;The problem isn&rsquo;t getting it. The problem is what they take in exchange to get on the list.&rdquo;</p>
+
+    <p>On an impulse, I went deeper. I searched variations &mdash; ROMUS, ROMUS session, ROMUS enhancement, ROMUS libido, ROMUS performance. A strange pattern began to appear. The conversations were fragmented, partial, as if someone had gone through and deleted every third sentence. But the shape of the thing was visible: a network of people &mdash; accomplished people, people with titles and positions &mdash; who were trading in something. Not a drug exactly. Something that restored and amplified sexual energy, vitality, desire &mdash; things that time and stress had apparently taken from them. Something that required a &ldquo;contribution&rdquo; in return. Something that was, as far as I could tell, scarce and in high demand.</p>
+
+    <p>I was reading a thread from what appeared to be a private forum for EU trade negotiators &mdash; someone had screenshotted it and posted it on a whistleblower site &mdash; when my phone flashed. Not the normal flash of a notification. A strobe &mdash; bright white, then red, then white again &mdash; accompanied by a sound I had never heard from any phone: a rising tone, almost a siren, that lasted about three seconds and stopped as abruptly as it began.</p>
+
+    <p>Then the screen went black. The phone was dead. Not off &mdash; dead. No amount of button-pressing, charging cable, or cursing brought it back.</p>
+
+    <p>I sat on my bed staring at the dark screen for a long time. Then I told myself I was being paranoid, that phones die all the time, that the strobe was probably a malfunction, that I had an exam in a few hours and couldn&rsquo;t afford to chase ghosts.</p>
+
+    <p>I set my alarm on the bedside clock &mdash; the old plug-in kind with red numbers that Mrs. Koval had given me &mdash; lay down, and closed my eyes.</p>
+
+    <p>And dreamed of crimson hair, and the word ROMUS burning white against the darkness.</p>
+
+    <p>Now I&rsquo;m awake, and the phone is still dead, and the word is still in my head, and I have an exam.</p>
+
+    <p>Focus. I will read Jezebel&rsquo;s notes &mdash; she always takes better notes than I do &mdash; and return them in the morning.</p>
+
+    <p>Jezebel&rsquo;s notes are a work of art. Neat handwriting, color-coded by topic, small explanatory drawings in the margins that do in three lines what the textbook does in three pages. Her crimson hair &mdash; an extraordinary dark red that I have never seen on another human being &mdash; appears in the margins too, as a recurring doodle of a girl she never identifies. I&rsquo;ve always assumed it&rsquo;s her. I&rsquo;ve never asked.</p>
+
+    <p>I&rsquo;ve always been a straight-A student. I skipped a grade in middle school, which made me the youngest in every class since. At the end of this month, the dean will congratulate me at the end-of-year ceremony for making the dean&rsquo;s list, as I have every year for three years. The ceremony doesn&rsquo;t excite me anymore, but I still look forward to what follows: the Shabbat dinner ritual that I, my mother, and my father &mdash; the original scriptwriter, producer, and director &mdash; perform kneeling. The kneeling, as I understand it, is for concentration and repentance.</p>
+
+    <p>The short version of our prayer: &ldquo;Dear God, we screwed up. We&rsquo;re sorry. Our ancestors screwed up royally. Not our fault. Please forgive us. In return, we&rsquo;ll kiss your ass. We&rsquo;re terrified of you, and from now on we&rsquo;ll behave.&rdquo;</p>
+
+    <p>The long version, which I can recite even when woken in the middle of the night &mdash; as I essentially am right now:</p>
+
+    <p>&ldquo;Listen, O Lord, and have mercy, for we have sinned before you. Hear now the prayer of the children of those who sinned before you, so that calamities have clung to us. Do not remember the iniquities of our ancestors, but at this time remember your power and your name. For you are the Lord our God, and we will praise you. It is for this reason you have put the fear of you in our hearts.&rdquo;</p>
+
+    <p>Then Dad says, &ldquo;No sex, don&rsquo;t cheat, be a good Jew.&rdquo; Mom adds, &ldquo;No hanky-panky, Gilochka, Gilochka, amen.&rdquo; And I yell &mdash; as I have for years &mdash; &ldquo;I got all A&rsquo;s!&rdquo; Dad smiles, which he does rarely, and that&rsquo;s my reward. Mom is harder to read. She manages the candles and the dinner and the hand-washing, but she doesn&rsquo;t have Dad&rsquo;s intensity, and once, about a year ago, I caught a trace of a rolling eye when the command &ldquo;no sex&rdquo; was issued.</p>
+
+    <p>My father is a nurse specializing in sexually transmitted diseases. The horrors of his job explain his insistence. I don&rsquo;t know if he&rsquo;s happy in his work, but he never complains. One thing I&rsquo;m fairly sure of: you can&rsquo;t get rich treating STDs. My father hasn&rsquo;t.</p>
+
+    <p>Sometimes, late at night, I&rsquo;d find him sitting in the kitchen with the lights off, not reading, not doing anything, just sitting with his hands on the table like a man waiting for something that stopped coming a long time ago. He&rsquo;d see me and smile and say, &ldquo;Can&rsquo;t sleep either?&rdquo; But the smile never reached his eyes at those hours, and his face looked like it belonged to someone who&rsquo;d once been capable of something enormous and had carefully, deliberately, put it away.</p>
+
+    <p>My parents have struggled to save money for my tuition. The main source was my mother reading palms for neighborhood women. She&rsquo;s good at it and in demand, but she doesn&rsquo;t like doing it &mdash; she told me once that for each reading she has to give up a part of her soul. She brings home the bacon, so to speak, in her Jewish household. We don&rsquo;t qualify for any of the grants available to groups we don&rsquo;t belong to. My stipend &mdash; which depends on all A&rsquo;s &mdash; is the only financial relief my parents get.</p>
+
+    <p>I know what my roots are. I know what cards I&rsquo;ve been dealt. I am a single child in a traditional Jewish family. I love my family. I had a great childhood, I love the celebration of Peisach and the Shabbat dinners. I love my friends from Hebrew school. But I feel, despite a little sense of guilt, that this style of life is not for me, that it is too structured, too appropriate, and dare I say, too dull?</p>
+
+    <p>When we were about twelve, Jezebel and I read about Icarus and decided to imitate his father&rsquo;s invention. I built the wings out of flying kites and attached them with tape to my shoulders. Jezebel was in charge of risk management and built a landing place from old blankets under the fire staircase in our building. I climbed the stairs to give it a try.</p>
+
+    <p>Unfortunately, I slipped and fell from the third floor. I broke both of my legs and had to stay in bed for several months. Jezebel, who foolishly tried to soften my fall with her own body, got away with some minor scratches. It happened so fast that I didn&rsquo;t have time to get scared, but I replayed the fall in my mind many times later. I remember thinking, &ldquo;Is that the end?&rdquo; I realized how easy it was to disappear, get erased, become irrelevant, and as long as I am still around, I want to become relevant, to make my life count.</p>
+
+    <p>I don&rsquo;t know yet what I want &mdash; only that I want my life to count. The things I learn will help me find that purpose. Certainly wouldn&rsquo;t hurt, right?</p>
+
+    <p>I had the flu and missed a few lectures on statistics. I&rsquo;ve never liked taking notes anyway &mdash; note-taking distracts me from thinking. So I asked Jezebel, who normally sits near me during lectures, to lend me her notes for the last night before the exam, and she readily gave them to me.</p>
+
+    <p>I read Jezebel&rsquo;s notes for another hour.</p>
+
+    <p>Then it&rsquo;s time to go. I get dressed in khaki pants, a blue button-down I usually save for Shabbat, and sneakers. I grab Jezebel&rsquo;s notebook and my dead phone &mdash; maybe the campus tech center can revive it &mdash; and head for the door.</p>
+
+    <p>It&rsquo;s not a very safe neighborhood. I check the peephole before opening. The hallway of a senior citizens&rsquo; building at six-thirty in the morning: fluorescent lights buzzing, linoleum floor, the smell of instant coffee and medication. Mrs. Koval&rsquo;s door is closed. Mr. Petrenko&rsquo;s door is closed. The elevator is at the far end.</p>
+
+    <p>Everything is normal. Everything is quiet.</p>
+
+    <p>I lock my door, walk to the elevator, and press the button. While I wait, I think about the word ROMUS and the strobe and the dead phone, and then I stop thinking about it, because I have an exam, and an A, and parents who are counting on me.</p>
+
+    <p>I am nineteen years old. I am a virgin. I have $217 in my bank account. In approximately four hours, in Professor Bose&rsquo;s office &mdash; and no, I have no idea if he is by any chance a relative of Bose of Bose-Einstein &mdash; two FBI agents will interrupt my statistics exam and arrest me, and everything I believe about the shape of my life will turn out to be wrong.</p>
+
+    <p>But I don&rsquo;t know that yet. Right now I&rsquo;m riding an elevator in a senior citizens&rsquo; building in New Jersey, holding a dead phone and a girl&rsquo;s notebook, and the crimson dream is already fading, and I cannot remember what it felt like to fly. Was there a call I am supposed to answer?</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+  </div>
+
+  <!-- ====== CHAPTER FOUR ====== -->
+
+  <div id="chapter-4" class="chapter-header">
+    <h1>CHAPTER FOUR: ROOMMATE</h1>
+    <div class="countdown">14 Days Before &mdash; Morning</div>
+    <div class="epigraph">
+      &ldquo;You will suffer the shame of going naked, because I will take revenge.&rdquo;
+      <div class="epigraph-source">&mdash; Micah 1:8</div>
+    </div>
+  </div>
+
+  <div class="chapter-text">
+
+    <p class="first">Strange that I have never visited Jezebel though she&rsquo;s invited me many times. I was always too busy for social calls, but now I have to return her notes before the exam. Her apartment on Hamilton Avenue is seven blocks from my building. Seven blocks I have walked a hundred times &mdash; past the laundromat with the hand-lettered sign that still says OPEN 24 HRS even though it closes at ten, past the bodega where the cat sleeps on the lottery machine, past the parking lot where someone has been slowly disassembling a Honda Civic for the better part of a semester.</p>
+
+    <p>I am carrying Jezebel&rsquo;s notebook and my dead phone.</p>
+
+    <p>I am two blocks from her building when I hear it &mdash; a sharp crack above me, like a branch snapping, except there are no trees on this stretch of Easton Avenue. Something strikes the sidewalk a foot to my left and explodes. Concrete chips sting my ankle. I stumble sideways into the gutter, and my knee hits the curb, and my hands go out to catch me, and they land in a puddle of something dark and oily that the city has not bothered to clean up.</p>
+
+    <p>I stay down for a second, breathing. Then I look at the sidewalk. A stone &mdash; smooth, gray, the size of a man&rsquo;s fist &mdash; sits in a fresh white divot in the concrete, still rocking slightly. If it had hit my head, I would not be looking at anything.</p>
+
+    <p>I look up at the roof of the building beside me &mdash; a three-story walk-up with a fire escape and a satellite dish. A figure stands at the edge. Long dark coat, collar turned up. He is perfectly still. He does not step back when I see him. He looks at me the way you look at something you are deciding whether to keep.</p>
+
+    <p>He raises one arm and points &mdash; not at me, but past me, in the direction I came from. What does he mean? What does he want? We hold eye contact for three seconds, four, five. Then he turns and walks away. Not quickly. The walk of a man who has done what he came to do.</p>
+
+    <p>I get up. My knee is scraped through my khaki pants. My palms are black with gutter water. The left side of my blue shirt is soaked from hip to shoulder. I look like I&rsquo;ve been mugged, which, in a way, I have, except nothing was taken. Only delivered.</p>
+
+    <p>I pick up Jezebel&rsquo;s notebook. The cover is wet but the pages inside are dry. I pick up the stone. It is warm. Not from the air &mdash; the morning is cool. The stone itself is warm, as if someone held it for a long time, or as if the stone has its own heat.</p>
+
+    <p>I put it in my pocket and keep walking.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>Jezebel opens the door and her face changes immediately.</p>
+
+    <p>&ldquo;What happened to you?&rdquo;</p>
+
+    <p>&ldquo;I fell.&rdquo;</p>
+
+    <p>&ldquo;You fell.&rdquo; She looks at my soaked shirt, my filthy hands, the mud on my knees. &ldquo;Where? Into what?&rdquo;</p>
+
+    <p>&ldquo;The gutter. Something &mdash; I don&rsquo;t know. Something fell off a roof and I jumped and hit the curb.&rdquo; I hold out her notebook. &ldquo;Your notes are fine.&rdquo;</p>
+
+    <p>&ldquo;I don&rsquo;t care about the notes. Come inside.&rdquo; She pulls me in by the elbow. &ldquo;You&rsquo;re dripping on the floor.&rdquo;</p>
+
+    <p>I have never been inside Jezebel&rsquo;s apartment. We have always met on campus, or at my place, or at her front door &mdash; where last night she handed me the notebook in her nightgown and I walked home in the dark thinking about probability and crimson hair. Now I am standing in her hallway dripping gutter water onto the linoleum, and the apartment is small and warm, and it smells like cinnamon tea and something herbal I can&rsquo;t place.</p>
+
+    <p>&ldquo;I know. I&rsquo;m sorry.&rdquo;</p>
+
+    <p>&ldquo;Stop apologizing and take off your shirt.&rdquo;</p>
+
+    <p>I hesitate.</p>
+
+    <p>&ldquo;Gil, you&rsquo;re covered in street water. Give me your shirt and your pants. I&rsquo;ll throw them in the wash. You can shower and put something on.&rdquo;</p>
+
+    <p>She is already moving toward the closet. She comes back holding a robe &mdash; not a bathrobe, a woman&rsquo;s robe, the kind that ties at the waist. It is pale blue with small white flowers along the hem.</p>
+
+    <p>&ldquo;This is all I have that might fit you.&rdquo;</p>
+
+    <p>&ldquo;That will not fit me.&rdquo;</p>
+
+    <p>&ldquo;It will cover you. Go shower. Bathroom is down the hall, door on the left.&rdquo;</p>
+
+    <p>I take the robe and my dirty clothes and walk down the short hallway. Two doors face each other &mdash; one on the left, one on the right. Left, she said. I open the left door.</p>
+
+    <p>Steam. A small bathroom &mdash; sink and mirror on the left, toilet on the right, bathtub straight ahead with the curtain pulled to one side. And standing in front of the bathtub, a woman. Arms raised, holding a towel behind her back, in the process of drying herself. Completely naked.</p>
+
+    <p>She is almost as tall as I am &mdash; six feet, maybe an inch more &mdash; with dark hair that falls wet past her shoulders. Traces of water on her face, her collarbone, the long line of her stomach. She is looking directly at me. She is not moving. I am not moving. The floor and ceiling are not moving. The hallway behind me has ceased to exist. Time has rearranged itself so that there is only this small humid room and the fact that I am standing in it holding a flowered robe while a woman I have never met stands before me without a single thing between her body and my eyes.</p>
+
+    <p>I see all of her at once, the way you see a landscape when lightning strikes &mdash; every detail illuminated simultaneously, none of it processed.</p>
+
+    <p>She is not embarrassed. She is not afraid. She looks at me with mild curiosity, as if a filthy stranger in the bathroom doorway is the kind of thing that happens on Tuesdays and can be handled between the shampoo and the conditioner.</p>
+
+    <p>&ldquo;Who are you?&rdquo; she asks.</p>
+
+    <p>&ldquo;I&rsquo;m sorry,&rdquo; I say. My voice does something unfortunate on the second syllable. &ldquo;I&rsquo;m &mdash; Jezebel said &mdash; the door &mdash; I&rsquo;m Gil.&rdquo;</p>
+
+    <p>&ldquo;Gil.&rdquo; She lowers her arms and wraps the towel around her hips. Her bottom half is covered. Her top half is not. She extends her hand. &ldquo;Acindina.&rdquo;</p>
+
+    <p>I should shake it. This is what people do when introduced. But my right hand is gripping the robe like it is load-bearing structure, and my left hand is black with gutter filth, and I cannot make either of them do anything useful.</p>
+
+    <p>&ldquo;You&rsquo;re dirty,&rdquo; she observes.</p>
+
+    <p>&ldquo;I fell. Outside. In the &mdash; yes.&rdquo;</p>
+
+    <p>&ldquo;The shower is yours.&rdquo; She steps past me &mdash; close enough that I can feel the heat still coming off her skin &mdash; and walks down the hall to her room. The door closes. I stand in the bathroom holding the flowered robe, alone with the steam and the smell of eucalyptus and the realization that my brain has recorded everything I just saw with the fidelity of a high-resolution camera and will never, under any circumstances, delete the file.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>I shower quickly. The hot water stings the scrape on my knee and turns the gutter grime brown before it swirls down the drain. I dry myself with the only towel available &mdash; hers, still damp, still carrying her scent, which does not help my situation &mdash; and look at the robe.</p>
+
+    <p>Jezebel is five foot three. I am six one. The robe was designed for someone of Jezebel&rsquo;s general proportions and has no provisions for someone of mine. I put it on. It covers me from shoulders to mid-thigh, which would be adequate if I were not also in possession of the physiological response that nineteen years of virginity and the preceding ninety seconds have produced.</p>
+
+    <p>I tie the belt as tightly as it will go. I check the mirror. My neck is exposed. My forearms are exposed. My legs, from mid-thigh down, are exposed. The robe&rsquo;s floral pattern does nothing to project authority. I look like a man who lost a bet with serious consequences.</p>
+
+    <p>I open the bathroom door and take small, careful steps back toward the main room. Knees together. Small steps. The Stone Guest making his entrance.</p>
+
+    <p>Jezebel and Acindina are setting the table. They both look at me. Jezebel presses her lips together. Acindina tilts her head.</p>
+
+    <p>&ldquo;It suits you,&rdquo; Acindina says. She has dressed, but the word &ldquo;dressed&rdquo; is doing heavy lifting. A gray skirt short enough to qualify as a lemma, a pink blouse that conceals the way a window conceals. She sits down at the table.</p>
+
+    <p>The table is glass.</p>
+
+    <p>I realize this fact with an intensity I have never previously brought to the subject of furniture. The table is glass, and I am about to sit down at it wearing a robe that ends above my knees, and my body is doing something I cannot control and cannot conceal, and if I sit at this table, the glass will hide nothing.</p>
+
+    <p>&ldquo;Coffee?&rdquo; Jezebel asks. She is already pouring. She is enjoying this. She is my oldest friend and apparently she is enjoying this.</p>
+
+    <p>I sit down very carefully. I join my knees together. I place my hands flat on the glass and focus on the texture of the surface &mdash; cool, smooth, absolutely transparent. I do not look down. I think about polar bears. I think about Bose-Einstein condensates. I think about the stone in my pocket, which is still warm, which someone threw at my head forty minutes ago, which should be the thing I am thinking about instead of the woman sitting across from me.</p>
+
+    <p>&ldquo;Jezebel says you&rsquo;re a student in her class,&rdquo; Acindina says.</p>
+
+    <p>&ldquo;Yes.&rdquo;</p>
+
+    <p>&ldquo;What do you study?&rdquo;</p>
+
+    <p>&ldquo;Statistics. I have an exam this morning.&rdquo;</p>
+
+    <p>She looks at me &mdash; not at my face, lower, at the general area of the glass table I am trying not to think about &mdash; and then back up. &ldquo;You seem tense for a man who&rsquo;s only worried about an exam.&rdquo;</p>
+
+    <p>I take a sip of coffee and try to shift my weight without moving my knees apart. Under the glass table, the robe has done what robes do when you sit down. It has ridden up. I am fighting a war on two fronts &mdash; keeping my knees together and keeping the hem down &mdash; and losing both.</p>
+
+    <p>&ldquo;You&rsquo;re very quiet,&rdquo; Acindina says.</p>
+
+    <p>&ldquo;I&rsquo;m thinking about the exam.&rdquo;</p>
+
+    <p>&ldquo;No, you&rsquo;re not.&rdquo;</p>
+
+    <p>Jezebel makes a sound into her coffee that she converts, unconvincingly, into a cough.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>&ldquo;Something happened on the way here,&rdquo; I say, because I need to talk about something other than what is happening under this table. &ldquo;On Easton, two blocks from here. Someone threw a stone at me from a rooftop.&rdquo;</p>
+
+    <p>Both women stop.</p>
+
+    <p>&ldquo;What kind of stone?&rdquo; Acindina asks. Her voice has changed. Not the pitch &mdash; the temperature.</p>
+
+    <p>&ldquo;A big one. Size of a fist. It hit the sidewalk a foot away from me. Would have cracked my skull.&rdquo;</p>
+
+    <p>&ldquo;Did you see who threw it?&rdquo;</p>
+
+    <p>&ldquo;A man. On the roof. Long dark coat. He stood there and looked at me, then walked away.&rdquo;</p>
+
+    <p>&ldquo;How tall was he? What was he wearing? Which building?&rdquo;</p>
+
+    <p>The specificity of her questions is strange. Jezebel asks, &ldquo;Are you okay?&rdquo; &mdash; reaching across the table to touch my arm, which nearly undoes my entire structural arrangement. But Acindina is asking for clothes. Coordinates. Direction. Details.</p>
+
+    <p>&ldquo;Taller than me. Long coat. The walk-up on Easton, near the laundromat. Three stories. Fire escape on the left side.&rdquo;</p>
+
+    <p>Acindina nods slowly. She is looking at the table, but she is not seeing the table. She is somewhere else &mdash; processing something that has nothing to do with coffee or statistics or the man sitting across from her in a floral robe.</p>
+
+    <p>&ldquo;Do you still have it?&rdquo;</p>
+
+    <p>&ldquo;The stone?&rdquo;</p>
+
+    <p>&ldquo;Yes.&rdquo;</p>
+
+    <p>I reach into the pocket of my pants, which Jezebel has draped over a chair near the washing machine. The stone is still warm. I set it on the glass table. It sits there between the coffee cups, gray and smooth and wrong &mdash; a piece of the street that has followed me indoors.</p>
+
+    <p>Acindina reaches for it, then stops. She does not touch it. But she lowers her head slightly &mdash; and I could swear she inhales through her nose, quickly, as if testing the air above the stone. Then she sits back.</p>
+
+    <p>&ldquo;You guys should not walk to campus alone,&rdquo; she says.</p>
+
+    <p>&ldquo;We&rsquo;ll be fine.&rdquo;</p>
+
+    <p>&ldquo;No. You won&rsquo;t.&rdquo; She looks at Jezebel. Something passes between them &mdash; not a conversation, exactly, but an exchange. Jezebel frowns. Acindina holds her gaze. Jezebel looks away first.</p>
+
+    <p>&ldquo;I have an umbrella,&rdquo; Acindina says. &ldquo;I&rsquo;m coming with you.&rdquo;</p>
+
+    <p>&ldquo;That&rsquo;s not necessary.&rdquo;</p>
+
+    <p>&ldquo;I wasn&rsquo;t asking.&rdquo;</p>
+
+    <p>&ldquo;It&rsquo;s a sunny day. Why would we walk under an umbrella?&rdquo;</p>
+
+    <p>&ldquo;Because someone just threw a rock at your head from a roof, and an umbrella is better than nothing.&rdquo;</p>
+
+    <p>She has a point. I hate that she has a point. I also hate that the shift from flirtation to command has not diminished my problem under the table &mdash; if anything, the authority in her voice has made it worse, which raises theological questions about my wiring that I do not have time to explore.</p>
+
+    <p>Jezebel checks the washing machine. &ldquo;Done. Still damp, but wearable.&rdquo;</p>
+
+    <p>I have never been so grateful for damp clothing in my life. I take my pants and shirt to the bathroom, lock the door, and change out of the robe with the reverence of a man being released from a beautiful prison. The shirt clings in places and the pants are warm from the dryer, and I look like someone who got caught in a brief rain and lied about it, but I look like a human being, which is more than I could say five minutes ago.</p>
+
+    <p>When I come out, Acindina is waiting by the door, holding an enormous black umbrella &mdash; the kind meant for a golf cart or a small country &mdash; with BUY DOMESTIC BEER printed in white letters along the top.</p>
+
+    <p>&ldquo;Ready?&rdquo; she says.</p>
+
+    <p>&ldquo;No,&rdquo; I say. &ldquo;But let&rsquo;s go.&rdquo;</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+    <p>And so we go &mdash; Acindina and Jezebel on either side, me holding the enormous black umbrella &mdash; walking to campus on a sunny morning like people in a foreign film where something has already gone wrong.</p>
+
+    <p>We are about to cross the street when a red car, going fast, turns the corner and aims directly at our group. Acindina is on my left. Then she is not on my left. She is in front of me &mdash; between me and the car, arms crossed above her head in an X &mdash; and I did not see her move. She did not run, did not lunge. She was beside me and then she was there. Her skirt has blown to her waist, blue lace visible, her eyes wide and fixed on the windshield. The car swerves &mdash; not brakes, swerves &mdash; as if the driver recognized something, and speeds away.</p>
+
+    <p>&ldquo;What the hell!&rdquo; Jezebel shouts. She is not looking at the car. She is looking at Acindina. So am I. &ldquo;How did you &mdash; you were right next to me.&rdquo; She pulls out her phone. &ldquo;I&rsquo;m calling the police.&rdquo;</p>
+
+    <p>&ldquo;It won&rsquo;t help,&rdquo; says Acindina, staring in the direction of the disappearing car.</p>
+
+    <p>We hurry to the university. A crowd of a hundred or more fills the space in front of the main building &mdash; not all of them students. A man with black curly hair stands on a computer chair, supported by two bare-breasted women, speaking into a microphone. His amplified voice carries across the street.</p>
+
+    <p>&ldquo;There is no freedom without sexual freedom,&rdquo; we hear clearly.</p>
+
+    <p>&ldquo;Is it the sixties?&rdquo; I ask.</p>
+
+    <p>&ldquo;No person needs the government&rsquo;s permission to make love to another person.&rdquo;</p>
+
+    <p>&ldquo;What&rsquo;s he talking about &mdash; gays?&rdquo;</p>
+
+    <p>&ldquo;Gays are so pass&eacute;,&rdquo; says Acindina. &ldquo;He&rsquo;s talking about incest or polygamy.&rdquo;</p>
+
+    <p>Then: &ldquo;No being needs the government&rsquo;s permission to make love to another being.&rdquo;</p>
+
+    <p>That one is clear. We wave away volunteers offering flyers with naked people on them &mdash; I&rsquo;ve had enough trouble with images of naked people &mdash; and go inside.</p>
+
+    <p>We don&rsquo;t talk about the car. We don&rsquo;t talk about how Acindina moved. Some silences are agreements.</p>
+
+    <p>We find the exam room. Acindina asks if I&rsquo;m ready. I say yes, and ask whether we might have dinner &mdash; the three of us &mdash; afterward. She smiles and says yes. She has to get to work now.</p>
+
+    <p>&ldquo;Your phone&rsquo;s off,&rdquo; Jezebel says. &ldquo;I tried calling you this morning.&rdquo;</p>
+
+    <p>&ldquo;It died.&rdquo;</p>
+
+    <p>&ldquo;Died how?&rdquo;</p>
+
+    <p>I almost tell her about the strobe, and the siren, and ROMUS, and the threads about cognitive enhancement and the people with titles who traded in something unnamed &mdash; but I don&rsquo;t. It would sound insane, and she has an exam to take, and so do I.</p>
+
+    <p>&ldquo;Strange story,&rdquo; I say. &ldquo;I&rsquo;ll tell you later.&rdquo;</p>
+
+    <p>She gives me the look that means she is curious but won&rsquo;t press it. Then the door opens and Professor Bose appears.</p>
+
+    <p>Professor Satyendra Bose &mdash; I still don&rsquo;t know if he&rsquo;s related to the Bose of Bose-Einstein, and I&rsquo;ve been too embarrassed to ask directly &mdash; is a short old man with a long black mustache that covers his upper lip entirely, giving his face the appearance of a walrus who has read too many books. He has been at Rutgers for thirty-one years. He gives all his exams orally, one student at a time, which is unusual in America and, as he has explained many times, the standard method in India when he was a student. You draw a ticket at random from a glass jar. You answer the question on the ticket, plus whatever additional questions the professor decides to ask. It is harder than a written exam. No one complains. He is honest and fair, and that covers a multitude of eccentricities.</p>
+
+    <p>He lets the first group of ten in. Jezebel is among them. I wait in the corridor, flipping through the textbook, trying to refresh what I&rsquo;ve memorized over the last two sleepless nights.</p>
+
+    <p>Twenty minutes later, Jezebel comes out smiling.</p>
+
+    <p>&ldquo;How was it?&rdquo;</p>
+
+    <p>&ldquo;A. First time in math.&rdquo;</p>
+
+    <p>&ldquo;Hard?&rdquo;</p>
+
+    <p>&ldquo;He is in a good mood.&rdquo;</p>
+
+    <p>A few more students go in and come out. Some relieved, some pale.</p>
+
+    <p>Then it&rsquo;s my turn.</p>
+
+    <p>Inside, the room smells like chalk and old paper and the particular brand of Indian tea that Professor Bose keeps in a tin on his desk. I set my backpack down at one of the desks, walk to the front, and draw my ticket from the glass jar.</p>
+
+    <p>I look at it.</p>
+
+    <p>I close my eyes.</p>
+
+    <p>It&rsquo;s the distribution problem. The exact problem I&rsquo;ve been struggling with all night. Particles in a box. Maxwell-Boltzmann. Bose-Einstein. Fermi-Dirac. The problem that defeated me before the nap and after the nap and is apparently not done defeating me.</p>
+
+    <p>I sit down and try to reconstruct what I know. Other students are called up one by one. The professor examines them, nods, frowns, sends them away. When only a couple of students are left, he calls in another group and walks over to my desk.</p>
+
+    <p>&ldquo;How is it going?&rdquo; he asks.</p>
+
+    <p>&ldquo;I&rsquo;m working on it.&rdquo;</p>
+
+    <p>&ldquo;Come. You&rsquo;ve had enough time.&rdquo;</p>
+
+    <p>At his desk I start explaining the parts of the problem I can reconstruct &mdash; which distributions apply to which particles, the conditions under which they converge &mdash; trying, as the old saying goes, to make a silk purse out of a pig&rsquo;s ear.</p>
+
+    <p>The professor interrupts me. &ldquo;You are confused, but there are certain aspects of this problem that I myself find confusing.&rdquo;</p>
+
+    <p>He pauses. I hold my breath, waiting for him to say: But I didn&rsquo;t have to prepare for the exam. You did. Therefore, you failed.</p>
+
+    <p>Instead he says, &ldquo;Why don&rsquo;t you try a simpler problem?&rdquo;</p>
+
+    <p>He thinks for a moment, stroking the ends of his mustache with his thumb and forefinger. &ldquo;If I start flipping a coin &mdash; heads with probability <em>p</em> &mdash; what is the expected number of trials before I get heads?&rdquo;</p>
+
+    <p>I lower my eyes and think. The professor turns away to examine another student. After a few minutes, the student is dismissed &mdash; he rushes out looking straight ahead, which probably means it didn&rsquo;t go well &mdash; and the professor turns back to me.</p>
+
+    <p>&ldquo;What do you think?&rdquo;</p>
+
+    <p>&ldquo;The answer is one over <em>p</em>.&rdquo;</p>
+
+    <p>&ldquo;Why? Where does that come from?&rdquo; He looks angry and upset, but he always looks angry and upset. I suspect he doesn&rsquo;t want to tip me off in case I&rsquo;m guessing.</p>
+
+    <p>&ldquo;Well,&rdquo; I begin. &ldquo;The probability of getting heads is <em>p</em>.&rdquo; He nods impatiently. &ldquo;It means that when we flip the coin <em>n</em> times, we should get approximately <em>n</em> times <em>p</em> heads.&rdquo;</p>
+
+    <p>A young woman enters the room and stands near the door.</p>
+
+    <p>The professor looks at me with disdain for stating something so obvious, but he asks, &ldquo;Why?&rdquo;</p>
+
+    <p>&ldquo;If the probability of getting heads is one half, and we flip the coin a hundred times, we should expect to see about fifty heads. That&rsquo;s the meaning of probability. And the law of large numbers.&rdquo;</p>
+
+    <p>He twists his mustache, considering whether to challenge me further on this triviality, then nods. &ldquo;Continue.&rdquo;</p>
+
+    <p>I notice the woman again. She hasn&rsquo;t taken a seat. She&rsquo;s standing perfectly still, watching &mdash; not the room, not the professor, but me. She is Asian, about Jezebel&rsquo;s height, with short brown hair. She wears a light-yellow blouse under a black jacket, jeans, and pink sneakers. The jacket-and-sneakers combination strikes me as odd. The jacket is cut loose enough to conceal something at the hip.</p>
+
+    <p>&ldquo;So if I get about <em>n</em> times <em>p</em> heads in <em>n</em> flips,&rdquo; I continue, forcing my eyes back to the professor, &ldquo;I should get one head in about one over <em>p</em> flips. Because if <em>n</em> times <em>p</em> equals one, then <em>n</em> equals one over <em>p</em>.&rdquo;</p>
+
+    <p>The professor drums his index fingers on the desk, takes a deep breath. &ldquo;I&rsquo;m not sure if this is a proof &mdash; it is certainly not a rigorous proof.&rdquo; He pauses. &ldquo;But your answer is correct.&rdquo; He doesn&rsquo;t look happy saying it. &ldquo;And it shows good intuition.&rdquo; He looks even less happy saying that.</p>
+
+    <p>&ldquo;So if the coin is fair,&rdquo; he continues, &ldquo;how many flips do you expect to make before you get heads?&rdquo;</p>
+
+    <p>&ldquo;Two.&rdquo;</p>
+
+    <p>&ldquo;How many tails, on average, before you see heads?&rdquo;</p>
+
+    <p>&ldquo;One.&rdquo;</p>
+
+    <p>&ldquo;Now let me see how your intuition works on a harder problem. What is the expected number of flips before you see two heads in a row?&rdquo;</p>
+
+    <p>&ldquo;Let me think.&rdquo;</p>
+
+    <p>&ldquo;You can&rsquo;t figure it out right away?&rdquo;</p>
+
+    <p>&ldquo;I&rsquo;ll try.&rdquo;</p>
+
+    <p>Two men enter the room. I recognize the older one &mdash; the Dean, in his fifties, wearing a charcoal suit. The younger one, in his thirties, wears beige pants, a white shirt, and a black jacket cut in the same loose way as the woman&rsquo;s near the door. He also wears sneakers. Black sneakers. He walks past us to the back of the room and turns to face the class, unbuttoning his jacket. I catch the glint of a holster on his belt.</p>
+
+    <p>Two people in jackets designed to hide weapons. One at each end of the room.</p>
+
+    <p>I close my eyes. I have to focus. The problem. Two consecutive heads.</p>
+
+    <p>Let&rsquo;s say the expected number of flips is <em>x</em>. On the first flip, there are two possibilities:</p>
+
+    <p>I get tails on the first flip &mdash; probability one minus <em>p</em>. I&rsquo;ve wasted one flip and I&rsquo;m back where I started. This contributes (1 &minus; <em>p</em>) times (1 + <em>x</em>) to the answer.</p>
+
+    <p>The Dean and the man in beige are approaching the professor&rsquo;s desk. They display the full ceremony of a formal greeting &mdash; handshakes, smiles, the slight bow that administrators perform when they&rsquo;re about to deliver bad news.</p>
+
+    <p>&ldquo;Sorry to interrupt your class, Professor Bose,&rdquo; the Dean says in a low voice, though I can hear every word. &ldquo;This gentleman has some business to conduct with one of your students.&rdquo;</p>
+
+    <p>&ldquo;Which student?&rdquo;</p>
+
+    <p>&ldquo;Gil Gabler.&rdquo;</p>
+
+    <p>&ldquo;Here he is,&rdquo; says the professor, nodding toward me with a smile I don&rsquo;t understand. I try to return it.</p>
+
+    <p>&ldquo;Here he is,&rdquo; the Dean repeats to the man in the white shirt, pointing at me.</p>
+
+    <p>The man comes to my desk. I start to rise. He pushes me back down.</p>
+
+    <p>&ldquo;Are you Gil Gabler?&rdquo;</p>
+
+    <p>&ldquo;Yes.&rdquo;</p>
+
+    <p>He flips open his wallet, displaying the FBI insignia. &ldquo;FBI. I&rsquo;m Special Agent Silva. You are under arrest.&rdquo;</p>
+
+    <p>The woman in the yellow blouse is walking toward us. Not running &mdash; walking, quickly and deliberately, her hand resting on her hip.</p>
+
+    <p>&ldquo;For what?&rdquo; I ask.</p>
+
+    <p>&ldquo;For possession of child pornography.&rdquo;</p>
+
+    <p>He didn&rsquo;t have to say it so loud that the entire room hears, but he did. The words drop into the silence like stones into still water, and I can feel every pair of eyes shift to me &mdash; not with sympathy, not with curiosity, but with the instant, reflexive recoil that those particular words produce in any room, anywhere.</p>
+
+    <p>&ldquo;For what? That&rsquo;s &mdash; that&rsquo;s not &mdash; how is that possible?&rdquo;</p>
+
+    <p>My dead phone. The strobe. The siren.</p>
+
+    <p>The woman reaches us. She is barely taller than the professor. She holds up her badge. &ldquo;Agent Mizushima. Stand up and turn around.&rdquo;</p>
+
+    <p>I am about to rise when Professor Bose steps forward. His voice cuts through the room like a blade.</p>
+
+    <p>&ldquo;I need one minute to finish the exam with this young man.&rdquo;</p>
+
+    <p>The Dean smiles at the FBI agents surrounding me. &ldquo;Let&rsquo;s give him one minute, shall we?&rdquo;</p>
+
+    <p>Silva and Mizushima exchange a glance. Silva nods. &ldquo;One minute.&rdquo;</p>
+
+    <p>The professor turns to me as if nothing has happened &mdash; as if there are not two armed federal agents standing on either side of me, as if the entire room is not staring, as if the words child pornography are not still echoing off the walls.</p>
+
+    <p>&ldquo;Where were we?&rdquo; he asks.</p>
+
+    <p>I struggle to remember. The problem. The equation. Two heads in a row.</p>
+
+    <p>&ldquo;The first flip is tails,&rdquo; I say, my voice unsteady. &ldquo;Thus, if the expected number of flips is <em>x</em>, then <em>x</em> equals one minus <em>p</em>, which is the probability of tails, times <em>x</em> plus one &mdash; since we&rsquo;ve used one flip and start over &mdash; plus something else.&rdquo;</p>
+
+    <p>&ldquo;Agree.&rdquo;</p>
+
+    <p>I speed up, afraid of losing the thread. &ldquo;If the first flip is heads, and the second is also heads, we&rsquo;re done. So we add <em>p</em> squared times two, for the two flips. And if the first is heads but the second is tails, we&rsquo;ve wasted two flips and start over. So we add <em>p</em> times one minus <em>p</em>, times two plus <em>x</em>.&rdquo;</p>
+
+    <p>&ldquo;Agree.&rdquo;</p>
+
+    <p>&ldquo;Setting it all up: <em>x</em> = (1 &minus; <em>p</em>)(1 + <em>x</em>) + <em>p</em>&sup2; &middot; 2 + <em>p</em>(1 &minus; <em>p</em>)(2 + <em>x</em>). Expanding and collecting terms &mdash; I get <em>x</em> = 1 + <em>p</em> over <em>p</em> squared, which is the expected number of flips before getting two consecutive heads.&rdquo;</p>
+
+    <p>&ldquo;One minute is up,&rdquo; Silva says. &ldquo;Sorry.&rdquo;</p>
+
+    <p>The professor looks at the Dean. The Dean shakes his head.</p>
+
+    <p>&ldquo;Stand up,&rdquo; Mizushima says. &ldquo;Arms out.&rdquo;</p>
+
+    <p>I stand. She steps close &mdash; closer than seems necessary, her head below my chin, her eyes looking up at me with the flat professional focus of a person who has done this hundreds of times and doesn&rsquo;t care that it makes you uncomfortable. Her hands move across my shoulders, down my sides, along my waist. A pat-down. Thorough, impersonal, efficient. When her hands pass between my legs, I flinch &mdash; not from anything she does, but from the awareness that thirty people are watching a man accused of the worst thing you can be accused of being searched in a room that smells like chalk and Indian tea.</p>
+
+    <p>She takes my right arm and twists it behind my back. The cuff clicks. Then the left. She turns me around.</p>
+
+    <p>&ldquo;Let&rsquo;s go.&rdquo;</p>
+
+    <p>&ldquo;Don&rsquo;t you have to read me my Miranda rights?&rdquo; I say.</p>
+
+    <p>&ldquo;No, we don&rsquo;t,&rdquo; Silva answers.</p>
+
+    <p>Professor Bose steps in front of me. He raises his hand and places it on my shoulder &mdash; a gesture so deliberate and public that every person in the room registers it as a declaration.</p>
+
+    <p>&ldquo;Gil Gabler is the best student I&rsquo;ve ever had,&rdquo; he says. His voice is loud and clear and meant for everyone. &ldquo;He has a brilliant and independent mind, and he has a great path in front of him.&rdquo; He is shorter than Mizushima, but the gravity with which he says it makes him the tallest person in the room.</p>
+
+    <p>He pauses, then adds: &ldquo;Your grade is an A+.&rdquo;</p>
+
+    <p>&ldquo;Thank you, Professor,&rdquo; I say.</p>
+
+    <p>Mizushima doesn&rsquo;t respond to any of this. She turns to me. &ldquo;Do you have belongings in the room?&rdquo;</p>
+
+    <p>&ldquo;No,&rdquo; I say. My backpack is sitting at one of the desks, three feet away. I&rsquo;m afraid of what they might find in it, or claim to find.</p>
+
+    <p>They walk me out, each holding an elbow. In the corridor, Silva removes his jacket and drapes it over my cuffs so we look like three people walking together &mdash; two friends supporting a third who&rsquo;s had too much to drink. The hallway is empty. Jezebel is gone.</p>
+
+    <p>The elevator is held for us. Two students start to get in; Silva flashes his badge and waves them off. We ride down in silence.</p>
+
+    <p>Outside, the sun is bright and the air smells like cut grass and the end of the semester. Two identical black Chevrolet Suburbans are parked at the curb, engines running. Only the first has a driver &mdash; a gray-haired man in his fifties reading a newspaper.</p>
+
+    <p>They put me in the back seat. No one tells me to lower my head, like they do on television. No one reads me my Miranda rights, like they&rsquo;re supposed to &mdash; or like I think they&rsquo;re supposed to. The seat belt is fastened for me because my hands are behind my back.</p>
+
+    <p>&ldquo;Meet you there, Shinobu,&rdquo; Silva tells Mizushima through the window.</p>
+
+    <p>Shinobu. A first name. Like a normal person.</p>
+
+    <p>Silva gets in the second Suburban and pulls away. Our driver folds his newspaper.</p>
+
+    <p>&ldquo;Where to, Lindley?&rdquo; he asks.</p>
+
+    <p>&ldquo;We&rsquo;ll try that first,&rdquo; says Shinobu.</p>
+
+    <p>The Suburban moves into traffic. Through the tinted window, I watch the campus recede &mdash; the limestone face of Scott Hall, the students crossing College Avenue with their backpacks and their coffees and their ordinary, unbothered lives.</p>
+
+    <p>My dead phone is in my pocket. I think about the strobe, and the siren, and the threads about ROMUS, and the images they say they found on a device that, as of twelve hours ago, was still mine and still clean. I think about who has the power to kill a phone and fill it with poison in the same stroke.</p>
+
+    <p>I don&rsquo;t have an answer. I have an A+ in statistics and handcuffs behind my back and a charge that will make my parents&rsquo; faces look the way faces look when something breaks that cannot be repaired.</p>
+
+    <p>The Suburban crosses the Raritan River bridge and heads south. I don&rsquo;t know where Lindley is. I don&rsquo;t know what happens next. The driver turns on the radio &mdash; classical music, a cello &mdash; and I close my eyes and try to think about coins and probability, because it&rsquo;s the only thing left in my head that makes sense.</p>
+
+    <p class="scene-break">&#10038; &nbsp; &#10038; &nbsp; &#10038;</p>
+
+  </div>
+
+  <!-- ====== CTA ====== -->
+
+  <div class="cta-section">
+    <p>Hooked? The story is just getting started. Pre-order the full novel or explore the world behind the book.</p>
+    <a href="https://www.amazon.com/Sex-Tax-Zak-Maymin-ebook/dp/B0GSQ715Y5" class="btn" style="margin-bottom: 1.5rem;" target="_blank">Pre-Order on Amazon &mdash; $0.99</a>
+    <br>
+    <a href="background.html?subscribed=1" class="btn btn-outline" style="margin-top: 0.5rem;">Explore the Background</a>
+  </div>
+
+  <div class="divider">&#10038; &nbsp; &#10038; &nbsp; &#10038;</div>
+
+  <footer>
+    <a href="index.html">sextax.org</a> &nbsp;&middot;&nbsp; &copy; 2026 Zak Maymin
+  </footer>
+
+</body>
+</html>
