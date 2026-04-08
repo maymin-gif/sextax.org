@@ -361,7 +361,7 @@
 
   <nav class="tab-nav">
     <a href="index.html">The Novel</a>
-    <a href="read.html">Read Chapter 1</a>
+    <a href="chapters_1_4.html">Read Free Chapters</a>
     <a href="background.html" class="active">Background</a>
   </nav>
 
@@ -669,7 +669,19 @@
 
   </section>
 
-<div id="all-chapters-content">
+<!-- SUBSCRIBE GATE -->
+<div id="subscribe-gate" style="display:none;">
+  <section class="chapter" style="text-align:center; padding: 4rem 2rem;">
+    <h2 style="color:#c8860a; margin-bottom:1rem;">Background for All 35 Chapters</h2>
+    <p style="color:#b8b0a0; max-width:540px; margin:0 auto 1rem; font-size:1.1rem;">
+      You've seen the companion material for the Author's Note and Chapter 1. Subscribe to unlock background for all chapters &mdash; paintings, biblical passages, academic papers, historical context, and mathematical puzzles.
+    </p>
+    <p style="color:#888; font-size:0.95rem; margin-bottom:2rem;">Free. No spam. Just the good stuff.</p>
+    <script async data-uid="25e0d711f4" src="https://zak-maymin-2.kit.com/25e0d711f4/index.js"></script>
+  </section>
+</div>
+
+<div id="all-chapters-content" style="display:none;">
 
 <!-- ============================================================ -->
 <!-- CHAPTER 2: DAUGHTER                                           -->
@@ -2566,6 +2578,39 @@
     })();
   </script>
 
+  <script>
+    // Subscriber gate logic
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('subscribed') === '1') {
+        localStorage.setItem('sextax_subscriber', '1');
+        history.replaceState(null, '', window.location.pathname + window.location.hash);
+      }
+
+      var isSubscriber = localStorage.getItem('sextax_subscriber') === '1';
+      var gate = document.getElementById('subscribe-gate');
+      var gated = document.getElementById('all-chapters-content');
+
+      if (isSubscriber) {
+        gate.style.display = 'none';
+        gated.style.display = '';
+      } else {
+        gate.style.display = '';
+        gated.style.display = 'none';
+      }
+
+      // Hide chapter 2+ links in sidebar for non-subscribers
+      if (!isSubscriber) {
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(function(a) {
+          var ch = a.dataset.ch;
+          if (ch && ch !== 'authors-note' && ch !== 'chapter-1') {
+            a.style.display = 'none';
+          }
+        });
+      }
+    })();
+  </script>
 
 </body>
 </html>
