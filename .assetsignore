@@ -1,0 +1,5 @@
+.git/
+.gitignore
+.assetsignore
+_orphans_review.html
+*.md
