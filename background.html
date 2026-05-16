@@ -319,9 +319,50 @@
       z-index: 85;
     }
 
+    /* Personal Illustrated Edition announcement */
+    .pe-announce {
+      max-width: 760px;
+      margin: 0 auto 1rem;
+      padding: 3rem 2.5rem;
+      border-top: 1px solid #1e1e1e;
+      border-bottom: 1px solid #1e1e1e;
+      background: radial-gradient(ellipse at 50% 0%, rgba(200,134,10,0.06) 0%, transparent 70%);
+    }
+    .pe-announce h2 {
+      font-size: 1.05rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #c8860a;
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 0.4rem;
+    }
+    .pe-announce .pe-status {
+      text-align: center;
+      font-style: italic;
+      color: #888;
+      margin-bottom: 2rem;
+    }
+    .pe-announce p {
+      color: #c8bfb0;
+      font-size: 1.02rem;
+      margin-bottom: 1.1rem;
+    }
+    .pe-announce .pe-cta {
+      color: #d8cfc0;
+      border-left: 2px solid #c8860a;
+      padding-left: 1rem;
+      margin: 1.6rem 0;
+    }
+    .pe-announce code {
+      color: #e09a20;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95em;
+    }
+
     /* Desktop: sidebar visible, content shifted */
     @media (min-width: 769px) {
-      .page-header, .chapter, footer { margin-left: 170px; }
+      .page-header, .chapter, footer, .pe-announce { margin-left: 170px; }
       .chapter { max-width: 900px; }
     }
 
@@ -370,6 +411,28 @@
     <h1>BACKGROUND</h1>
     <p>Paintings, passages, papers, and puzzles &mdash; chapter by chapter.</p>
   </div>
+
+  <!-- PERSONAL ILLUSTRATED EDITION ANNOUNCEMENT -->
+  <section class="pe-announce">
+    <h2>The Personal Illustrated Edition</h2>
+    <p class="pe-status">In preparation.</p>
+
+    <p>The paintings and the commentary were always meant to live on paper &mdash; in color, bound into the novel itself, not scrolled past on a screen.</p>
+
+    <p>The Personal Illustrated Edition of <em>Sex Tax</em> is the full novel printed in color, on paper, with the art and the notes bound into the book itself. Large format. Hardcover. Made to be kept.</p>
+
+    <p>Every copy is <strong>signed and individually numbered</strong> &mdash; <em>Copy 1, Copy 2, Copy 47, Copy 768</em> &mdash; on a hand-signed bookplate, a small <em>ex libris</em> label that arrives separately and is yours to place inside the front cover. It is not printed into the book; that is deliberate, and it is how numbered editions have been done for two centuries. The lower the number, the earlier you were.</p>
+
+    <p>There is no date. It is being made properly, which takes as long as it takes.</p>
+
+    <p>It will open at an <strong>introductory price that will rise later</strong>. Order early and you pay less &mdash; but you will always see the current price before you buy. Nothing changes after you order; there is never a surprise.</p>
+
+    <p class="pe-cta">To be told the moment it is ready, email <code>sextax.org@gmail.com</code> with the single word <strong>Personal</strong> in the subject line. Nothing in the body. That is the entire process.</p>
+
+    <p>Your email stays private &mdash; never sold, never shared.</p>
+
+    <p>When it ships, you will have 60 days to decide it was worth it. If it wasn&rsquo;t, one email refunds you in full and you keep the book anyway. A thing made this carefully should not need a return policy, but you should not have to take that on faith.</p>
+  </section>
 
   <!-- SIDEBAR NAV -->
   <nav class="sidebar" id="sidebar">
